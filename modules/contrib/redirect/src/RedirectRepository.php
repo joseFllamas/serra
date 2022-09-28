@@ -79,6 +79,53 @@ class RedirectRepository {
 
     // Load redirects by hash. A direct query is used to improve performance.
     $rid = $this->connection->query('SELECT rid FROM {redirect} WHERE hash IN (:hashes[]) ORDER BY LENGTH(redirect_source__query) DESC', [':hashes[]' => $hashes])->fetchField();
+    $wildcard_path = FALSE;
+    if (empty($rid)) {
+      // Check for a wildcard pattern.
+      $patterns = $this->connection
+        ->query("SELECT rid, language, redirect_source__path AS pattern FROM {redirect} WHERE redirect_source__path LIKE '%*%' ORDER BY LENGTH(redirect_source__query) DESC")
+        ->fetchAll();
+      $wildcard_matches = [];
+      foreach ($patterns as $rule) {
+        $pattern = str_replace('/*', '*', $rule->pattern);
+        if (fnmatch($pattern, $source_path)) {
+          // If the original rule ends in /*, it's a folder redirect and should
+          // also match the plain Ã¢â‚¬Â<U+009D>folderÃ¢â‚¬Â<U+009D> without slash.
+          if (substr($rule->pattern, -2) == '/*') {
+            $expr = '!' . str_replace('/*', '(\/.*)', $rule->pattern) . '!';
+            if (!preg_match($expr, $source_path, $matches)) {
+              continue;
+            }
+            $rule->wildcard_value = $matches[1];
+          }
+          $wildcard_matches[$rule->language] = $rule;
+        }
+      }
+      if (!empty($wildcard_matches)) {
+        $wildcard_language = '';
+        if (array_key_exists($language, $wildcard_matches)) {
+          $wildcard_language = $language;
+        }
+        elseif (array_key_exists(Language::LANGCODE_NOT_SPECIFIED, $wildcard_matches)) {
+          $wildcard_language = Language::LANGCODE_NOT_SPECIFIED;
+        }
+        if (!empty($wildcard_language)) {
+          $rid = $wildcard_matches[$wildcard_language]->rid;
+          $pattern = $wildcard_matches[$wildcard_language]->pattern;
+          $tr = [
+            '*' => '',
+          ];
+          if (empty($rule->wildcard_value)) {
+            $tr = ['/*' => ''] + $tr;
+          }
+          $raw_pattern = strtr($pattern, $tr);
+          $wildcard_path = str_replace($raw_pattern, '', $source_path);
+          if(strpos($wildcard_path, '/') === 0){
+            $wildcard_path = substr($wildcard_path, 1);
+          }
+        }
+      }
+    }
 
     if (!empty($rid)) {
       // Check if this is a loop.
@@ -96,6 +143,11 @@ class RedirectRepository {
         return $recursive;
       }
 
+      // Reset set redirect URL with wildcard path.
+      if (isset($wildcard_path) && strpos($redirect->getRedirect()['uri'], "entity:") === false) {
+        $redirect_url = str_replace(' ', '%20', str_replace("internal:", "", str_replace("*", $wildcard_path, $redirect->getRedirect()['uri'])));
+        $redirect->setRedirect($redirect_url);
+      }
       return $redirect;
     }
 
@@ -133,6 +185,7 @@ class RedirectRepository {
    */
   public function findBySourcePath($source_path) {
     $ids = $this->manager->getStorage('redirect')->getQuery()
+      ->accessCheck(TRUE)
       ->condition('redirect_source.path', $source_path, 'LIKE')
       ->execute();
     return $this->manager->getStorage('redirect')->loadMultiple($ids);
@@ -150,6 +203,7 @@ class RedirectRepository {
   public function findByDestinationUri(array $destination_uri) {
     $storage = $this->manager->getStorage('redirect');
     $ids = $storage->getQuery()
+      ->accessCheck(TRUE)
       ->condition('redirect_redirect.uri', $destination_uri, 'IN')
       ->execute();
     return $storage->loadMultiple($ids);

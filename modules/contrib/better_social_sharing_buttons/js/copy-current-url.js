@@ -1,77 +1,69 @@
-/**
- * Copy the current page url to clipboard when clicking on the .btnCopy button.
- * Based on
- * https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript/30810322#30810322
- */
+(function () {
 
-(function ($) {
   'use strict';
 
-  // Selector of the element that copies link when clicked.
-  Drupal.behaviors.copyButtonElements = {
-    attach: function (context) {
-      var $copyButton = $('.btnCopy');
-      $copyButton.once('copy-current-url').each(function () {
-        // Adding click event on each anchor element.
-        $(this).on('click', function (e) {
-          e.preventDefault();
-          var popupElements = $('.social-sharing-buttons__popup');
-          Drupal.copyTextToClipboard(window.location.href, popupElements);
-        });
-      });
-    }
-  };
+/* Main function, listens for a click event,
+calls all the other functions upon element click */
+Drupal.behaviors.copyButtonElements = {
+  attach: function (context) {
+    let btnCopy = document.querySelector('a.btnCopy.social-sharing-buttons__button');
+    btnCopy.onclick = () => {
+      // Checks if page is using HTTPS
+      if (window.isSecureContext) {
+        // Calls the secureCopyToClipboard function
+        Drupal.secureCopyToClipboard(window.location.href);
+      } else {
+        // If site is not using HTTPS then use the fallback function
+        Drupal.unsecureCopyToClipboard(window.location.href);
+      }
+    };
+  }
+};
 
-  // Function to copy current url to clipboard.
-  // Shows a popupmessage on screen if url was copied successful.
-  Drupal.copyTextToClipboard = function (text, popupElements) {
-    if (!navigator.clipboard) {
-      Drupal.fallbackCopyTextToClipboard(text, popupElements);
-      return;
-    }
-
-    navigator.clipboard.writeText(text, popupElements)
-      .then(function () {
-        Drupal.showCopiedMessage(popupElements);
-      }, function (err) {
-        console.error('Error copying current url to clipboard: ', err);
-      });
-  };
-
-  // Fallback copy functionality using using older document.execCommand('copy') for when the normal clipboard
-  // functionality (navigator.clipboard) does not work. This generates a textarea with url as content and the copies that
-  // content using the document.execCommand('copy') command.
-  Drupal.fallbackCopyTextToClipboard = function (text, popupElements) {
-
-    var $inputURL = $("<input>");
-    $("body").append($inputURL);
-    $inputURL.val(window.location.href).select();
-
-    try {
-      document.execCommand("copy");
-      Drupal.showCopiedMessage(popupElements);
-    }
-    catch (err) {
-      console.error('Error copying current url to clipboard', err);
-    }
-
-    $inputURL.remove();
-  };
-
-  // Show a popup if the current url was successfully copied.
-  Drupal.showCopiedMessage = function (popupElements) {
-    var visibleClass = 'visible',
-      $popupElements = popupElements;
-
-    $popupElements.each(function () {
-      $(this).addClass(visibleClass);
+// For HTTPS sites this is the function to copy current url to clipboard
+Drupal.secureCopyToClipboard = function (valueToBeCopiedToClipboard) {
+  // Here we use the clipboardAPI to copy to clipboard
+  navigator.clipboard.writeText(valueToBeCopiedToClipboard)
+    .then(() => {
+      // Calls the function that pops up the message
+      Drupal.showPopUpMessage();
+    },function (err) {
+      console.error('Error copying current URL to clipboard: ', err);
     });
+};
 
-    setTimeout(function () {
-      $popupElements.each(function () {
-        $(this).removeClass(visibleClass);
-      });
-    }, 4000);
-  };
+// For non-HTTPS sites this will be the fallback function
+Drupal.unsecureCopyToClipboard = function (valueToBeCopiedToClipboard) {
+  const inputElem = document.createElement("input");
+  inputElem.value = valueToBeCopiedToClipboard;
+  // Append the element to the body
+  document.body.append(inputElem);
+  // Selects the element
+  inputElem.select();
+  try {
+    /* This section copies the current selection to clipboard using 'execCommand',
+    which is in the process of being deprecated, however its 'copy' command is still
+    fully supported by major browsers. To learn more please follow the link below:
+    https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand */
+    document.execCommand('copy');
+    this.showPopUpMessage();
+  } catch (err) {
+    // If unable to copy to clipboard, raise error
+    console.error('Unable to copy to clipboard', err);
+  }
+  // We remove the appended input element
+  document.body.removeChild(inputElem);
+};
 
-})(jQuery, Drupal);
+// Shows a popup if the current url was successfully copied.
+Drupal.showPopUpMessage = function () {
+  let elemPopUpShow = '.social-sharing-buttons__popup';
+  // Adds 'visible' to class
+  document.querySelector(elemPopUpShow).classList.add('visible');
+  // Removes 'visible' from class after a certain time
+  setTimeout(() => {
+    document.querySelector(elemPopUpShow).classList.remove('visible');
+  }, 4000);
+};
+
+})(Drupal);

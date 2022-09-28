@@ -8,32 +8,84 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "composer-patches": {
+            "type": "vcs",
+            "url": "https://github.com/vardot/composer-patches"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/advagg": "^5.0",
+        "drupal/advagg_css_minify": "^5.0",
+        "drupal/advagg_js_minify": "^5.0",
+        "drupal/advagg_mod": "^5.0",
+        "drupal/amswap": "^3.1",
         "drupal/backup_migrate": "^5.0",
+        "drupal/better_social_sharing_buttons": "^4.0",
+        "drupal/block_field": "1.x-dev@dev",
         "drupal/cache_control_override": "^1.0@alpha",
+        "drupal/captcha": "^1.5",
+        "drupal/color_field": "^2.5",
         "drupal/colorbox": "1.x-dev@dev",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8",
-        "drupal/core-vendor-hardening": "^8.8",
+        "drupal/colorbox_load": "^1.2",
+        "drupal/components": "^2.4",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/core-vendor-hardening": "^9",
+        "drupal/devel": "^5.0",
+        "drupal/draggableviews": "^2.0",
+        "drupal/entity": "^1.4",
+        "drupal/eu_cookie_compliance": "^1.23",
+        "drupal/field_group": "^3.3",
+        "drupal/field_validation": "^1.0@beta",
+        "drupal/file_mdm": "^2.5",
+        "drupal/fontawesome": "^2.23",
+        "drupal/form_placeholder": "^1.0",
+        "drupal/google_analytics": "^4.0",
         "drupal/hreflang": "^1.3",
+        "drupal/imageapi_optimize": "^4.0",
+        "drupal/imagick": "^1.5",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jquery_ui_droppable": "^1.2",
         "drupal/lazy": "^3.6",
         "drupal/memcache": "^2.2",
+        "drupal/menu_item_extras": "^2.17",
+        "drupal/menu_link_attributes": "^1.2",
+        "drupal/metatag": "1.16",
         "drupal/minifyhtml": "^1.10",
+        "drupal/ng_lightbox": "^2.0@beta",
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
+        "drupal/paragraphs_collapsible": "^1.2",
+        "drupal/pathauto": "^1.11",
+        "drupal/quick_node_clone": "^1.15",
+        "drupal/radix": "^5.0",
+        "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
+        "drupal/smart_trim": "^1.3",
+        "drupal/smtp": "^1.1",
+        "drupal/sophron": "^1.3",
+        "drupal/taxonomy_manager": "^2.0",
+        "drupal/taxonomy_menu": "3.x-dev@dev",
         "drupal/transliterate_filenames": "^1.5",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.2",
+        "drupal/webform": "6.2.x-dev@dev",
+        "drupal/webp": "^1.0@beta",
         "drupal/xmlsitemap": "^1.0",
         "drupal/yoast_seo": "^2.0@alpha",
+        "drupal/youtube": "^1.2",
+        "drush/drush": "^11.2",
         "tubalmartin/cssmin": "^4.1"
     },
     "conflict": {
@@ -58,7 +110,34 @@
         },
         "patches": {
             "drupal/core": {
-                "Error after saving node drupal 8.7 issue": "https://www.drupal.org/files/issues/2019-02-11/ignore_width_height_on_untranslatable_field_comparision_2941092_8.patch"
+                "https://www.drupal.org/project/drupal/issues/2941092": "https://www.drupal.org/files/issues/2021-04-15/2941092-19.patch"
+            },
+            "drupal/advagg": {
+                "#3226448. Disable advagg for admin routes": "https://www.drupal.org/files/issues/2021-08-04/3226448-5.patch"
+            },
+            "drupal/entity_reference_revisions": {
+                "#3045258. Entity reference revisions (Paragraphs) that are associated with unrevisioned entities have broken relationship base field definition": "https://www.drupal.org/files/issues/2019-04-02/entity_reference_revisions--relationship-to-parent-without-revisions--3045258--3--D8.patch",
+                "#3198489. Loading multiple entity revisions together causes memory exhaustion": "https://www.drupal.org/files/issues/2021-02-15/3198489-2.patch"
+            },
+            "drupal/focal_point": {
+                "#3094478. Integrate focal point with media_library": "https://www.drupal.org/files/issues/2020-04-28/3094478-23_1.patch",
+                "#2997675. Provide image effect to scale by width only": "https://www.drupal.org/files/issues/2020-03-10/focal-point-2997675-12.patch"
+            },
+            "drupal/http_cache_control": {
+                "#3173023. Add check boxes for Cache-Control directives": "https://www.drupal.org/files/issues/2020-09-24/diff-http_cache_control-002.patch"
+            },
+            "drupal/linkit": {
+                "#3158783. Links around media images break when edited, using Linkit and CKeditor": "https://www.drupal.org/files/issues/2021-02-18/links_around_media_images_break_ckeditor-3158783-14.patch"
+            },
+            "drupal/paragraphs_asymmetric_translation_widgets": {
+                "#3035916. Translation Problem with Paragraph 1.6 and Paragraphs asymmetric translation widgets 1.0-beta1": "https://www.drupal.org/files/issues/2020-05-06/3035916-10.patch"
+            },
+            "drupal/redirect": {
+                "#2831605. Support for wildcards": "https://www.drupal.org/files/issues/2021-02-08/support-for-wildcard-2831605-83.patch"
+            },
+            "drupal/search_api": {
+                "#2986623. Entity reference 'referencing entity' or 'back referencing'": "https://www.drupal.org/files/issues/2018-10-09/2986623-26--reverse_entity_references.patch",
+                "#2799497. 'where' property on SearchApiQuery is protected": "https://www.drupal.org/files/issues/2020-10-16/2799497-7-public-where-condition.patch"
             }
         },
         "installer-paths": {

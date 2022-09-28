@@ -1,8 +1,0 @@
-<?php
-
-/**
- * @file
- * Code for the Ft text ckeditor feature.
- */
-
-include_once 'ft_text_ckeditor.features.inc';

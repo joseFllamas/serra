@@ -3,7 +3,7 @@
   "type": "drupal-module",
   "description": "Allows the administration menu to be customised per user role.",
   "keywords": ["Drupal"],
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.drupal.org/project/amswap",
   "minimum-stability": "dev",
   "support": {

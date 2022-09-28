@@ -16,7 +16,7 @@ field.widget.settings.block_field_default:
       type: sequence
       label: 'Settings'
       sequence:
-        type: config_object
+        type: string
     configuration_form:
       type: string
 
@@ -73,4 +73,4 @@ field.value.block_field:
       type: sequence
       label: 'Settings'
       sequence:
-        type: config
+        type: string

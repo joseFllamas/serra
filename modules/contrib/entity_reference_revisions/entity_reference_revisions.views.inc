@@ -55,7 +55,7 @@ function entity_reference_revisions_field_views_data(FieldStorageConfigInterface
       'id' => 'entity_reverse',
       'base' => $entity_type->getDataTable() ?: $entity_type->getBaseTable(),
       'entity_type' => $entity_type_id,
-      'base field' => $entity_type->getKey('revision'),
+      'base field' => $entity_type->isRevisionable() ? $entity_type->getKey('revision') : $entity_type->getKey('id'),
       'field_name' => $field_name,
       'field table' => $table_mapping->getDedicatedDataTableName($field_storage),
       'field field' => $field_name . '_target_revision_id',

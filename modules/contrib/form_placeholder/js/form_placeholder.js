@@ -4,7 +4,7 @@
   Drupal.form_placeholder = {};
 
   Drupal.form_placeholder.elementIsSupported = function ($element) {
-    var supportedElement = $element.is('input[type=number], input[type=text], input[type=date], input[type=email], input[type=url], input[type=tel], input[type=password], textarea');
+    var supportedElement = $element.is('input[type=number], input[type=text], input[type=email], input[type=url], input[type=tel], input[type=password], textarea, select');
     var hasId = $element.attr('id');
     return supportedElement && hasId;
   };
@@ -35,10 +35,11 @@
       }
       exclude += '.form-placeholder-exclude-children *';
       exclude += ', .form-placeholder-exclude';
+      exclude += ', .form-placeholder-processed';
 
       var required_indicator = settings.form_placeholder.required_indicator;
 
-      $(include, context).not(exclude).each(function () {
+      $(include).not(exclude).each(function () {
         var $textfield = $(this);
         var elementSupported = Drupal.form_placeholder.elementIsSupported($textfield);
         var placeholderSupported = Drupal.form_placeholder.placeholderIsSupported() || $().placeholder;
@@ -71,7 +72,14 @@
           }
 
           if (!$textfield.attr('placeholder')) {
-            $textfield.attr('placeholder', placeholder);
+            if ($textfield.is('select')) {
+              var $selected = $textfield.find('[value=""]');
+              $selected.text($label.text());
+              $selected.prop('disabled', true);
+            }
+            else {
+              $textfield.attr('placeholder', placeholder);
+            }
             $label.addClass('visually-hidden');
           }
 
@@ -79,6 +87,7 @@
           if (!Drupal.form_placeholder.placeholderIsSupported() && $().placeholder) {
             $textfield.placeholder();
           }
+          $textfield.addClass('form-placeholder-processed');
         }
       });
     }

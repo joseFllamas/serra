@@ -48,6 +48,9 @@ class RedirectSourceWidget extends WidgetBase {
       '#required' => $element['#required'],
       '#field_prefix' => Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString(),
       '#attributes' => ['data-disable-refocus' => 'true'],
+      '#description' => $this->t("Specify pages by using their paths. The '*' character is a wildcard. An example path is %user-wildcard for every user page.", [
+        '%user-wildcard' => '/user/*',
+      ]),
     ];
 
     // If creating new URL add checks.

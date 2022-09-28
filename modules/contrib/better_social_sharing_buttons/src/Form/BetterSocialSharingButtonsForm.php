@@ -35,24 +35,19 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
 
     $config = $this->config('better_social_sharing_buttons.settings');
 
-    $weight = 1;
-
     $social_services = [
       'facebook' => $this->t('Facebook'),
       'twitter' => $this->t('Twitter'),
       'whatsapp' => $this->t('WhatsApp'),
       'facebook_messenger' => $this->t('Facebook Messenger'),
-      'email' => $this->t('E-mail'),
+      'email' => $this->t('Email'),
       'pinterest' => $this->t('Pinterest'),
       'linkedin' => $this->t('Linkedin'),
-      'googleplus' => $this->t('Google+'),
       'digg' => $this->t('Digg'),
-      'stumbleupon' => $this->t('StumbleUpon'),
-      'delicious' => $this->t('Delicious'),
-      'slashdot' => $this->t('Slashdot'),
       'tumblr' => $this->t('Tumblr'),
       'reddit' => $this->t('Reddit'),
       'evernote' => $this->t('Evernote'),
+      'print' => $this->t('Print'),
       'copy' => $this->t('Copy current page url to clipboard'),
     ];
 
@@ -61,20 +56,12 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
       '#type' => 'checkboxes',
       '#description' => $this->t('Check the services for which you would want social sharing buttons to appear'),
       '#options' => $social_services,
-      '#default_value' => $config->get('services') ?: [
-        'facebook',
-        'twitter',
-        'linkedin',
-        'googleplus',
-        'email',
-      ],
-      '#weight' => $weight,
+      '#default_value' => $config->get('services'),
     ];
-    $weight++;
 
     $form['iconset'] = [
       '#type' => 'radios',
-      '#title' => $this->t('Which iconset do you want to use ?'),
+      '#title' => $this->t('Which iconset do you want to use?'),
       '#default_value' => $config->get('iconset') ?: 'social-icons--square',
       '#required' => TRUE,
       '#options' => [
@@ -95,15 +82,13 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
         ...
         '),
       ],
-      '#weight' => $weight,
     ];
-    $weight++;
 
     $form['facebook_app_id'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Facebook App ID'),
       '#default_value' => $config->get('facebook_app_id') ?: '',
-      '#description' => $this->t('If you want to share to FB messenger, a Facebook App Id is required'),
+      '#description' => $this->t('If you want to share to FB messenger, a Facebook App ID is required'),
       '#states'        => [
         'visible'      => [
           ':input[name="services[facebook_messenger]"]' => ['checked' => TRUE],
@@ -112,38 +97,41 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
           ':input[name="services[facebook_messenger]"]' => ['checked' => TRUE],
         ],
       ],
-      '#weight' => $weight,
+    ];
+
+    $form['print_css'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Print css file'),
+      '#default_value' => $config->get('print_css') ?: '',
+      '#description' => $this->t('Enter absolute path to your print css file. When set, the print version will display on screen.'),
+      '#states'        => [
+        'visible'      => [
+          ':input[name="services[print]"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
 
     $form['width'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Icon width'),
+      '#title' => $this->t('Icon size'),
       '#default_value' => $config->get('width') ?: '20px',
-      '#description' => $this->t('Set the width of the icons in pixels, like 32px'),
+      '#description' => $this->t('Set the size of the icons in pixels, e.g., 32px. Height and width will be set to this size.'),
       '#required' => TRUE,
-      '#weight' => $weight,
     ];
-    $weight++;
-
-    $form['height'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('Icon height'),
-      '#default_value' => $config->get('height') ?: '20px',
-      '#description' => $this->t('Set the height of the icons in pixels, like 32px'),
-      '#required' => TRUE,
-      '#weight' => $weight,
-    ];
-    $weight++;
 
     $form['radius'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Border radius'),
       '#default_value' => $config->get('radius') ?: '3px',
-      '#description' => $this->t('Set the border radius of each icon (=rounded corners). Set to 0px to have square icons or 100% to convert the square icons into circular icons'),
+      '#description' => $this->t('Set the border radius of each icon (=rounded corners). Set to 0px to have square icons or 100% to convert the square icons into circular icons.'),
       '#required' => TRUE,
-      '#weight' => $weight,
     ];
-    $weight++;
+
+    $form['node_field'] = [
+      '#title' => $this->t('Enable Better Social Sharing Buttons display field for nodes'),
+      '#type' => 'checkbox',
+      '#default_value' => $config->get('node_field') ?: FALSE,
+    ];
 
     return parent::buildForm($form, $form_state);
   }
@@ -155,13 +143,13 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
     $config = $this->config('better_social_sharing_buttons.settings');
     $config->set('services', $form_state->getValue('services'));
     $config->set('width', $form_state->getValue('width'));
-    $config->set('height', $form_state->getValue('height'));
     $config->set('radius', $form_state->getValue('radius'));
     $config->set('facebook_app_id', $form_state->getValue('facebook_app_id'));
+    $config->set('print_css', $form_state->getValue('print_css'));
     $config->set('iconset', $form_state->getValue('iconset'));
+    $config->set('node_field', $form_state->getValue('node_field'));
     $config->save();
-    $message = $this->t("Configuration saved !");
-    $this->messenger()->addMessage($message);
+    $this->messenger()->addMessage($this->t("Configuration saved!"));
   }
 
   /**
@@ -171,7 +159,7 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
     if ($form_state->getValue('services')['facebook_messenger']) {
       $appid = $form_state->getValue('facebook_app_id');
       if (!is_numeric($appid)) {
-        $form_state->setErrorByName('facebook_app_id', $this->t('Facebook App Id should be numeric'));
+        $form_state->setErrorByName('facebook_app_id', $this->t('Facebook App ID should be numeric'));
       }
     }
 

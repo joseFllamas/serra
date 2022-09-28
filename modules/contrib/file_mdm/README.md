@@ -1,6 +1,6 @@
 # File metadata manager
 
-A Drupal 8 module providing a file metadata manager service and API. Allows to
+A Drupal module providing a file metadata manager service and API. Allows to
 get, via an unified API, information stored in files like EXIF photo
 information, TrueType font information, etc.
 
@@ -33,7 +33,12 @@ The module is inspired by discussions at [#2630242 Provide methods to retrieve E
 
 
 ## Requirements
-The versions 8.x-2.x of the module require __Drupal 8.8.0 or above__.
+
+* The module **must** be downloaded or updated using Composer, see [Download contributed modules and themes using Composer](https://www.drupal.org/node/2718229#adding-modules).
+This ensures that all dependencies get downloaded as well, with the appropriate
+release level.
+
+* Drupal 9.3.x and higher or 10.0.x and higher
 
 
 ## Installing

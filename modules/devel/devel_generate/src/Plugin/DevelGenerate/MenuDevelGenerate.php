@@ -91,7 +91,7 @@ class MenuDevelGenerate extends DevelGenerateBase implements ContainerFactoryPlu
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-    $entity_manager = $container->get('entity.manager');
+    $entity_manager = $container->get('entity_type.manager');
     return new static(
       $configuration, $plugin_id, $plugin_definition,
       $container->get('menu.link_tree'),

@@ -2,5 +2,5 @@ name: Odisean layouts
 type: module
 description: 'Custom layouts designed for Bootstrap4 by odisean'
 package: Odisean
-core: 8.x
+core_version_requirement: ^8.7.7 || ^9
 configure: odisean_layouts.form 

@@ -4,7 +4,8 @@ namespace Drupal\sophron_guesser;
 
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\sophron\MimeMapManagerInterface;
-use Symfony\Component\HttpFoundation\File\MimeType\MimeTypeGuesserInterface;
+use FileEye\MimeMap\MappingException;
+use Symfony\Component\Mime\MimeTypeGuesserInterface;
 
 /**
  * Makes possible to guess the MIME type of a file using its extension.
@@ -41,7 +42,7 @@ class SophronMimeTypeGuesser implements MimeTypeGuesserInterface {
   /**
    * {@inheritdoc}
    */
-  public function guess($path) {
+  public function guessMimeType(string $path) : ?string {
     $extension = '';
     $file_parts = explode('.', $this->fileSystem->basename($path));
 
@@ -54,11 +55,31 @@ class SophronMimeTypeGuesser implements MimeTypeGuesserInterface {
     while ($additional_part = array_pop($file_parts)) {
       $extension = strtolower($additional_part . ($extension ? '.' . $extension : ''));
       if ($mime_map_extension = $this->mimeMapManager->getExtension($extension)) {
-        return $mime_map_extension->getDefaultType(FALSE);
+        try {
+          return $mime_map_extension->getDefaultType();
+        }
+        catch (MappingException $e) {
+          return 'application/octet-stream';
+        }
       }
     }
 
     return 'application/octet-stream';
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function guess($path) {
+    @trigger_error(__METHOD__ . '() is deprecated in drupal:9.1.0 and is removed from drupal:10.0.0. Use ::guessMimeType() instead. See https://www.drupal.org/node/3133341', E_USER_DEPRECATED);
+    return $this->guessMimeType($path);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isGuesserSupported(): bool {
+    return TRUE;
   }
 
   /**

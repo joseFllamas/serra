@@ -5,7 +5,8 @@
   margin: 2em 0;
 }
 
-.social-sharing-buttons a, .social-sharing-buttons__button {
+.social-sharing-buttons a,
+.social-sharing-buttons__button {
   text-decoration: none;
   margin: 0 4px;
   display: flex;
@@ -16,6 +17,7 @@
 .btnCopy {
   position: relative;
   padding: 0;
+  cursor: pointer;
 }
 
 .social-sharing-buttons__popup {

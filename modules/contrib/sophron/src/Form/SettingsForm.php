@@ -133,20 +133,15 @@ class SettingsForm extends ConfigFormBase {
       ],
     ];
 
-    // Allow mapping commands in the admin UI only for PHP 7+. This is because
-    // running the mapping routine for lower version expose the module to
-    // fatal error risks that cannot be caught before PHP 7.
-    if (PHP_VERSION_ID >= 70000) {
-      $commands = $config->get('map_commands');
-      $form['mapping']['map_commands'] = [
-        '#type' => 'textarea',
-        '#title' => $this->t('Mapping commands'),
-        '#description' => $this->t("The commands below alter the default MIME type mapping. More information in the module's README.md file."),
-        '#description_display' => 'before',
-        '#rows' => 5,
-        '#default_value' => empty($commands) ? '' : Yaml::dump($commands, 1),
-      ];
-    }
+    $commands = $config->get('map_commands');
+    $form['mapping']['map_commands'] = [
+      '#type' => 'textarea',
+      '#title' => $this->t('Mapping commands'),
+      '#description' => $this->t("The commands below alter the default MIME type mapping. More information in the module's README.md file."),
+      '#description_display' => 'before',
+      '#rows' => 5,
+      '#default_value' => empty($commands) ? '' : Yaml::dump($commands, 1),
+    ];
 
     // Mapping errors.
     if ($errors = $this->mimeMapManager->getMappingErrors($this->mimeMapManager->getMapClass())) {
@@ -217,7 +212,7 @@ class SettingsForm extends ConfigFormBase {
           $i++,
           $type_string,
           implode(', ', $type->getExtensions()),
-          $type->getDescription(),
+          $type->hasDescription() ? $type->getDescription() : '',
           implode(', ', $type->getAliases()),
         ];
       }
@@ -246,11 +241,12 @@ class SettingsForm extends ConfigFormBase {
     $i = 1;
     foreach ($this->mimeMapManager->listExtensions() as $extension_string) {
       if ($extension = $this->mimeMapManager->getExtension($extension_string)) {
+        $defaultExtensionType = $this->mimeMapManager->getType($extension->getDefaultType());
         $rows[] = [
           $i++,
           $extension_string,
           implode(', ', $extension->getTypes()),
-          $this->mimeMapManager->getType($extension->getDefaultType())->getDescription(),
+          $defaultExtensionType->hasDescription() ? $defaultExtensionType->getDescription() : '',
         ];
       }
     }
@@ -279,7 +275,7 @@ class SettingsForm extends ConfigFormBase {
     }
 
     // Mapping commands.
-    if (PHP_VERSION_ID >= 70000 && $form_state->getValue('map_commands') !== '') {
+    if ($form_state->getValue('map_commands') !== '') {
       try {
         $map_commands = Yaml::parse($form_state->getValue('map_commands'));
         $data = $this->configFactory->get('sophron.settings')->get();
@@ -314,10 +310,8 @@ class SettingsForm extends ConfigFormBase {
     try {
       $config->set('map_option', $form_state->getValue('map_option'));
       $config->set('map_class', $form_state->getValue('map_class'));
-      if (PHP_VERSION_ID >= 70000) {
-        $commands = Yaml::parse($form_state->getValue('map_commands'));
-        $config->set('map_commands', $commands ?: []);
-      }
+      $commands = Yaml::parse($form_state->getValue('map_commands'));
+      $config->set('map_commands', $commands ?: []);
       $config->save();
     }
     catch (\Exception $e) {
@@ -342,7 +336,7 @@ class SettingsForm extends ConfigFormBase {
 
     $rows = [];
     foreach ($extensions as $extension_string) {
-      $drupal_mime_type = $core_extended_guesser->guess('a.' . $extension_string);
+      $drupal_mime_type = $core_extended_guesser->guessMimeType('a.' . $extension_string);
 
       $extension = $this->mimeMapManager->getExtension($extension_string);
       if ($extension) {

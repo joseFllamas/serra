@@ -390,7 +390,7 @@ class FieldItemList extends ItemList implements FieldItemListInterface {
     $non_computed_properties = array_filter($property_definitions, function (DataDefinitionInterface $property) {
       return !$property->isComputed();
     });
-    
+
     // in the specific case where this is an image field (as recognized by the
     // array keys) we do not want the width and the height in the comparision
     // because these are somehow calculated fields no matter what.

@@ -103,7 +103,8 @@ class OrphanPurger extends QueueWorkerBase implements ContainerFactoryPluginInte
       ->fetchCol();
 
     /** @var \Drupal\Core\Entity\ContentEntityInterface $composite_revision */
-    foreach ($composite_storage->loadMultipleRevisions($entity_revision_ids) as $composite_revision) {
+    foreach ($entity_revision_ids as $entity_revision_id) {
+      $composite_revision = $composite_storage->loadRevision($entity_revision_id);
       if (!$this->purger->isUsed($composite_revision)) {
         $this->purger->deleteUnusedRevision($composite_revision);
       }

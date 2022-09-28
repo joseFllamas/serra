@@ -1,7 +1,1 @@
-role_menu_pairs:
-  -
-    role: owner
-    menu: owner
-dependencies:
-  module:
-    - amswap
+role_menu_pairs: {}

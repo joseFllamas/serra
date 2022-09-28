@@ -3,14 +3,14 @@
 namespace Drupal\amswap\Tests;
 
 use Drupal\Core\Url;
-use Drupal\simpletest\WebTestBase;
+use Drupal\Tests\BrowserTestBase;
 
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
  * @group amswap
  */
-class LoadTest extends WebTestBase{
+class LoadTest extends BrowserTestBase {
 
   /**
    * Modules to enable.
@@ -40,7 +40,7 @@ class LoadTest extends WebTestBase{
    */
   public function testLoad() {
     $this->drupalGet(Url::fromRoute('<front>'));
-    $this->assertResponse(200);
+    $this->assertSession()->statusCodeEquals(200);
   }
 
 }
