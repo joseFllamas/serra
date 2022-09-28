@@ -1,0 +1,226 @@
+{#
+/**
+ * @file
+ * Defadivt theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - defadivt_row_class: A flag indicating whether defadivt classes shodivd be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% set i = 0 %}
+{% set numrows = rows|length %}
+{% set random_x = random(2) %}
+{% set random_y = random(2) %}
+
+{% if numrows == 2 %}	
+	<div class="list-inline list1 mb-1 pb-0">
+
+    {{ rows[i].content }}
+    {%  set i = i+1 %}
+    {{ rows[i].content }}
+    {%  set i = i+1 %}
+	</div>
+{% elseif numrows == 3 %}
+	{% if random_x == 1 %} 
+	<div class="list-inline list2 mb-1 pb-0">
+
+	   	{{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+
+	</div>
+	{% else %}
+	<div class="list-inline list4 mb-1 pb-0">
+
+	   	{{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+
+	</div>
+	{% endif %}
+{% elseif numrows == 4 %}	
+	{% if random_x == 1 %} 
+	<div class="list-inline list3 mb-1 pb-0">
+
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %} 
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+
+	</div>
+	{% else %}
+		<div class="list-inline list1 mb-1 pb-0">
+
+		   	{{ rows[i].content }}
+			{%  set i = i+1 %}
+		    {{ rows[i].content }}
+			{%  set i = i+1 %}
+
+		</div>
+		<div class="list-inline list1 mb-1 pb-0">
+
+		   	{{ rows[i].content }}
+			{%  set i = i+1 %}
+		    {{ rows[i].content }}
+			{%  set i = i+1 %}
+
+		</div>
+	{% endif %}
+{% elseif numrows == 5 %}
+   	{% if random_y == 1 %}
+	   	<div class="list-inline list1 mb-1 pb-0">
+
+		    {{ rows[i].content }}
+		    {%  set i = i+1 %}
+		    {{ rows[i].content }}
+		    {%  set i = i+1 %}
+		</div>
+		{% if random_x == 1 %} 
+			<div class="list-inline list2 mb-1 pb-0">
+
+			   	{{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+
+			</div>
+		{% else %}
+			<div class="list-inline list4 mb-1 pb-0">
+
+			   	{{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+
+			</div>
+		{% endif %}
+	{% else %}
+		{% if random_x == 1 %} 
+			<div class="list-inline list2 mb-1 pb-0">
+
+			   	{{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+
+			</div>
+		{% else %}
+			<div class="list-inline list4 mb-1 pb-0">
+
+			   	{{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+				{%  set i = i+1 %}
+			    {{ rows[i].content }}
+
+			</div>
+		{% endif %}
+		<div class="list-inline list1 mb-1 pb-0">
+
+		    {{ rows[i].content }}
+		    {%  set i = i+1 %}
+		    {{ rows[i].content }}
+		    {%  set i = i+1 %}
+		</div>
+	{% endif %}
+{% else %}	
+	<div class="list-inline list1 mb-1 pb-0">
+
+	    {{ rows[i].content }}
+	    {%  set i = i+1 %}
+	    {{ rows[i].content }}
+	    {%  set i = i+1 %}
+	</div>
+
+	{% if random_x == 1 %} 
+	<div class="list-inline list2 mb-1 pb-0">
+
+	   	{{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+
+	</div>
+	{% else %}
+	<div class="list-inline list4 mb-1 pb-0">
+
+	   	{{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+
+	</div>
+	{% endif %}
+	<div class="list-inline list3 mb-1 pb-0">
+
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %} 
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+
+	</div>
+	{% if random_x == 1 %} 
+	<div class="list-inline list4 mb-1 pb-0">
+
+	   	{{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+
+	</div>
+	{% else %}
+	<div class="list-inline list2 mb-1 pb-0">
+
+	   	{{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+		{%  set i = i+1 %}
+	    {{ rows[i].content }}
+
+	</div>
+	{% endif %}
+
+	<div class="list-inline list4 mb-1 pb-0">
+
+    {{ rows[i].content }}
+	{%  set i = i+1 %}
+    {{ rows[i].content }}
+	{%  set i = i+1 %}
+    {{ rows[i].content }}
+	{%  set i = i+1 %}
+
+	</div>
+{% endif %}

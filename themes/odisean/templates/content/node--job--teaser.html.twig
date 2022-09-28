@@ -1,0 +1,40 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  {% block content %}
+    <div class="jobteaser">
+      <div class="jobcontent">
+          <h2{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          </h2>
+
+        <div{{ content_attributes }}>
+          <div class="location "><i class="fa fa-map-marker" aria-hidden="true"></i> {{ content.field_location|field_value }}</div>
+          <div class="section "><i class="fa fa-building" aria-hidden="true"></i> {{ content.field_sector|field_value }}</div>
+
+        </div>
+      </div>
+      <div class="jobapply">
+        <a class="btn btn-primary btn-md" href="{{ url }}"> {{ 'Apply'|t }}</a>
+      </div>
+    </div>
+  {% endblock %}
+</article>

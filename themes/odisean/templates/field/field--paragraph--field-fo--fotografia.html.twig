@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+#}
+{%
+  set classes = [
+  bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
+  label_display == 'inline' ? 'd-flex',
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  'font-weight-bold',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+
+%}
+
+
+
+  <div class="fotografia">
+      {% for item in items %}
+       {{ item.content }}
+      <div class="caption">{{ item.content['#item'].title }}</div>
+      
+      {% endfor %}
+  </div>

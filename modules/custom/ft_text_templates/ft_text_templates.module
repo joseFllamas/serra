@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function ft_text_templates_preprocess_page(&$variables) {
+   $module_path = drupal_get_path('module', 'ft_text_templates');
+   drupal_add_css($module_path . '/css/ft_text_templates.css');
+}

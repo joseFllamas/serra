@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+#}
+{%
+  set classes = [
+  bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
+  label_display == 'inline' ? 'd-flex',
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  'font-weight-bold',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+
+    <div class="field__items buttons">
+      {#
+      /**
+       * @file
+       * Theme override for a field.
+       *
+       * Add bootstrap button style to a link field
+       */
+      #}
+      {% for item in items %}
+        {%
+          set link_classes = [
+            'btn',
+            'brn-md',
+            'btn-arrow',
+            (loop.index0 is divisible by(2)) ? 'btn-serra' : 'btn-dark'
+          ]
+        %}
+        {% set content = item.content %}
+       {#  {% content['#title'] = content['#title'] + '<span><i class="fas fa-chevron-right"></i></span>' %} #}
+        {% set content = content|merge({ '#attributes': { class: link_classes } }) %}
+        <span>
+         {{ content }}
+
+          </span>
+      {% endfor %}
+  </div>

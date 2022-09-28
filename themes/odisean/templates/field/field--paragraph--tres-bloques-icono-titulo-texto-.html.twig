@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+{{ content.field_enlace }}
+{{ content.field_icono_tres_bloques }}
+{{ content.field_texto_tres_bloques }}
+{{ content.field_titulo_grande }}
+{{ content.field_titulo_pequeno }}
+
+
+#}
+{% for item in items %}
+      {{ item.content }}
+{% endfor %}
+

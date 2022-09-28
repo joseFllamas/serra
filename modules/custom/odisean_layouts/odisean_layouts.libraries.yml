@@ -1,0 +1,5 @@
+css-base:
+  version: 1.x
+  css:
+    theme:
+      css/css-base.css: {}

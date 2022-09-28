@@ -1,0 +1,90 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  'contact1',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+{{ content.field_cabecera }}
+
+<section {{ attributes.addClass(classes) }}>
+        <div class="row">
+            <div class="container">
+                <div class="spacer p-t-50">
+                    <div class="row m-0">
+                        {{ title_prefix }}
+                        {{ title_suffix }}
+
+                        {% block content %}
+                          {% if not page %}
+                            <h2{{ title_attributes }}>
+                              <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+                            </h2>
+                          {% endif %}
+
+                          {% if display_submitted %}
+                            <footer>
+                              {{ author_picture }}
+                              <div{{ author_attributes }}>
+                                {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+                                {{ metadata }}
+                              </div>
+                            </footer>
+                          {% endif %}
+
+                           <div class="col-lg-6">
+                                {{ content.field_formulario }}
+                            </div>
+
+                            <div class="col-lg-3 p-0">
+                                
+                                <div class="detail-box p-20 bg-info">
+                                     {{ content.field_columna1 }}
+                                     {# <div class="logoform text-center"> #}
+                                    {#   <img alt="SERRA" src="/sites/default/files/logo_serra_1.png"></img>
+                                  </div> #}
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 p-0">
+                                
+                                <div class="detail-box p-20 bg-info" >
+                                    
+                                     {{ content.field_columna2 }}
+                                    
+                                </div>
+                            </div>
+                         
+                              {% endblock %}
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+<section class="bg-secondary p-t-50 p-b-50">  
+  <div class="container">
+  <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Dónde estamos</h2>
+            {{ content.field_mapa }}
+
+        </div>
+    </div>
+</section>

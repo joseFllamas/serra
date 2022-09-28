@@ -1,0 +1,10 @@
+my_custom_layout:
+  label: 'Article template'
+  category: 'Odisean B4 layouts'
+  template: templates/article
+  default_region: main
+  library: odisean_layouts/css-base
+  regions:
+    main:
+      label: 'Contenido principal'
+   

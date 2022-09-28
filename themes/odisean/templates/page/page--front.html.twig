@@ -1,0 +1,102 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page landing-page">
+  {% embed '@radix/navbar/navbar.twig' with {
+    placement: 'sticky-top',
+    container: 'fixed',
+    color: 'light',
+    utility_classes: ['bg-light'],
+  } %}
+
+
+    {% block branding %}
+     <div class="topbar">
+        <div class="header header1 po-relative">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg h1-nav">
+                {% if page.navbar_branding %}
+                   {{ page.navbar_branding }}
+                {% endif %}
+
+                  {% if page.navbar_right %}
+                    <div class="collapse navbar-collapse ml-auto mt-2 mt-lg-0" id="header1">
+                    {{ page.navbar_right }}
+                    </div>
+                  {% endif %}
+              
+            </nav>
+      </div>
+      <!-- comment 1 -->
+    </div>
+     <!-- comment 2 -->
+  </div>
+   <!-- comment 3 -->
+
+    {% endblock %}
+
+
+  {% endembed %}
+
+{# /*capçalera amb títol*/ #}
+  <main class="pt-0 pb-5">
+{#     {% if page.header %}
+      <header class="page__header mb-3 page_header_page">
+        <div class="container">
+          {{ page.header }}
+        </div>
+      </header>
+    {% endif %} #}
+{# fi capçalera #}
+
+ {% if page.precontent %}
+        {{ page.precontent }}
+     {% endif %}
+
+    {% if page.content %}
+      <div class="page__content">
+        <div class="container-fluid">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endif %}
+  </main>
+
+  {% if page.footer %}
+              <section class="footer4 b-t spacer">
+             <div class="container">
+               <div class="row">
+                    <div class="col-lg-3 col-md-6 m-b-30">
+                        {{ page.footer }}
+                    </div>
+                    <div class="col-lg-3 col-md-6 m-b-30">
+                         {{ page.footer_u }}
+                    </div>
+                    <div class="col-lg-3 col-md-6 m-b-30">
+                          {{ page.footer_dos }}
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                          {{ page.footer_tres }}
+                    </div>
+                </div>
+                <div class="f4-bottom-bar">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="d-flex font-14">
+                              {{ page.footer_quatre }}
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+  {% endif %}
+</div>
+
+
+
+
+          

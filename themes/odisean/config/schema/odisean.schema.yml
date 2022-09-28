@@ -1,0 +1,5 @@
+# Schema for the configuration files of the odisean theme.
+
+odisean.settings:
+  type: theme_settings
+  label: 'odisean settings'

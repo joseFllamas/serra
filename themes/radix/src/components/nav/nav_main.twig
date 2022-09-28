@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Template for a Nav component.
+ *
+ * Available config:
+ * - alignment: left | right | center | vertical.
+ * - style: tabs | pills
+ * - fill: fill | justify
+ * - utility_classes: An array of utility classes.
+ */
+#}
+{% import _self as menus %}
+
+{% if alignment == 'right' %}
+  {% set alignment = 'justify-content-end' %}
+{% elseif alignment == 'center' %}
+  {% set alignment = 'justify-content-center' %}
+{% elseif alignment == 'vertical' %}
+  {% set alignment = 'flex-column' %}
+{% else %}
+  {% set alignment = '' %}
+{% endif %}
+
+{% set style = style ? 'nav-' ~ style : '' %}
+{% set fill = fill ? 'nav-' ~ fill : '' %}
+
+{% set nav_classes = [ 'nav', style, alignment, fill]|merge(utility_classes ? utility_classes : []) %}
+
+{% if items %}
+  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+    {% block items %}
+      {% for item in items %}
+        {% set nav_item_classes = [
+          'nav-item',
+          item.in_active_trail ? 'active',
+          item.is_expanded and item.below ? 'dropdown open'
+        ] %}
+        {% set nav_link_classes = ['nav-link'] %}
+        {% if item.url.options.attributes.class is iterable %}
+          {% set nav_link_classes = nav_link_classes|merge(item.url.options.attributes.class) %}
+        {% elseif item.url.options.attributes.class %}
+          {% set nav_link_classes = nav_link_classes|merge([item.url.options.attributes.class]) %}
+        {% endif %}
+        <li class="{{ nav_item_classes|join(' ') }}">
+         {% if item.is_expanded and item.below %}
+             {% if  item.url %}
+                <a data-mine="{{ item.url }}" class="nav-link dropdown-toggle" href="{{ item.url }}" id="h1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{ item.title }} <i class="fa fa-angle-down m-l-5"></i></a>
+              {% else %}
+                 {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+              {% endif %}
+            {% include '@radix/dropdown/dropdown-menu.twig' with {
+                items: item.below
+              } %}
+           {% else %}
+            {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+          {% endif %}
+
+        </li>
+      {% endfor %}
+    {% endblock %}
+  </ul>
+{% endif %}
+

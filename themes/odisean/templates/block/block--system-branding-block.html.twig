@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Template for the branding block.
+ */
+#}
+
+
+{% block content %}
+  
+
+
+
+{#   <a href="{{ path('<front>') }}" class="navbar-brand d-flex align-items-center pb-xs-1 pb-md-3 " aria-label="{{ text }}">
+  <img src="{{ site_logo }}" alt="{{ elements.content.site_name['#markup'] ~ ' logo' }}" class="mt-lg-1" />
+    {{ site_name }}
+  </a> #}
+  
+<a class="navbar-brand" href="{{ path('<front>') }}"><img src="{{ site_logo }}" alt="SERRA"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header1" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+
+{% endblock %}
+
+

@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+#}
+{%
+  set classes = [
+  bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
+  label_display == 'inline' ? 'd-flex',
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  'font-weight-bold',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+
+<div{{ attributes.addClass(classes) }}>
+    <div class="row justify-content-center">
+      <div class="col-md-7 text-center">
+        <h2 class="title">{{ label|trans }}{% if label_display == 'inline' %}<span class="field__label__suffix mr-1">:</span>{% endif %}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center m-t-30">
+      <div class="col-md-4 ">
+                  <div class="card" data-aos="flip-left" data-aos-duration="1200">
+                     {{ items[0].content }}
+                  </div>
+      </div>
+      <div class="col-md-4 ">
+                  <div class="card" data-aos="flip-up" data-aos-duration="1200">
+                     {{ items[1].content }}
+                  </div>
+      </div>  
+      <div class="col-md-4 ">
+                  <div class="card" data-aos="flip-up" data-aos-duration="1200">
+                     {{ items[2].content }}
+                  </div>
+      </div>
+   </div>
+</div>

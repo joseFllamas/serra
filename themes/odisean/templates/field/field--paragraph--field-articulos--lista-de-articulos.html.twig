@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+#}
+{%
+  set classes = [
+  bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
+  label_display == 'inline' ? 'd-flex',
+  'llista_home',
+  
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  'font-weight-bold',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+<div class="page-taxonomy llista_home">
+  <div class="container-fluid">
+    <div class="llistahome">
+    <h2 class="titlesection text-center">Últimas Historias</h2>
+  <div class="list-inline list2 mb-1 pb-0">
+    
+                  {{ items[0].content }}
+                  {{ items[1].content }}
+                  {{ items[2].content }}
+              </div>
+  <div class="list-inline list4 mb-1 pb-0">
+
+
+                  {{ items[3].content }}
+                  {{ items[4].content }}
+                  {{ items[5].content }}
+    </div>
+  <div class="list-inline list2 mb-1 pb-0">
+
+
+                  {{ items[6].content }}
+                  {{ items[7].content }}
+                  {{ items[8].content }}
+
+                  
+    </div>
+  </div>
+  </div>
+</div>
+
+
+

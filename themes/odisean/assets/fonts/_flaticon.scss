@@ -1,0 +1,284 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 07/10/2020 13:00
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-cajas:before { content: "\f100"; }
+.flaticon-cajas-1:before { content: "\f101"; }
+.flaticon-entrega-rapida:before { content: "\f102"; }
+.flaticon-aprendizaje-automatico:before { content: "\f103"; }
+.flaticon-aprendizaje-automatico-1:before { content: "\f104"; }
+.flaticon-enfoque-automatico:before { content: "\f105"; }
+.flaticon-premio:before { content: "\f106"; }
+.flaticon-cinta-transportadora:before { content: "\f107"; }
+.flaticon-transportador:before { content: "\f108"; }
+.flaticon-transportador-1:before { content: "\f109"; }
+.flaticon-transportadora:before { content: "\f10a"; }
+.flaticon-transportador-2:before { content: "\f10b"; }
+.flaticon-transportador-3:before { content: "\f10c"; }
+.flaticon-transportador-4:before { content: "\f10d"; }
+.flaticon-cinta-transportadora-1:before { content: "\f10e"; }
+.flaticon-transportadora-1:before { content: "\f10f"; }
+.flaticon-transportadora-2:before { content: "\f110"; }
+.flaticon-transportador-5:before { content: "\f111"; }
+.flaticon-cinta-transportadora-2:before { content: "\f112"; }
+.flaticon-transportador-6:before { content: "\f113"; }
+.flaticon-cinta-transportadora-3:before { content: "\f114"; }
+.flaticon-cinta-transportadora-4:before { content: "\f115"; }
+.flaticon-cinta-transportadora-5:before { content: "\f116"; }
+.flaticon-transportadora-3:before { content: "\f117"; }
+.flaticon-transportador-7:before { content: "\f118"; }
+.flaticon-cinta-transportadora-6:before { content: "\f119"; }
+.flaticon-transportadora-4:before { content: "\f11a"; }
+.flaticon-transportadora-5:before { content: "\f11b"; }
+.flaticon-transportador-8:before { content: "\f11c"; }
+.flaticon-transportadora-6:before { content: "\f11d"; }
+.flaticon-transportadora-7:before { content: "\f11e"; }
+.flaticon-transportadora-8:before { content: "\f11f"; }
+.flaticon-cinta-transportadora-7:before { content: "\f120"; }
+.flaticon-cinta-transportadora-8:before { content: "\f121"; }
+.flaticon-transportador-9:before { content: "\f122"; }
+.flaticon-transportadora-9:before { content: "\f123"; }
+.flaticon-transportadora-10:before { content: "\f124"; }
+.flaticon-minimizar:before { content: "\f125"; }
+.flaticon-minimizar-1:before { content: "\f126"; }
+.flaticon-dolar:before { content: "\f127"; }
+.flaticon-hucha:before { content: "\f128"; }
+.flaticon-internet:before { content: "\f129"; }
+.flaticon-acelerar:before { content: "\f12a"; }
+.flaticon-acelerar-1:before { content: "\f12b"; }
+.flaticon-precision:before { content: "\f12c"; }
+.flaticon-bateria:before { content: "\f12d"; }
+.flaticon-bateria-1:before { content: "\f12e"; }
+.flaticon-estante:before { content: "\f12f"; }
+.flaticon-cepo:before { content: "\f130"; }
+.flaticon-impresion-3d:before { content: "\f131"; }
+.flaticon-secador-de-manos:before { content: "\f132"; }
+.flaticon-360-grados:before { content: "\f133"; }
+.flaticon-gestion-del-tiempo:before { content: "\f134"; }
+.flaticon-lista-de-verificacion:before { content: "\f135"; }
+.flaticon-reloj:before { content: "\f136"; }
+.flaticon-produccion:before { content: "\f137"; }
+.flaticon-gestion-del-tiempo-1:before { content: "\f138"; }
+.flaticon-velocimetro:before { content: "\f139"; }
+.flaticon-graficos:before { content: "\f13a"; }
+.flaticon-graficos-1:before { content: "\f13b"; }
+.flaticon-graficos-2:before { content: "\f13c"; }
+.flaticon-flechas-de-pantalla-completa:before { content: "\f13d"; }
+.flaticon-secure-shield:before { content: "\f13e"; }
+.flaticon-pantalla-de-computadora:before { content: "\f13f"; }
+.flaticon-agil:before { content: "\f140"; }
+.flaticon-adaptacion:before { content: "\f141"; }
+.flaticon-expandir:before { content: "\f142"; }
+.flaticon-seguro-medico:before { content: "\f143"; }
+.flaticon-calidad:before { content: "\f144"; }
+.flaticon-control-de-calidad:before { content: "\f145"; }
+.flaticon-caja-de-carton:before { content: "\f146"; }
+.flaticon-cajas-2:before { content: "\f147"; }
+.flaticon-cajas-3:before { content: "\f148"; }
+.flaticon-fabrica-ecologica:before { content: "\f149"; }
+.flaticon-fabrica:before { content: "\f14a"; }
+.flaticon-brazo-robotico:before { content: "\f14b"; }
+.flaticon-velocidad-de-la-pagina:before { content: "\f14c"; }
+.flaticon-transportadora-11:before { content: "\f14d"; }
+.flaticon-transportador-10:before { content: "\f14e"; }
+.flaticon-transportadora-12:before { content: "\f14f"; }
+.flaticon-transportadora-13:before { content: "\f150"; }
+.flaticon-3d-impresora:before { content: "\f151"; }
+.flaticon-impresora-3d:before { content: "\f152"; }
+.flaticon-inversion:before { content: "\f153"; }
+.flaticon-seguro-de-inversiones:before { content: "\f154"; }
+.flaticon-inversion-1:before { content: "\f155"; }
+.flaticon-transportador-11:before { content: "\f156"; }
+.flaticon-formacion:before { content: "\f157"; }
+.flaticon-formacion-1:before { content: "\f158"; }
+.flaticon-escala:before { content: "\f159"; }
+.flaticon-justa:before { content: "\f15a"; }
+.flaticon-casco-de-seguridad:before { content: "\f15b"; }
+.flaticon-trabajador:before { content: "\f15c"; }
+.flaticon-manufacturing:before { content: "\f15d"; }
+.flaticon-columnas:before { content: "\f15e"; }
+.flaticon-columnas-1:before { content: "\f15f"; }
+.flaticon-filtro-de-aire:before { content: "\f160"; }
+.flaticon-cinturon:before { content: "\f161"; }
+.flaticon-motor-v:before { content: "\f162"; }
+.flaticon-tarjeta:before { content: "\f163"; }
+.flaticon-gancho:before { content: "\f164"; }
+.flaticon-herramientas:before { content: "\f165"; }
+.flaticon-herramientas-para-reparar:before { content: "\f166"; }
+.flaticon-papeleria-papeles-apilados:before { content: "\f167"; }
+.flaticon-productos-de-impresion-apilados:before { content: "\f168"; }
+.flaticon-fabrica-1:before { content: "\f169"; }
+.flaticon-maquina-del-torno:before { content: "\f16a"; }
+.flaticon-fresadora:before { content: "\f16b"; }
+.flaticon-fresadora-1:before { content: "\f16c"; }
+.flaticon-fresadora-2:before { content: "\f16d"; }
+.flaticon-ordenador-de-sobremesa:before { content: "\f16e"; }
+.flaticon-reciclar:before { content: "\f16f"; }
+.flaticon-orden-descendiente:before { content: "\f170"; }
+.flaticon-orden-ascendente:before { content: "\f171"; }
+.flaticon-estrategia:before { content: "\f172"; }
+.flaticon-tornillos:before { content: "\f173"; }
+.flaticon-pernos:before { content: "\f174"; }
+.flaticon-sierra:before { content: "\f175"; }
+.flaticon-taladrador:before { content: "\f176"; }
+.flaticon-cerebro:before { content: "\f177"; }
+.flaticon-avance-rapido:before { content: "\f178"; }
+.flaticon-ejecutar:before { content: "\f179"; }
+    
+    $font-Flaticon-cajas: "\f100";
+    $font-Flaticon-cajas-1: "\f101";
+    $font-Flaticon-entrega-rapida: "\f102";
+    $font-Flaticon-aprendizaje-automatico: "\f103";
+    $font-Flaticon-aprendizaje-automatico-1: "\f104";
+    $font-Flaticon-enfoque-automatico: "\f105";
+    $font-Flaticon-premio: "\f106";
+    $font-Flaticon-cinta-transportadora: "\f107";
+    $font-Flaticon-transportador: "\f108";
+    $font-Flaticon-transportador-1: "\f109";
+    $font-Flaticon-transportadora: "\f10a";
+    $font-Flaticon-transportador-2: "\f10b";
+    $font-Flaticon-transportador-3: "\f10c";
+    $font-Flaticon-transportador-4: "\f10d";
+    $font-Flaticon-cinta-transportadora-1: "\f10e";
+    $font-Flaticon-transportadora-1: "\f10f";
+    $font-Flaticon-transportadora-2: "\f110";
+    $font-Flaticon-transportador-5: "\f111";
+    $font-Flaticon-cinta-transportadora-2: "\f112";
+    $font-Flaticon-transportador-6: "\f113";
+    $font-Flaticon-cinta-transportadora-3: "\f114";
+    $font-Flaticon-cinta-transportadora-4: "\f115";
+    $font-Flaticon-cinta-transportadora-5: "\f116";
+    $font-Flaticon-transportadora-3: "\f117";
+    $font-Flaticon-transportador-7: "\f118";
+    $font-Flaticon-cinta-transportadora-6: "\f119";
+    $font-Flaticon-transportadora-4: "\f11a";
+    $font-Flaticon-transportadora-5: "\f11b";
+    $font-Flaticon-transportador-8: "\f11c";
+    $font-Flaticon-transportadora-6: "\f11d";
+    $font-Flaticon-transportadora-7: "\f11e";
+    $font-Flaticon-transportadora-8: "\f11f";
+    $font-Flaticon-cinta-transportadora-7: "\f120";
+    $font-Flaticon-cinta-transportadora-8: "\f121";
+    $font-Flaticon-transportador-9: "\f122";
+    $font-Flaticon-transportadora-9: "\f123";
+    $font-Flaticon-transportadora-10: "\f124";
+    $font-Flaticon-minimizar: "\f125";
+    $font-Flaticon-minimizar-1: "\f126";
+    $font-Flaticon-dolar: "\f127";
+    $font-Flaticon-hucha: "\f128";
+    $font-Flaticon-internet: "\f129";
+    $font-Flaticon-acelerar: "\f12a";
+    $font-Flaticon-acelerar-1: "\f12b";
+    $font-Flaticon-precision: "\f12c";
+    $font-Flaticon-bateria: "\f12d";
+    $font-Flaticon-bateria-1: "\f12e";
+    $font-Flaticon-estante: "\f12f";
+    $font-Flaticon-cepo: "\f130";
+    $font-Flaticon-impresion-3d: "\f131";
+    $font-Flaticon-secador-de-manos: "\f132";
+    $font-Flaticon-360-grados: "\f133";
+    $font-Flaticon-gestion-del-tiempo: "\f134";
+    $font-Flaticon-lista-de-verificacion: "\f135";
+    $font-Flaticon-reloj: "\f136";
+    $font-Flaticon-produccion: "\f137";
+    $font-Flaticon-gestion-del-tiempo-1: "\f138";
+    $font-Flaticon-velocimetro: "\f139";
+    $font-Flaticon-graficos: "\f13a";
+    $font-Flaticon-graficos-1: "\f13b";
+    $font-Flaticon-graficos-2: "\f13c";
+    $font-Flaticon-flechas-de-pantalla-completa: "\f13d";
+    $font-Flaticon-secure-shield: "\f13e";
+    $font-Flaticon-pantalla-de-computadora: "\f13f";
+    $font-Flaticon-agil: "\f140";
+    $font-Flaticon-adaptacion: "\f141";
+    $font-Flaticon-expandir: "\f142";
+    $font-Flaticon-seguro-medico: "\f143";
+    $font-Flaticon-calidad: "\f144";
+    $font-Flaticon-control-de-calidad: "\f145";
+    $font-Flaticon-caja-de-carton: "\f146";
+    $font-Flaticon-cajas-2: "\f147";
+    $font-Flaticon-cajas-3: "\f148";
+    $font-Flaticon-fabrica-ecologica: "\f149";
+    $font-Flaticon-fabrica: "\f14a";
+    $font-Flaticon-brazo-robotico: "\f14b";
+    $font-Flaticon-velocidad-de-la-pagina: "\f14c";
+    $font-Flaticon-transportadora-11: "\f14d";
+    $font-Flaticon-transportador-10: "\f14e";
+    $font-Flaticon-transportadora-12: "\f14f";
+    $font-Flaticon-transportadora-13: "\f150";
+    $font-Flaticon-3d-impresora: "\f151";
+    $font-Flaticon-impresora-3d: "\f152";
+    $font-Flaticon-inversion: "\f153";
+    $font-Flaticon-seguro-de-inversiones: "\f154";
+    $font-Flaticon-inversion-1: "\f155";
+    $font-Flaticon-transportador-11: "\f156";
+    $font-Flaticon-formacion: "\f157";
+    $font-Flaticon-formacion-1: "\f158";
+    $font-Flaticon-escala: "\f159";
+    $font-Flaticon-justa: "\f15a";
+    $font-Flaticon-casco-de-seguridad: "\f15b";
+    $font-Flaticon-trabajador: "\f15c";
+    $font-Flaticon-manufacturing: "\f15d";
+    $font-Flaticon-columnas: "\f15e";
+    $font-Flaticon-columnas-1: "\f15f";
+    $font-Flaticon-filtro-de-aire: "\f160";
+    $font-Flaticon-cinturon: "\f161";
+    $font-Flaticon-motor-v: "\f162";
+    $font-Flaticon-tarjeta: "\f163";
+    $font-Flaticon-gancho: "\f164";
+    $font-Flaticon-herramientas: "\f165";
+    $font-Flaticon-herramientas-para-reparar: "\f166";
+    $font-Flaticon-papeleria-papeles-apilados: "\f167";
+    $font-Flaticon-productos-de-impresion-apilados: "\f168";
+    $font-Flaticon-fabrica-1: "\f169";
+    $font-Flaticon-maquina-del-torno: "\f16a";
+    $font-Flaticon-fresadora: "\f16b";
+    $font-Flaticon-fresadora-1: "\f16c";
+    $font-Flaticon-fresadora-2: "\f16d";
+    $font-Flaticon-ordenador-de-sobremesa: "\f16e";
+    $font-Flaticon-reciclar: "\f16f";
+    $font-Flaticon-orden-descendiente: "\f170";
+    $font-Flaticon-orden-ascendente: "\f171";
+    $font-Flaticon-estrategia: "\f172";
+    $font-Flaticon-tornillos: "\f173";
+    $font-Flaticon-pernos: "\f174";
+    $font-Flaticon-sierra: "\f175";
+    $font-Flaticon-taladrador: "\f176";
+    $font-Flaticon-cerebro: "\f177";
+    $font-Flaticon-avance-rapido: "\f178";
+    $font-Flaticon-ejecutar: "\f179";

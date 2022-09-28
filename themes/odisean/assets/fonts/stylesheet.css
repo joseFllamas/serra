@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Flaticon';
+    src: url('Flaticon.woff2') format('woff2'),
+        url('Flaticon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'la-regular-400';
+    src: url('la-regular-400.woff2') format('woff2'),
+        url('la-regular-400.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt Pro Normal';
+    src: url('FaktPro-Normal.woff2') format('woff2'),
+        url('FaktPro-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fakt Pro Blond';
+    src: url('FaktPro-Blond.woff2') format('woff2'),
+        url('FaktPro-Blond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portrait';
+    src: url('Portrait-Light.woff2') format('woff2'),
+        url('Portrait-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portrait';
+    src: url('Portrait-Regular.woff2') format('woff2'),
+        url('Portrait-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,157 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 07/10/2020 13:00
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before{   
+    font-family: Flaticon;
+    font-size: 48px;
+    font-style: normal;
+    font-style: none;
+    position: relative;
+    margin-left: 5px;
+    z-index: 100;
+}
+
+.flaticon-cajas:before { content: "\f100"; }
+.flaticon-cajas-1:before { content: "\f101"; }
+.flaticon-entrega-rapida:before { content: "\f102"; }
+.flaticon-aprendizaje-automatico:before { content: "\f103"; }
+.flaticon-aprendizaje-automatico-1:before { content: "\f104"; }
+.flaticon-enfoque-automatico:before { content: "\f105"; }
+.flaticon-premio:before { content: "\f106"; }
+.flaticon-cinta-transportadora:before { content: "\f107"; }
+.flaticon-transportador:before { content: "\f108"; }
+.flaticon-transportador-1:before { content: "\f109"; }
+.flaticon-transportadora:before { content: "\f10a"; }
+.flaticon-transportador-2:before { content: "\f10b"; }
+.flaticon-transportador-3:before { content: "\f10c"; }
+.flaticon-transportador-4:before { content: "\f10d"; }
+.flaticon-cinta-transportadora-1:before { content: "\f10e"; }
+.flaticon-transportadora-1:before { content: "\f10f"; }
+.flaticon-transportadora-2:before { content: "\f110"; }
+.flaticon-transportador-5:before { content: "\f111"; }
+.flaticon-cinta-transportadora-2:before { content: "\f112"; }
+.flaticon-transportador-6:before { content: "\f113"; }
+.flaticon-cinta-transportadora-3:before { content: "\f114"; }
+.flaticon-cinta-transportadora-4:before { content: "\f115"; }
+.flaticon-cinta-transportadora-5:before { content: "\f116"; }
+.flaticon-transportadora-3:before { content: "\f117"; }
+.flaticon-transportador-7:before { content: "\f118"; }
+.flaticon-cinta-transportadora-6:before { content: "\f119"; }
+.flaticon-transportadora-4:before { content: "\f11a"; }
+.flaticon-transportadora-5:before { content: "\f11b"; }
+.flaticon-transportador-8:before { content: "\f11c"; }
+.flaticon-transportadora-6:before { content: "\f11d"; }
+.flaticon-transportadora-7:before { content: "\f11e"; }
+.flaticon-transportadora-8:before { content: "\f11f"; }
+.flaticon-cinta-transportadora-7:before { content: "\f120"; }
+.flaticon-cinta-transportadora-8:before { content: "\f121"; }
+.flaticon-transportador-9:before { content: "\f122"; }
+.flaticon-transportadora-9:before { content: "\f123"; }
+.flaticon-transportadora-10:before { content: "\f124"; }
+.flaticon-minimizar:before { content: "\f125"; }
+.flaticon-minimizar-1:before { content: "\f126"; }
+.flaticon-dolar:before { content: "\f127"; }
+.flaticon-hucha:before { content: "\f128"; }
+.flaticon-internet:before { content: "\f129"; }
+.flaticon-acelerar:before { content: "\f12a"; }
+.flaticon-acelerar-1:before { content: "\f12b"; }
+.flaticon-precision:before { content: "\f12c"; }
+.flaticon-bateria:before { content: "\f12d"; }
+.flaticon-bateria-1:before { content: "\f12e"; }
+.flaticon-estante:before { content: "\f12f"; }
+.flaticon-cepo:before { content: "\f130"; }
+.flaticon-impresion-3d:before { content: "\f131"; }
+.flaticon-secador-de-manos:before { content: "\f132"; }
+.flaticon-360-grados:before { content: "\f133"; }
+.flaticon-gestion-del-tiempo:before { content: "\f134"; }
+.flaticon-lista-de-verificacion:before { content: "\f135"; }
+.flaticon-reloj:before { content: "\f136"; }
+.flaticon-produccion:before { content: "\f137"; }
+.flaticon-gestion-del-tiempo-1:before { content: "\f138"; }
+.flaticon-velocimetro:before { content: "\f139"; }
+.flaticon-graficos:before { content: "\f13a"; }
+.flaticon-graficos-1:before { content: "\f13b"; }
+.flaticon-graficos-2:before { content: "\f13c"; }
+.flaticon-flechas-de-pantalla-completa:before { content: "\f13d"; }
+.flaticon-secure-shield:before { content: "\f13e"; }
+.flaticon-pantalla-de-computadora:before { content: "\f13f"; }
+.flaticon-agil:before { content: "\f140"; }
+.flaticon-adaptacion:before { content: "\f141"; }
+.flaticon-expandir:before { content: "\f142"; }
+.flaticon-seguro-medico:before { content: "\f143"; }
+.flaticon-calidad:before { content: "\f144"; }
+.flaticon-control-de-calidad:before { content: "\f145"; }
+.flaticon-caja-de-carton:before { content: "\f146"; }
+.flaticon-cajas-2:before { content: "\f147"; }
+.flaticon-cajas-3:before { content: "\f148"; }
+.flaticon-fabrica-ecologica:before { content: "\f149"; }
+.flaticon-fabrica:before { content: "\f14a"; }
+.flaticon-brazo-robotico:before { content: "\f14b"; }
+.flaticon-velocidad-de-la-pagina:before { content: "\f14c"; }
+.flaticon-transportadora-11:before { content: "\f14d"; }
+.flaticon-transportador-10:before { content: "\f14e"; }
+.flaticon-transportadora-12:before { content: "\f14f"; }
+.flaticon-transportadora-13:before { content: "\f150"; }
+.flaticon-3d-impresora:before { content: "\f151"; }
+.flaticon-impresora-3d:before { content: "\f152"; }
+.flaticon-inversion:before { content: "\f153"; }
+.flaticon-seguro-de-inversiones:before { content: "\f154"; }
+.flaticon-inversion-1:before { content: "\f155"; }
+.flaticon-transportador-11:before { content: "\f156"; }
+.flaticon-formacion:before { content: "\f157"; }
+.flaticon-formacion-1:before { content: "\f158"; }
+.flaticon-escala:before { content: "\f159"; }
+.flaticon-justa:before { content: "\f15a"; }
+.flaticon-casco-de-seguridad:before { content: "\f15b"; }
+.flaticon-trabajador:before { content: "\f15c"; }
+.flaticon-manufacturing:before { content: "\f15d"; }
+.flaticon-columnas:before { content: "\f15e"; }
+.flaticon-columnas-1:before { content: "\f15f"; }
+.flaticon-filtro-de-aire:before { content: "\f160"; }
+.flaticon-cinturon:before { content: "\f161"; }
+.flaticon-motor-v:before { content: "\f162"; }
+.flaticon-tarjeta:before { content: "\f163"; }
+.flaticon-gancho:before { content: "\f164"; }
+.flaticon-herramientas:before { content: "\f165"; }
+.flaticon-herramientas-para-reparar:before { content: "\f166"; }
+.flaticon-papeleria-papeles-apilados:before { content: "\f167"; }
+.flaticon-productos-de-impresion-apilados:before { content: "\f168"; }
+.flaticon-fabrica-1:before { content: "\f169"; }
+.flaticon-maquina-del-torno:before { content: "\f16a"; }
+.flaticon-fresadora:before { content: "\f16b"; }
+.flaticon-fresadora-1:before { content: "\f16c"; }
+.flaticon-fresadora-2:before { content: "\f16d"; }
+.flaticon-ordenador-de-sobremesa:before { content: "\f16e"; }
+.flaticon-reciclar:before { content: "\f16f"; }
+.flaticon-orden-descendiente:before { content: "\f170"; }
+.flaticon-orden-ascendente:before { content: "\f171"; }
+.flaticon-estrategia:before { content: "\f172"; }
+.flaticon-tornillos:before { content: "\f173"; }
+.flaticon-pernos:before { content: "\f174"; }
+.flaticon-sierra:before { content: "\f175"; }
+.flaticon-taladrador:before { content: "\f176"; }
+.flaticon-cerebro:before { content: "\f177"; }
+.flaticon-avance-rapido:before { content: "\f178"; }
+.flaticon-ejecutar:before { content: "\f179"; }

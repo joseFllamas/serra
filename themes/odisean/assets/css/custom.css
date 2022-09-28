@@ -1,0 +1,214 @@
+.form-item-joboffer{
+	display: none !important;
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before {
+	margin-left: 0px !important;
+}
+.flaticon-cerebro:before {
+	margin-left: 14px !important;
+}
+.flaticon-transportadora-3:before {
+	margin-left: 3px !important;
+}
+.flaticon-seguro-medico:before {
+	margin-left: 8px !important;
+}
+.flaticon-secador-de-manos:before,
+.flaticon-flechas-de-pantalla-completa:before,
+.flaticon-enfoque-automatico:before {
+	margin-left: 3px !important;
+top: 1px !important;
+}
+.flaticon-impresora-3d:before {
+	margin-left: 2px !important;
+}
+.flaticon-transportador:before,
+.flaticon-hucha:before,
+.flaticon-graficos-2:before {
+	margin-left: 5px !important;
+}
+.flaticon-velocidad-de-la-pagina:before {
+	margin-left: 6px !important;
+}
+.language-switcher-language-url ul.links.nav li a{
+	padding-left: 15px;
+}
+.block--basic h2{    
+	margin-bottom: 20px;
+
+    color: #AF282E;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.block--logos{
+    margin:0 auto;
+}
+@media (min-width:992px){
+    .block--logos{
+        margin:inherit;
+        margin-left:auto;
+
+    }
+}
+.imagebg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@media (min-width: 992px) and (max-width: 1400px){
+	.navbar-expand-lg .navbar-nav .dropdown-menu {
+	    position: absolute;
+	    transform: translateX(-32%);
+	}
+}
+
+.job .field__label {
+    display: block;
+    padding: 10px;
+    background: #bd2816;
+    text-transform: uppercase;
+    color: #fff;
+}
+.job .field__item {
+    padding: 10px 10px 4rem;
+}
+.job .field__item strong{
+	font-weight: 700;
+}
+.shortcuts_links{ 
+	display: flex;
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.shortcuts_links a{
+	display: block;
+	position: relative;
+	padding-right: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 12px;
+}
+.shortcuts_links a:after{
+	content: "";
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top:50%;
+	transform:translateY(-50%);
+	width: 1px;
+	background: #d7d7d7;
+}
+.shortcuts_links a:last-child{
+	/*padding-right: 0;*/
+}
+.shortcuts_links a:last-child:after{
+display: none !important;
+
+}
+
+@media (max-width: 992px){
+	
+	#shortcuts{
+		display: none;
+	}
+	.job .shortcuts{ display: none }
+}
+.page-node-type-job .location{
+	padding-left: 40px;
+	color: white;
+}
+.page-node-type-job .section{
+	padding-left: 40px;
+	color: white;
+
+}
+.page--full>div>.block>h2{
+	text-align: center;
+	margin-top: 1.5rem;
+	padding:2.5rem 0;
+	border-top: 1px solid #d7d7d7;
+}
+.block .views-element-container,
+.page-node-type-job .block--webform form{
+    width: 1000px;
+    max-width: 100%;
+    padding: 0 15px 3rem;
+    /* background: #fff; */
+    margin: 0 auto;
+}
+.page-node-type-job .block--webform h2{
+	padding: 1.5rem 0 1rem;
+	text-align: center;
+}
+.page-node-type-job .block--webform{
+	background: #f7f7f7;
+}
+.page-node-type-job .banner-innerpage .title{
+font-size: 2.5rem;
+}
+.goup{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #bd2816;
+    text-transform: uppercase;
+    color: #fff !important;
+    text-align: center;
+    z-index: 40;
+    line-height: 30px;
+}
+
+.jobteaser{
+  display:flex;
+  align-items:center;
+  flex-wrap: nowrap;
+  padding-bottom:1rem;
+  margin-bottom:1rem;
+  
+}
+.jobcontent{
+  flex-basis:75%;
+  width:75%;
+}
+.jobapply{
+  flex-basis:25%;
+  width:25%;
+}
+
+
+
+
+
+.block--odisean-local-tasks {
+    position: fixed; z-index: 999; top: 350px; right: 0;
+}
+.block--odisean-local-tasks  ul {
+    margin: 0;
+    text-align: right;
+    border: none;
+    flex-direction: column;
+}
+.block--odisean-local-tasks ul  li {display: block;margin: 5px 0;}
+.block--odisean-local-tasks ul  li a { margin: 0;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(30,30,30,.85);
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    box-shadow: 0 0 60px rgba(0,0,0,.3);
+    transition: .3s;
+    -webkit-transition: .3s;
+}
+.block--odisean-local-tasks ul  li a.active {
+    background: #fff; color: #333;
+}
+.block--odisean-local-tasks ul  li a:hover {
+    padding-right: 50px;  background: #fff; color: #333;
+}

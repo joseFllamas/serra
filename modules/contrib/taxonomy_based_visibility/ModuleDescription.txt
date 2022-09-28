@@ -1,0 +1,3 @@
+Taxonomy based visibility is the module which allows the user to set the block visibility based on taxonomy terms. 
+This Modules creates a new section "Taxonomy Based Visibility" in Visibility section on every individual block configuration page. 
+This will help the user to control block visibility in every node/content view page based on the taxonomy/category/term value selected in every node.

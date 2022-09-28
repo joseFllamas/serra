@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+#}
+{%
+  set classes = [
+  bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
+  label_display == 'inline' ? 'd-flex',
+  'row',
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  'font-weight-bold',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+<section>
+    <div class="container-fluid mt25 pb50">
+
+      <div {{ attributes.addClass(classes) }}>
+       {% for item in items %}
+        {{ item.content }}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

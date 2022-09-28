@@ -1,0 +1,14 @@
+name: Taxonomy Based Visibility
+type: module
+description: 'Controls block Visibility  based on Taxonomy terms'
+package: 'Taxonomy Based Visibility'
+# version: 8.x-1.x
+# core: 8.x
+dependencies:
+ - drupal:taxonomy
+
+# Information added by Drupal.org packaging script on 2018-11-29
+version: '8.x-1.0'
+core: '8.x'
+project: 'taxonomy_based_visibility'
+datestamp: 1543480683

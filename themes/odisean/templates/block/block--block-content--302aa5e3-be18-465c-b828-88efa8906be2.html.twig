@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Template for a Block component.
+ *
+ * Available config:
+ * - html_tag: The HTML tag for the block.
+ * - utility_classes: An array of utility classes.
+ 12 meses 12 causas
+ */
+#}
+{% set classes = [
+  'block',
+  bundle ? 'block--' ~ bundle|clean_class,
+  'bloquerevista',
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : []) %}
+
+  <div {{ attributes|without('id').addClass(classes) }} >
+  	<div class="container">
+  {{ title_prefix }}
+  {% if label %}
+    {% block label %}
+      <h2 class="titlesection text-center">{{ label }}</h2>
+    {% endblock %}
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+ 
+    {{ content }}
+
+  {% endblock %}
+	</div>
+  </div>

@@ -1,0 +1,117 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+
+<div class="banner-innerpage" style="background:#fefefe">
+  <div class="imagebg"><div data-quickedit-field-id="paragraph/349/field_imagen_/es/default" class="imagen-titulo-cabecera__field-imagen-"> <picture> <source srcset="/sites/default/files/styles/max_1980/public/2022-03/bottom_texture.webp?itok=dVh17wUh 1x" media="(min-width: 1200px)" type="image/webp"> <source srcset="/sites/default/files/styles/max_1980/public/2022-03/bottom_texture.webp?itok=dVh17wUh 1x" media="(min-width: 992px) and (max-width: 1199px)" type="image/webp"> <source srcset="/sites/default/files/styles/cabecera_9/public/2022-03/bottom_texture.webp?itok=w92AedSi 1x" media="(min-width: 768px) and (max-width: 991px)" type="image/webp"> <source srcset="/sites/default/files/styles/cabecera_720/public/2022-03/bottom_texture.webp?itok=vj6Tk3AS 1x" media="(min-width: 576px) and (max-width: 767px)" type="image/webp"> <source srcset="/sites/default/files/styles/cabecera_400/public/2022-03/bottom_texture.webp?itok=fSj4P1OW 1x" media="(max-width: 575px)" type="image/webp"> <source srcset="/sites/default/files/styles/max_1980/public/2022-03/bottom_texture.jpg?itok=dVh17wUh 1x" media="(min-width: 1200px)" type="image/jpeg"> <source srcset="/sites/default/files/styles/max_1980/public/2022-03/bottom_texture.jpg?itok=dVh17wUh 1x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg"> <source srcset="/sites/default/files/styles/cabecera_9/public/2022-03/bottom_texture.jpg?itok=w92AedSi 1x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg"> <source srcset="/sites/default/files/styles/cabecera_720/public/2022-03/bottom_texture.jpg?itok=vj6Tk3AS 1x" media="(min-width: 576px) and (max-width: 767px)" type="image/jpeg"> <source srcset="/sites/default/files/styles/cabecera_400/public/2022-03/bottom_texture.jpg?itok=fSj4P1OW 1x" media="(max-width: 575px)" type="image/jpeg"> <img src="/sites/default/files/styles/max_1980/public/2022-03/bottom_texture.jpg?itok=dVh17wUh" typeof="foaf:Image" class="img-fluid" alt="workwithus"> </picture></div></div>
+
+  <div class="mask"></div>
+  <div class="container-fluid">
+    <div class="row justify-content-center ">
+      <div class="col-md-12 align-self-center text-center">
+        <h1 class="title">{{ label }}</h1>
+        <div class="location "><i class="fa fa-map-marker" aria-hidden="true"></i> {{ content.field_location|field_value }}</div>
+        <div class="section "><i class="fa fa-building" aria-hidden="true"></i> {{ content.field_sector|field_value }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container shortcuts" id="shortcuts" style="padding-top:2rem">
+  <div class="row">
+    <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="shortcuts_links">
+        {% if content.body|field_value is not empty %}
+              <a href="#description">{{ 'Description'|t }}</a>
+            {% endif %}
+            {% if content.field_funciones|field_value is not empty %}
+               <a href="#functions">{{ 'Functions'|t }}</a>
+               
+            {% endif %}
+            {% if content.field_knowledge_and_skills|field_value is not empty %}
+               <a href="#skills">{{ 'Knowledge and skills'|t }}</a>
+            {% endif %}
+            {% if content.field_requirements|field_value is not empty %}
+               <a href="#requirements">{{ 'Requirements'|t }}</a>
+            {% endif %}
+            {% if content.field_working_hours|field_value is not empty %}  
+               <a href="#workinghours">{{ 'Working hours'|t }}</a>
+            {% endif %}
+            {% if content.field_benefits|field_value is not empty %}  
+               <a href="#benefits">{{ 'Benefits'|t }}</a>
+            {% endif %}
+              <a class="btn btn-primary btn-sm" href="#apply">{{ 'Apply'|t }}</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top:2rem">
+  <div class="row">
+    <div class="col-12 col-lg-10 offset-lg-1">
+  <article{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+
+    {% block content %}
+
+      <div{{ content_attributes }}>
+      {% if content.body|field_value is not empty %}
+        <div id="description">
+        {{ content.body }}
+        </div>
+      {% endif %}
+      {% if content.field_funciones|field_value is not empty %}
+          <div id="functions">
+         {{ content.field_funciones }}
+       </div>
+      {% endif %}
+      {% if content.field_knowledge_and_skills|field_value is not empty %}
+          <div id="skills">
+
+        {{ content.field_knowledge_and_skills }}
+      </div>
+      {% endif %}
+      {% if content.field_requirements|field_value is not empty %}
+          <div id="requirements">
+
+        {{ content.field_requirements }}
+      </div>
+      {% endif %}
+      {% if content.field_benefits|field_value is not empty %} 
+          <div id="benefits">
+
+        {{ content.field_benefits }}
+      </div>
+      {% endif %}
+      {% if content.field_working_hours|field_value is not empty %}
+          <div id="workinghours">
+
+        {{ content.field_working_hours }}
+      </div>
+      {% endif %}
+        <div class="bloques">
+          {{ content.field_bloque_reutilizable }}
+        </div>
+
+      </div>
+    {% endblock %}
+  </article>
+</div>
+</div>
+</div>
+ <div id="apply"></div>
+
+<a class="goup" style="display:none" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>

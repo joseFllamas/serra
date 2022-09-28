@@ -1,0 +1,82 @@
+<?php
+/**
+ * @file
+ * Theme functions
+ */
+
+// Include all files from the includes directory.
+$includes_path = dirname(__FILE__) . '/includes/*.inc';
+foreach (glob($includes_path) as $filename) {
+  require_once dirname(__FILE__) . '/includes/' . basename($filename);
+}
+use Drupal\image\Entity\ImageStyle;
+use Drupal\taxonomy\Entity\Term;
+
+function odisean_preprocess_node(&$variables) {
+ $variables['view_mode'] = $variables['elements']['#view_mode'];
+  $node = $variables['node'];
+ 
+  // Provide a distinct $teaser boolean.
+ if ($variables['view_mode'] == 'nom_view_mode' && $node->type->entity->label() == 'Artículo'){
+  
+ } 
+
+
+}
+function odisean_theme_suggestions_page_alter(&$suggestions, $vars, $hook) {      
+  if (\Drupal::routeMatch()
+      ->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()
+      ->getRawParameter('taxonomy_term')
+  ) {
+    $term = Term::load($tid);
+    $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
+  }
+//  kint($suggestions);
+}
+
+function odisean_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {      
+  $vocabulary = $vars['elements']['#taxonomy_term']->getVocabularyId();
+  $suggestions[] = 'taxonomy_term__' .  $vocabulary;
+ // kint($suggestions);
+}
+/**
+ * Implements hook_preprocess_page().
+*/
+function odisean_preprocess_taxonomy_term(&$variables) {
+  
+}
+
+function odisean_preprocess_page(&$variables) {
+  $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+
+}
+/**
+ * Implements template_preprocess_paragraph().
+ *
+ * @param array $variables
+ *   An akint($variables);ssociative array containing:
+ *   - elements: An array of elements to display in view mode.
+ *   - paragraph: The paragraph object.
+ *   - view_mode: View mode; e.g., 'full', 'teaser'...
+ */
+
+function odisean_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+  // Get the parent bundle.
+  if($paragraph->hasField('nome_camp')){
+    
+  }
+
+  if($paragraph->gettype() == 'paragraph name'  ){
+  }
+  $parent = $paragraph->getParentEntity();
+
+  // this assumes that this paragraph type is alwways configured
+  // to be a direct descendant of a node
+    if (is_null($parent) && \Drupal::routeMatch()->getRouteName() == 'entity.node.preview') {
+      $parent = \Drupal::routeMatch()->getParameter('node_preview');
+    }
+  
+   
+}

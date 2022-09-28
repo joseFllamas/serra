@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Default theme implementation to each level of menu.
+ */
+#}
+{% import _self as menu %}
+
+
+
+
+{# {{ menu.menu_links(items, attributes, 0) }} #}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menu_links %}
+  <ul class="navbar-nav ml-auto mt-2 mt-lg-0 {{ menu_level }}">
+
+  {% for key, item in items if key|first != '#' %}
+    {% set menu_item_classes = [
+      'menu-item',
+      item.is_expanded ? 'nav-item dropdown open',
+      item.is_collapsed ? 'menu-item--collapsed',
+      item.in_active_trail ? 'menu-item--active-trail',
+    ] %}
+
+    <li{{ item.attributes.addClass(menu_item_classes) }}>
+
+      {# {{ link(item.title, item.url) }} #}
+      {% if item.is_expanded %} 
+      {{ link(item.title, item.url) }}
+
+       <i class="fa fa-angle-down m-l-5"></i>
+     
+     {%  else %}
+      <a href="{{item.url}}" class="dropdown-item">{{item.title}}</a>
+
+     {% endif %} 
+
+      {% set rendered_content = item.content|without('') %}
+      {% if rendered_content|render %}
+        {{ rendered_content }}
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro menu_sublinks(items, attributes, menu_level) %}
+  {% import _self as menu_links %}
+  <ul class="dropdown-menu">
+
+  {% for key, item in items if key|first != '#' %}
+    {% set menu_item_classes = [
+      'menu-item',
+      item.is_expanded ? 'nav-item dropdown open',
+      item.is_collapsed ? 'menu-item--collapsed',
+      item.in_active_trail ? 'menu-item--active-trail',
+    ] %}
+
+    <li{{ item.attributes.addClass(menu_item_classes) }}>
+
+      <a href="{{item.url}}" class="dropdown-item">{{item.title}}</a>
+
+    </li>
+  {% endfor %}
+  </ul>
+{% endmacro %}

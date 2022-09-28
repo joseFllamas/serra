@@ -1,0 +1,16 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/odisean.style.css: {}
+      assets/css/flaticon.css: {}
+      assets/css/custom.css: {}
+      slick/slick/slick.css: {}
+      slick/slick/slick-theme.css: {}
+  js:
+    slick/slick/slick.min.js: {}
+    assets/js/bootstrap.min.js: {}
+    assets/js/odisean.script.js: {} 
+  dependencies:
+    - core/jquery
+    - core/drupal

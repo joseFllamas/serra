@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * Theme override to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+
+ <div class="card" > 
+  <a href="{{ fields.view_node.content|render|striptags|trim }}">
+    <div class="card-img-top">{{ fields.field_imagen.content }} </div>
+  </a>
+  <div class="date-pos bg-info-gradiant">{{ fields.field_fecha.content }}</div>
+  <h2 class="font-medium m-t-30">{{ fields.title.content }}</h2>
+  <p class="m-t-20">{{ fields.body.content }}</p> <a data-toggle="collapse" href="{{ fields.view_node.content|render|striptags|trim }}" class="linking  m-t-10">Learn More <i class="ti-arrow-right"></i></a>
+</div>
+
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+
+
+<div class="card productos" > 
+  <a href="{{ fields.view_node.content|render|striptags|trim }}">
+    <div class="card-img-top">{{ fields.field_imagen_representativa.content }} </div>
+  </a>
+  {# <div class="date-pos bg-info-gradiant">{{ fields.field_fecha.content }}</div> #}
+  <h2 class="font-medium logo m-t-30"><img src="/sites/default/files/2020-07/favicon_logo_serra.jpg" alt="ser"> {{ fields.title.content }}</h2>
+  <p class=" ">{{ fields.body.content }}</p> 
+
+  <a class="btn btn-serra btn-md btn-arrow"  href="{{ fields.view_node.content|render|striptags|trim }}" ><span>Ver detalle<i class="fas fa-chevron-right"></i></span> </a>
+</div>
+
+

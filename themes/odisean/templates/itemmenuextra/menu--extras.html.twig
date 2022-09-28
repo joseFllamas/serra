@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - content.children: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - content: The field item content.
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+
+
+{# {{ menu.menu_links(items, attributes, 0) }} #}
+
+
+{% if items %}
+  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      {% for item in items %}
+        {% set nav_item_classes = [
+          'nav-item',
+          item.in_active_trail ? 'active',
+          item.is_expanded and item.below ? 'dropdown-li',
+          item.content|render|striptags|trim is not empty ? 'dropdown-li'
+        ] %}
+        {% set nav_link_classes = ['nav-link'] %}
+        {% if item.url.options.attributes.class is iterable %}
+          {% set nav_link_classes = nav_link_classes|merge(item.url.options.attributes.class) %}
+        {% elseif item.url.options.attributes.class %}
+          {% set nav_link_classes = nav_link_classes|merge([item.url.options.attributes.class]) %}
+        {% endif %}
+        <li class="{{ nav_item_classes|join(' ') }}">
+         {% if item.is_expanded and  item.below %}
+             {% if  item.url is defined %}
+                <a data-mine="{{ item.url }}" class="nav-link dropdown-toggle" href="{{ item.url }}" id="h1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{ item.title }} <i class="fa fa-angle-down m-l-5"></i></a>
+              {% else %}
+                 {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+              {% endif %}
+            {% include '@radix/dropdown/dropdown-menu.twig' with {
+                items: item.below
+              } %}
+          {% elseif item.content and item.content|render|striptags|trim is not empty %}
+             {% if  item.url is defined %}
+                <a data-mine="{{ item.url }}" class="nav-link dropdown-toggle" href="{{ item.url }}" id="h1-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{ item.title }} <i class="fa fa-angle-down m-l-5"></i></a>
+              {% else %}
+                 {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+              {% endif %}
+
+	          		 {{  item.content }}
+       			
+           {% else %}
+            {{ link(item.title, item.url, { 'class': nav_link_classes }) }}
+          {% endif %}
+
+        </li>
+      {% endfor %}
+  </ul>
+{% endif %}

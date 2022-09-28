@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default template for a field.
+ */
+#}
+{%
+  set classes = [
+  bundle|clean_class ~ '__' ~ field_name_clean|clean_class,
+  label_display == 'inline' ? 'd-flex',
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  'font-weight-bold',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+<div class="col-lg-4 bg-primary">
+   {{ items[0].content }}
+</div>
+
+<div class="col-lg-4 bg-secondary bg-inverter">
+   {{ items[1].content }}
+</div>
+
+<div class="col-lg-4 bg-primary">
+   {{ items[2].content }}
+</div>

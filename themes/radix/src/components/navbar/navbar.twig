@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Template for Navbar component.
+ *
+ * Available config:
+ * - container: fixed | fluid.
+ * - placement: default | fixed-top | fixed-bottom | sticky-top
+ * - color: light | dark
+ * - utility_classes: An array of utility classes.
+ *
+ * Available blocks:
+ * - branding
+ * - left
+ * - right
+ */
+#}
+{{ attach_library('radix/navbar') }}
+
+{% set container = container == 'fixed' ? 'container' : false %}
+{% set placement = placement ?? '' %}
+{% set color = color ?? 'light' %}
+   {% block branding %}
+    {{ branding }}
+    {% endblock %}
+
