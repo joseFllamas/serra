@@ -3,7 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c8cdca0aaaffb973797ca0665eb769893b044040',
+        'reference' => '5b6aa286a9f988faba582af5efaa213d5c627755',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -346,14 +346,12 @@
             'dev_requirement' => false,
         ),
         'drupal/colorbox' => array(
-            'pretty_version' => 'dev-1.x',
-            'version' => 'dev-1.x',
-            'reference' => 'fd51a8ceefea24174438ef594b161c4fa74a6ad1',
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '2.0.0',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/colorbox',
-            'aliases' => array(
-                0 => '1.x-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'drupal/colorbox_load' => array(
@@ -754,7 +752,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c8cdca0aaaffb973797ca0665eb769893b044040',
+            'reference' => '5b6aa286a9f988faba582af5efaa213d5c627755',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

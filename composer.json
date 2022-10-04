@@ -37,7 +37,7 @@
         "drupal/cache_control_override": "^1.0@alpha",
         "drupal/captcha": "^1.5",
         "drupal/color_field": "^2.5",
-        "drupal/colorbox": "1.x-dev@dev",
+        "drupal/colorbox": "^2.0",
         "drupal/colorbox_load": "^1.2",
         "drupal/components": "^2.4",
         "drupal/core-composer-scaffold": "^9",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95a8954cd8ad33ec5a119b04d8a62e99",
+    "content-hash": "f233aa55f2ce78a8237188067fba9381",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2608,29 +2608,32 @@
         },
         {
             "name": "drupal/colorbox",
-            "version": "dev-1.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "fd51a8ceefea24174438ef594b161c4fa74a6ad1"
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbox-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "8cdbf92db81ce30225c3ff1c1e4c283c84ec9e03"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^8.8 || ^9 || ^10"
             },
             "suggest": {
                 "jackmoore/colorbox": "The Colorbox library is required to use the drupal/colorbox module."
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.9+4-dev",
-                    "datestamp": "1650338860",
+                    "version": "2.0.0",
+                    "datestamp": "1662740108",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -11501,7 +11504,6 @@
     "stability-flags": {
         "drupal/block_field": 20,
         "drupal/cache_control_override": 15,
-        "drupal/colorbox": 20,
         "drupal/field_validation": 10,
         "drupal/inline_entity_form": 5,
         "drupal/ng_lightbox": 10,
