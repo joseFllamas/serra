@@ -1,0 +1,22 @@
+uuid: c591fed5-9ff2-45ef-9676-1895526f0455
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloque_reutilizable
+id: paragraph.bloque_reutilizable.status
+field_name: status
+entity_type: paragraph
+bundle: bloque_reutilizable
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

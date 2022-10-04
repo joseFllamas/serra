@@ -1,0 +1,18 @@
+uuid: a711716a-9c16-4256-896c-af6343093f74
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto_tres_bloques
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.texto_tres_bloques
+target_entity_type_id: paragraph
+target_bundle: texto_tres_bloques
+default_langcode: site_default
+language_alterable: false

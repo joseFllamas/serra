@@ -1,0 +1,7 @@
+uuid: f40aa227-7e34-47aa-9be8-9883d1ada0b2
+langcode: es
+status: false
+dependencies: {  }
+formId: node_producto_form
+captchaType: default
+label: node_producto_form

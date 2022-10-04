@@ -1,0 +1,36 @@
+uuid: f516364e-3d22-4566-a11b-acbe5ec2994f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tres_bloques_icono.field_tres_bloques_icono_titulo_
+    - paragraphs.paragraphs_type.tres_bloques_icono
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.tres_bloques_icono.default
+targetEntityType: paragraph
+bundle: tres_bloques_icono
+mode: default
+content:
+  field_tres_bloques_icono_titulo_:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

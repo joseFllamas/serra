@@ -1,0 +1,20 @@
+uuid: 4332e8a0-f2c5-4423-93b6-609d070a15fa
+langcode: es
+status: true
+dependencies:
+  theme:
+    - radix
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: radix_local_actions
+theme: radix
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones primarias de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

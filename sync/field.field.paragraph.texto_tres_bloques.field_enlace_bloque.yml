@@ -1,0 +1,23 @@
+uuid: 24df5af7-e55f-4f9f-a2d6-78126989e06c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_bloque
+    - paragraphs.paragraphs_type.texto_tres_bloques
+  module:
+    - link
+id: paragraph.texto_tres_bloques.field_enlace_bloque
+field_name: field_enlace_bloque
+entity_type: paragraph
+bundle: texto_tres_bloques
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 1
+field_type: link

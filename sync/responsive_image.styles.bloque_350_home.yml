@@ -1,0 +1,16 @@
+uuid: bf85d4a3-6ca1-482f-8d05-8007023b5f76
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.bloque_350
+id: bloque_350_home
+label: 'bloque 350 home'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: bloque_350
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: bloque_350

@@ -1,0 +1,18 @@
+uuid: c794eebf-b639-4be8-8ff2-08ed9570a4ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.catalogos
+id: paragraph.catalogos.created
+field_name: created
+entity_type: paragraph
+bundle: catalogos
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

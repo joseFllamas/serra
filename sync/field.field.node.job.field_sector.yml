@@ -1,0 +1,19 @@
+uuid: f8815016-78fd-40cb-867a-7cd0106afd03
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sector
+    - node.type.job
+id: node.job.field_sector
+field_name: field_sector
+entity_type: node
+bundle: job
+label: Sector
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

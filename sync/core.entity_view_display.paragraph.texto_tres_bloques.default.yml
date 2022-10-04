@@ -1,0 +1,61 @@
+uuid: a6e784db-2b87-4bfd-92f9-ffb9696a7002
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto_tres_bloques.field_enlace_bloque
+    - field.field.paragraph.texto_tres_bloques.field_imagen_tres_boques
+    - field.field.paragraph.texto_tres_bloques.field_texto_tres_boques
+    - field.field.paragraph.texto_tres_bloques.field_titulo_tres_bloques
+    - paragraphs.paragraphs_type.texto_tres_bloques
+    - responsive_image.styles.bloque_350_home
+  module:
+    - lazy
+    - link
+    - responsive_image
+id: paragraph.texto_tres_bloques.default
+targetEntityType: paragraph
+bundle: texto_tres_bloques
+mode: default
+content:
+  field_enlace_bloque:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imagen_tres_boques:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: bloque_350_home
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: ''
+        data_uri: false
+    weight: 2
+    region: content
+  field_texto_tres_boques:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo_tres_bloques:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

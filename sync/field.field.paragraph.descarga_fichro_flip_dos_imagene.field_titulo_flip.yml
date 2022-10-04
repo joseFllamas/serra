@@ -1,0 +1,19 @@
+uuid: 3122ad3a-4cc7-4f7f-946c-4c8350391a61
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_flip
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+id: paragraph.descarga_fichro_flip_dos_imagene.field_titulo_flip
+field_name: field_titulo_flip
+entity_type: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

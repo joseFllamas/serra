@@ -1,0 +1,22 @@
+uuid: 596d6903-2427-4c5d-8a30-64b6f17712fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+id: paragraph.slick_imagenes_youtube.status
+field_name: status
+entity_type: paragraph
+bundle: slick_imagenes_youtube
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

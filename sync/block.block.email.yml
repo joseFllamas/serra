@@ -1,0 +1,25 @@
+uuid: 38cb9bf6-354a-4829-bc72-93141c75f371
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:76d56466-6cb7-4e94-85e9-b7eae6f769a7'
+  module:
+    - block_content
+  theme:
+    - odisean
+id: email
+theme: odisean
+region: footer_dos
+weight: 0
+provider: null
+plugin: 'block_content:76d56466-6cb7-4e94-85e9-b7eae6f769a7'
+settings:
+  id: 'block_content:76d56466-6cb7-4e94-85e9-b7eae6f769a7'
+  label: Email
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

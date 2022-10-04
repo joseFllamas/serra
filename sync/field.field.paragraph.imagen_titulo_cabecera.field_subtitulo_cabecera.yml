@@ -1,0 +1,19 @@
+uuid: 25f95a21-6ae0-44bc-b32c-647f2396568b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitulo_cabecera
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+id: paragraph.imagen_titulo_cabecera.field_subtitulo_cabecera
+field_name: field_subtitulo_cabecera
+entity_type: paragraph
+bundle: imagen_titulo_cabecera
+label: 'Subtitulo cabecera'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 835c251b-35c4-4eba-9ace-84a6cdaa20c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+id: menu_link_content.main.title
+field_name: title
+entity_type: menu_link_content
+bundle: main
+label: 'Título del enlace del menú.'
+description: 'El texto que se usará en el menú para este enlace.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

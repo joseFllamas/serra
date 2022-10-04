@@ -1,0 +1,21 @@
+uuid: 10bf4c25-350b-499c-a54b-a618287cc0e9
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_icono
+field_name: field_icono
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

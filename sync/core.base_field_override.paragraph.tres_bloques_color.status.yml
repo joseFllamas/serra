@@ -1,0 +1,22 @@
+uuid: 3da67f80-7760-4cb5-8b74-22084081114b
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tres_bloques_color
+id: paragraph.tres_bloques_color.status
+field_name: status
+entity_type: paragraph
+bundle: tres_bloques_color
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: 27dca4f6-1759-4402-959b-553fbf0d5a48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tres_bloques_icono.field_tres_bloques_icono_titulo_
+    - paragraphs.paragraphs_type.tres_bloques_icono
+  module:
+    - entity_reference_revisions
+id: paragraph.tres_bloques_icono.default
+targetEntityType: paragraph
+bundle: tres_bloques_icono
+mode: default
+content:
+  field_tres_bloques_icono_titulo_:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

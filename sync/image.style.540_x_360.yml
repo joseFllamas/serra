@@ -1,0 +1,16 @@
+uuid: 8b4f86d1-d7e3-4833-be6c-51ef88d158a2
+langcode: es
+status: true
+dependencies: {  }
+name: 540_x_360
+label: '540 x 360'
+effects:
+  dd477af3-aa33-4345-bc11-dd7ab95b672f:
+    uuid: dd477af3-aa33-4345-bc11-dd7ab95b672f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 360
+      anchor: center-center
+pipeline: webp

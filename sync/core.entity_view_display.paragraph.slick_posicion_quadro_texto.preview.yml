@@ -1,0 +1,78 @@
+uuid: 0f6d79fe-4f5a-4bb0-a92e-2e273bfc03ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.slick_posicion_quadro_texto.field_enlace_boton
+    - field.field.paragraph.slick_posicion_quadro_texto.field_imagen_slick_posicion
+    - field.field.paragraph.slick_posicion_quadro_texto.field_posicion
+    - field.field.paragraph.slick_posicion_quadro_texto.field_texto_slick_posicion
+    - field.field.paragraph.slick_posicion_quadro_texto.field_video_mp4
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+  module:
+    - file
+    - image
+    - layout_builder
+    - lazy
+    - link
+    - options
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.slick_posicion_quadro_texto.preview
+targetEntityType: paragraph
+bundle: slick_posicion_quadro_texto
+mode: preview
+content:
+  field_enlace_boton:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_imagen_slick_posicion:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '0'
+        placeholder_style: ''
+        data_uri: false
+    weight: 1
+    region: content
+  field_posicion:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_texto_slick_posicion:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_video_mp4:
+    type: file_url_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

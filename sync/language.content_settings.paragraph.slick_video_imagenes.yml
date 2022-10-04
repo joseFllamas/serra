@@ -1,0 +1,18 @@
+uuid: 83176f70-4b06-4883-bd33-06b8ef73fe06
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slick_video_imagenes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.slick_video_imagenes
+target_entity_type_id: paragraph
+target_bundle: slick_video_imagenes
+default_langcode: site_default
+language_alterable: false

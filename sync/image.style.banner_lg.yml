@@ -1,0 +1,16 @@
+uuid: 2330f58c-a553-453e-a8d5-f2cc649483a2
+langcode: es
+status: true
+dependencies: {  }
+name: banner_lg
+label: 'banner LG'
+effects:
+  34ba3827-5dbe-447e-a618-8f1edf7d5539:
+    uuid: 34ba3827-5dbe-447e-a618-8f1edf7d5539
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1316
+      height: 476
+      anchor: center-center
+pipeline: webp

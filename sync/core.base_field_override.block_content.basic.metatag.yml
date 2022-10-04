@@ -1,0 +1,18 @@
+uuid: 03df7bf0-9ea5-437d-a924-e5f07d91ca9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.metatag
+field_name: metatag
+entity_type: block_content
+bundle: basic
+label: 'Meta etiquetas'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

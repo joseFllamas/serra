@@ -1,0 +1,8 @@
+uuid: 5881519d-2364-4fd3-9914-823bbd5a5fee
+langcode: es
+status: true
+dependencies: {  }
+name: 340_x_3202
+label: '340 x 3202'
+effects: {  }
+pipeline: webp

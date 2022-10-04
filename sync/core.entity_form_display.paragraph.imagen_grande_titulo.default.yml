@@ -1,0 +1,42 @@
+uuid: 41ada079-cfb2-416d-a0a7-4f974a5ca858
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen_grande_titulo.field_imagen_imagen_grande
+    - field.field.paragraph.imagen_grande_titulo.field_titulo_imagen_grande
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.imagen_grande_titulo
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.imagen_grande_titulo.default
+targetEntityType: paragraph
+bundle: imagen_grande_titulo
+mode: default
+content:
+  field_imagen_imagen_grande:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_titulo_imagen_grande:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,18 @@
+uuid: 1eb37f49-596e-4fe3-9e3c-6cb7e7ddb930
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.slick_imagenes_youtube
+target_entity_type_id: paragraph
+target_bundle: slick_imagenes_youtube
+default_langcode: site_default
+language_alterable: false

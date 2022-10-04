@@ -1,0 +1,36 @@
+uuid: c06a8001-9501-4196-9451-ad0a41253141
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_video_imagenes.field_slide
+    - paragraphs.paragraphs_type.slick_video_imagenes
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.slick_video_imagenes.default
+targetEntityType: paragraph
+bundle: slick_video_imagenes
+mode: default
+content:
+  field_slide:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

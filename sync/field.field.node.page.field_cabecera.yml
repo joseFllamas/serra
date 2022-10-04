@@ -1,0 +1,91 @@
+uuid: a50db9f0-bac7-49ad-8a1e-c064363f89f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cabecera
+    - node.type.page
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+  module:
+    - entity_reference_revisions
+id: node.page.field_cabecera
+field_name: field_cabecera
+entity_type: node
+bundle: page
+label: Cabecera
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      imagen_titulo_cabecera: imagen_titulo_cabecera
+    negate: 0
+    target_bundles_drag_drop:
+      baner_bajo:
+        weight: 22
+        enabled: false
+      baner_bajo_produccion:
+        weight: 23
+        enabled: false
+      baner_grande:
+        weight: 24
+        enabled: false
+      bloque_reutilizable:
+        weight: 25
+        enabled: false
+      catalogos:
+        weight: 26
+        enabled: false
+      descarga_fichro_flip_dos_imagene:
+        weight: 27
+        enabled: false
+      from_library:
+        weight: 28
+        enabled: false
+      icono_titulo_texto:
+        weight: 29
+        enabled: false
+      imagen_grande_titulo:
+        weight: 30
+        enabled: false
+      imagen_titulo_cabecera:
+        weight: 31
+        enabled: true
+      logos:
+        weight: 32
+        enabled: false
+      noticias:
+        weight: 33
+        enabled: false
+      slick_imagenes_youtube:
+        weight: 34
+        enabled: false
+      slick_posicion_quadro_texto:
+        weight: 35
+        enabled: false
+      slick_video_imagenes:
+        weight: 36
+        enabled: false
+      texto_tres_bloques:
+        weight: 37
+        enabled: false
+      texto_tres_bloques_multi:
+        weight: 38
+        enabled: false
+      tres_bloques_color:
+        weight: 39
+        enabled: false
+      tres_bloques_color_estrecho:
+        weight: 40
+        enabled: false
+      tres_bloques_icono:
+        weight: 41
+        enabled: false
+      tres_bloques_icono_titulo_texto_:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

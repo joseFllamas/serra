@@ -1,0 +1,15 @@
+uuid: db158005-994a-4445-9325-a038fb3a33ac
+langcode: es
+status: true
+dependencies:
+  module:
+    - webp
+name: webp
+label: webp
+processors:
+  22c802af-8e3a-4d77-8114-f84288cd22e4:
+    id: webp_webp
+    data:
+      quality: '75'
+    weight: 1
+    uuid: 22c802af-8e3a-4d77-8114-f84288cd22e4

@@ -1,0 +1,18 @@
+uuid: 32341ad9-df44-47c0-b496-2f9e6510a061
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.noticias_categorias
+id: taxonomy_term.noticias_categorias.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: noticias_categorias
+label: 'Meta etiquetas'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

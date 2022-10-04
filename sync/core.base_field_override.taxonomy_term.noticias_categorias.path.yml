@@ -1,0 +1,20 @@
+uuid: 95ed7317-07d1-41d5-a9ac-a9de66225179
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.noticias_categorias
+  module:
+    - path
+id: taxonomy_term.noticias_categorias.path
+field_name: path
+entity_type: taxonomy_term
+bundle: noticias_categorias
+label: 'Alias de URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

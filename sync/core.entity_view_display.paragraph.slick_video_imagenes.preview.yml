@@ -1,0 +1,35 @@
+uuid: e0efcaab-4b39-434e-a8fb-120728e6f9cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.slick_video_imagenes.field_slide
+    - paragraphs.paragraphs_type.slick_video_imagenes
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.slick_video_imagenes.preview
+targetEntityType: paragraph
+bundle: slick_video_imagenes
+mode: preview
+content:
+  field_slide:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

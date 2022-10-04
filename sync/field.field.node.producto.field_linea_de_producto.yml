@@ -1,0 +1,29 @@
+uuid: ef78acde-62e9-4435-9aaa-4e95cfec45b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linea_de_producto
+    - node.type.producto
+    - taxonomy.vocabulary.tipo_de_producto
+id: node.producto.field_linea_de_producto
+field_name: field_linea_de_producto
+entity_type: node
+bundle: producto
+label: 'Linea de producto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_producto: tipo_de_producto
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

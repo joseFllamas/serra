@@ -1,0 +1,33 @@
+uuid: 1cc7fe94-8d82-4ea5-8b16-3cf410062d22
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen.field_image_noticia
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.imagen
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.imagen.default
+targetEntityType: paragraph
+bundle: imagen
+mode: default
+content:
+  field_image_noticia:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,49 @@
+uuid: 44d9e0f8-0e9e-4191-8029-67d30c212895
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - eu_cookie_compliance
+    - filter
+    - media
+    - paragraphs_type_permissions
+    - search
+    - system
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'bypass paragraphs type content access'
+  - 'display eu cookie compliance popup'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view paragraph content baner_bajo'
+  - 'view paragraph content baner_bajo_produccion'
+  - 'view paragraph content baner_grande'
+  - 'view paragraph content bloque_reutilizable'
+  - 'view paragraph content catalogos'
+  - 'view paragraph content descarga_fichro_flip_dos_imagene'
+  - 'view paragraph content from_library'
+  - 'view paragraph content icono_titulo_texto'
+  - 'view paragraph content imagen_titulo_cabecera'
+  - 'view paragraph content logos'
+  - 'view paragraph content slick_imagenes_youtube'
+  - 'view paragraph content slick_posicion_quadro_texto'
+  - 'view paragraph content slick_video_imagenes'
+  - 'view paragraph content texto_tres_bloques'
+  - 'view paragraph content texto_tres_bloques_multi'
+  - 'view paragraph content tres_bloques_color'
+  - 'view paragraph content tres_bloques_color_estrecho'
+  - 'view paragraph content tres_bloques_icono'
+  - 'view paragraph content tres_bloques_icono_titulo_texto_'

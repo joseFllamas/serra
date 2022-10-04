@@ -1,0 +1,28 @@
+uuid: 48b606a9-b217-4d84-a006-d2ebe2c1a325
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.bloque_reutilizable.field_reutilizable
+    - paragraphs.paragraphs_type.bloque_reutilizable
+  module:
+    - block_field
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.bloque_reutilizable.preview
+targetEntityType: paragraph
+bundle: bloque_reutilizable
+mode: preview
+content:
+  field_reutilizable:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

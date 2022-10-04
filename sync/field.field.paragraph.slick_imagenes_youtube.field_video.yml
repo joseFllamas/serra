@@ -1,0 +1,21 @@
+uuid: a19e9829-95aa-4f21-84d1-0497f4ed3dd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+  module:
+    - youtube
+id: paragraph.slick_imagenes_youtube.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: slick_imagenes_youtube
+label: Vídeo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

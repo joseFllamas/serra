@@ -1,0 +1,19 @@
+uuid: 9d4eb8c4-0cb3-4eb2-aa4f-79b3a76f09bd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_knowledge_and_skills
+field_name: field_knowledge_and_skills
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

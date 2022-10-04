@@ -1,0 +1,13 @@
+uuid: 00ca696b-c25d-4f1c-8f9f-56685f239a26
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'Retirar el contenido de la portada'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

@@ -1,0 +1,30 @@
+uuid: 2eb1d11b-fe52-4647-80c1-7a409648360f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.baner_grande.field_baner_grande
+    - paragraphs.paragraphs_type.baner_grande
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.baner_grande.preview
+targetEntityType: paragraph
+bundle: baner_grande
+mode: preview
+content:
+  field_baner_grande:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

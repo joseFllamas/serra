@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: es
+uuid: af0276db-debf-4ab8-809e-d0cc59160de8
+name: 'Talleres Serra'
+mail: joan@odisean.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/9
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: ''

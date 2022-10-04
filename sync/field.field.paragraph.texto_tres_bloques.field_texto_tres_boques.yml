@@ -1,0 +1,19 @@
+uuid: d1727aaa-b5c4-403d-b3a8-9c01d09bde39
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_tres_boques
+    - paragraphs.paragraphs_type.texto_tres_bloques
+id: paragraph.texto_tres_bloques.field_texto_tres_boques
+field_name: field_texto_tres_boques
+entity_type: paragraph
+bundle: texto_tres_bloques
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

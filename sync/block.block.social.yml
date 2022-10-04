@@ -1,0 +1,25 @@
+uuid: 86e1f1c6-2b96-4ed6-ac9b-8daa9f33523c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7381e872-b4ab-4437-8229-041cf520ffbe'
+  module:
+    - block_content
+  theme:
+    - odisean
+id: social
+theme: odisean
+region: footer_tres
+weight: 0
+provider: null
+plugin: 'block_content:7381e872-b4ab-4437-8229-041cf520ffbe'
+settings:
+  id: 'block_content:7381e872-b4ab-4437-8229-041cf520ffbe'
+  label: Social
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

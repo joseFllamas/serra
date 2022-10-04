@@ -1,0 +1,19 @@
+uuid: 90041548-76df-4d5f-b727-79af42cf3ff3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_noticias
+    - paragraphs.paragraphs_type.noticias
+id: paragraph.noticias.field_texto_noticias
+field_name: field_texto_noticias
+entity_type: paragraph
+bundle: noticias
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

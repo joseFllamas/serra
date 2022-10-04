@@ -1,0 +1,19 @@
+uuid: f9f3b04e-c722-4a2a-bdd9-10850e65d598
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitulo_flip_1_
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+id: paragraph.descarga_fichro_flip_dos_imagene.field_subtitulo_flip_1_
+field_name: field_subtitulo_flip_1_
+entity_type: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+label: 'Subtítulo flip'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

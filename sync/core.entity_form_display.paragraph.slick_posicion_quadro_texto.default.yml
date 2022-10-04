@@ -1,0 +1,68 @@
+uuid: 8dfef1e5-a144-48c7-9970-ec47a035ce5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_posicion_quadro_texto.field_enlace_boton
+    - field.field.paragraph.slick_posicion_quadro_texto.field_imagen_slick_posicion
+    - field.field.paragraph.slick_posicion_quadro_texto.field_posicion
+    - field.field.paragraph.slick_posicion_quadro_texto.field_texto_slick_posicion
+    - field.field.paragraph.slick_posicion_quadro_texto.field_video_mp4
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+  module:
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.slick_posicion_quadro_texto.default
+targetEntityType: paragraph
+bundle: slick_posicion_quadro_texto
+mode: default
+content:
+  field_enlace_boton:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_imagen_slick_posicion:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_posicion:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_texto_slick_posicion:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_mp4:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

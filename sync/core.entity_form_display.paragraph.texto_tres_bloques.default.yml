@@ -1,0 +1,61 @@
+uuid: 40d3522a-e06a-4aae-b53b-fff80e9a182f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto_tres_bloques.field_enlace_bloque
+    - field.field.paragraph.texto_tres_bloques.field_imagen_tres_boques
+    - field.field.paragraph.texto_tres_bloques.field_texto_tres_boques
+    - field.field.paragraph.texto_tres_bloques.field_titulo_tres_bloques
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.texto_tres_bloques
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.texto_tres_bloques.default
+targetEntityType: paragraph
+bundle: texto_tres_bloques
+mode: default
+content:
+  field_enlace_bloque:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_imagen_tres_boques:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_texto_tres_boques:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_tres_bloques:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

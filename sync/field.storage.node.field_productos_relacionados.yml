@@ -1,0 +1,19 @@
+uuid: bb248c9a-f8f4-4114-aa9e-a7661949e7b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_productos_relacionados
+field_name: field_productos_relacionados
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

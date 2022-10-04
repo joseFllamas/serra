@@ -1,0 +1,18 @@
+uuid: 57e8c834-65f6-434c-ada3-d41cd1286572
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloque_reutilizable
+id: paragraph.bloque_reutilizable.created
+field_name: created
+entity_type: paragraph
+bundle: bloque_reutilizable
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

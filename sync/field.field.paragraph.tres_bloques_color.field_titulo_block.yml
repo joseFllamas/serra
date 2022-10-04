@@ -1,0 +1,21 @@
+uuid: a44a4e11-38c2-4fc4-af8b-a97e8b827da1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_block
+    - paragraphs.paragraphs_type.tres_bloques_color
+  module:
+    - text
+id: paragraph.tres_bloques_color.field_titulo_block
+field_name: field_titulo_block
+entity_type: paragraph
+bundle: tres_bloques_color
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

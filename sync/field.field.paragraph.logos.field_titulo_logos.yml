@@ -1,0 +1,19 @@
+uuid: 8254617a-5cfe-45cb-bb40-9fa2fe188aeb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_logos
+    - paragraphs.paragraphs_type.logos
+id: paragraph.logos.field_titulo_logos
+field_name: field_titulo_logos
+entity_type: paragraph
+bundle: logos
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,58 @@
+uuid: 9fce7994-1db9-46d9-b429-524ef3dc9e58
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_imagenes_youtube.field_imagen
+    - field.field.paragraph.slick_imagenes_youtube.field_video
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+    - responsive_image.styles.slide_producto
+    - responsive_image.styles.wide
+  module:
+    - colorbox
+    - field_layout
+    - layout_builder
+    - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.slick_imagenes_youtube.default
+targetEntityType: paragraph
+bundle: slick_imagenes_youtube
+mode: default
+content:
+  field_imagen:
+    type: colorbox_responsive
+    label: hidden
+    settings:
+      colorbox_responsive_node_style: slide_producto
+      colorbox_responsive_image_style: wide
+      colorbox_gallery: custom
+      colorbox_gallery_custom: galeriaproducto
+      colorbox_caption: none
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video:
+    type: youtube_video
+    label: hidden
+    settings:
+      youtube_size: 450x315
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_mute: false
+      youtube_loop: false
+      youtube_controls: false
+      youtube_autohide: false
+      youtube_iv_load_policy: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

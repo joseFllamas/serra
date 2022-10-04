@@ -1,0 +1,25 @@
+uuid: 1a61f815-ac60-43e3-9a01-6eb917ef9c54
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e02031f3-0595-4325-ae0e-e251325bf0b2'
+  module:
+    - block_content
+  theme:
+    - odisean
+id: logos
+theme: odisean
+region: footer_quatre
+weight: 0
+provider: null
+plugin: 'block_content:e02031f3-0595-4325-ae0e-e251325bf0b2'
+settings:
+  id: 'block_content:e02031f3-0595-4325-ae0e-e251325bf0b2'
+  label: logos
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 935986f8-c1b6-489d-9530-028371a0de88
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pdf
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+  module:
+    - file
+id: paragraph.descarga_fichro_flip_dos_imagene.field_pdf
+field_name: field_pdf
+entity_type: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+label: PDF
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

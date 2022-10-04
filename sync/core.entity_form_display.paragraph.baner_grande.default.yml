@@ -1,0 +1,36 @@
+uuid: a98ef56d-946d-4ff9-8a3a-1bd3477a397a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.baner_grande.field_baner_grande
+    - paragraphs.paragraphs_type.baner_grande
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.baner_grande.default
+targetEntityType: paragraph
+bundle: baner_grande
+mode: default
+content:
+  field_baner_grande:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

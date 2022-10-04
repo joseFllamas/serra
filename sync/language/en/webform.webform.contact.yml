@@ -1,0 +1,16 @@
+elements: |
+  tipo_de_consulta:
+    '#title': 'Choose an option'
+    '#options':
+      'Trabaja con nosotros': 'Work with us'
+  telefono:
+    '#title': Phone
+  poblacion:
+    '#title': County
+  cargo_en_la_empresa:
+    '#title': Position
+  consulta:
+    '#title': Comments
+handlers:
+  email_notification:
+    label: 'Aviso por correo electrónico'

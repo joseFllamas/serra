@@ -1,0 +1,46 @@
+uuid: 6389e20a-9630-4396-878f-b4e00f930760
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.noticias.field_noticias
+    - field.field.paragraph.noticias.field_texto_noticias
+    - field.field.paragraph.noticias.field_titulo_noticias
+    - paragraphs.paragraphs_type.noticias
+  module:
+    - block_field
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.noticias.preview
+targetEntityType: paragraph
+bundle: noticias
+mode: preview
+content:
+  field_noticias:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_texto_noticias:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo_noticias:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

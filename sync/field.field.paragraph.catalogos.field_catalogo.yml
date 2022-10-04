@@ -1,0 +1,97 @@
+uuid: 94d6b0ce-9342-4b36-8d10-675b0c78f3ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_catalogo
+    - paragraphs.paragraphs_type.catalogos
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+  module:
+    - entity_reference_revisions
+id: paragraph.catalogos.field_catalogo
+field_name: field_catalogo
+entity_type: paragraph
+bundle: catalogos
+label: Catálogos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      descarga_fichro_flip_dos_imagene: descarga_fichro_flip_dos_imagene
+    negate: 0
+    target_bundles_drag_drop:
+      baner_bajo:
+        weight: 24
+        enabled: false
+      baner_bajo_produccion:
+        weight: 25
+        enabled: false
+      baner_grande:
+        weight: 26
+        enabled: false
+      bloque_reutilizable:
+        weight: 15
+        enabled: false
+      catalogos:
+        weight: 16
+        enabled: false
+      descarga_fichro_flip_dos_imagene:
+        weight: 17
+        enabled: true
+      from_library:
+        weight: 18
+        enabled: false
+      icono_titulo_texto:
+        weight: 19
+        enabled: false
+      imagen:
+        weight: 32
+        enabled: false
+      imagen_grande_titulo:
+        weight: 33
+        enabled: false
+      imagen_titulo_cabecera:
+        weight: 20
+        enabled: false
+      logos:
+        weight: 21
+        enabled: false
+      noticias:
+        weight: 36
+        enabled: false
+      slick_imagenes_youtube:
+        weight: 23
+        enabled: false
+      slick_posicion_quadro_texto:
+        weight: 24
+        enabled: false
+      slick_video_imagenes:
+        weight: 25
+        enabled: false
+      texto:
+        weight: 40
+        enabled: false
+      texto_tres_bloques:
+        weight: 26
+        enabled: false
+      texto_tres_bloques_multi:
+        weight: 42
+        enabled: false
+      tres_bloques_color:
+        weight: 27
+        enabled: false
+      tres_bloques_color_estrecho:
+        weight: 44
+        enabled: false
+      tres_bloques_icono:
+        weight: 45
+        enabled: false
+      tres_bloques_icono_titulo_texto_:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

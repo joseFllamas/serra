@@ -1,0 +1,24 @@
+uuid: 584d3c3f-3c04-41a4-aaef-6c8b8de46822
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_working_hours
+    - node.type.job
+  module:
+    - text
+id: node.job.field_working_hours
+field_name: field_working_hours
+entity_type: node
+bundle: job
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>Horario base: 8:00 -13:30 y 15:00-17:45</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

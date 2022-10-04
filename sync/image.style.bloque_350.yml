@@ -1,0 +1,16 @@
+uuid: 5ec81ee8-48a5-4515-b577-7b9e4759e3df
+langcode: es
+status: true
+dependencies: {  }
+name: bloque_350
+label: 'bloque 350'
+effects:
+  233bb10f-b2ea-4a49-9c06-b58a4bd45c11:
+    uuid: 233bb10f-b2ea-4a49-9c06-b58a4bd45c11
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 233
+      anchor: center-center
+pipeline: webp

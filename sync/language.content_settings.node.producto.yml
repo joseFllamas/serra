@@ -1,0 +1,18 @@
+uuid: 4f527c32-54e3-44eb-b091-3d96a26285c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.producto
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.producto
+target_entity_type_id: node
+target_bundle: producto
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,10 @@
+uuid: d928497b-50e3-402f-b662-738f65c9e4de
+langcode: es
+status: true
+dependencies: {  }
+id: baner_bajo
+label: 'Baner bajo'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

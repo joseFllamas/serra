@@ -1,0 +1,32 @@
+uuid: 88861944-402b-47a8-a747-09e6d2de867b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias
+  module:
+    - ctools
+    - views
+  theme:
+    - odisean
+id: views_block__noticias_block_2
+theme: odisean
+region: content_right
+weight: -9
+provider: null
+plugin: 'views_block:noticias-block_2'
+settings:
+  id: 'views_block:noticias-block_2'
+  label: Categorias
+  label_display: visible
+  provider: views
+  views_label: Categorias
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      noticia: noticia

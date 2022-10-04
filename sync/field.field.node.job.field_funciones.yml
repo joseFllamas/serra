@@ -1,0 +1,21 @@
+uuid: c233d546-695c-4e95-ad08-17fed66a8b5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funciones
+    - node.type.job
+  module:
+    - text
+id: node.job.field_funciones
+field_name: field_funciones
+entity_type: node
+bundle: job
+label: Funciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

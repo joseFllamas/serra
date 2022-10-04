@@ -1,0 +1,30 @@
+uuid: 1c78f4f3-460c-47c8-9789-fcf645377b5a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.catalogos.field_catalogo
+    - paragraphs.paragraphs_type.catalogos
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.catalogos.preview
+targetEntityType: paragraph
+bundle: catalogos
+mode: preview
+content:
+  field_catalogo:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

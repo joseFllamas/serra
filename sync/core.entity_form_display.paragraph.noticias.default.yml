@@ -1,0 +1,51 @@
+uuid: 800abb1b-440f-458f-a59e-1cdc4d80650b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.noticias.field_noticias
+    - field.field.paragraph.noticias.field_texto_noticias
+    - field.field.paragraph.noticias.field_titulo_noticias
+    - paragraphs.paragraphs_type.noticias
+  module:
+    - block_field
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.noticias.default
+targetEntityType: paragraph
+bundle: noticias
+mode: default
+content:
+  field_noticias:
+    type: block_field_default
+    weight: 2
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+  field_texto_noticias:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_noticias:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

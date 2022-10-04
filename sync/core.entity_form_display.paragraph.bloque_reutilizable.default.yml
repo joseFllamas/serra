@@ -1,0 +1,33 @@
+uuid: 7a1cd89e-8575-4034-af86-5e16a929858d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_reutilizable.field_reutilizable
+    - paragraphs.paragraphs_type.bloque_reutilizable
+  module:
+    - block_field
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.bloque_reutilizable.default
+targetEntityType: paragraph
+bundle: bloque_reutilizable
+mode: default
+content:
+  field_reutilizable:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

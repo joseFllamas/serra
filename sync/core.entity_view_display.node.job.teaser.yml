@@ -1,0 +1,47 @@
+uuid: e6adc3cd-aa42-4b4a-938a-c31068dce50e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job.body
+    - field.field.node.job.field_benefits
+    - field.field.node.job.field_funciones
+    - field.field.node.job.field_knowledge_and_skills
+    - field.field.node.job.field_location
+    - field.field.node.job.field_requirements
+    - field.field.node.job.field_sector
+    - field.field.node.job.field_working_hours
+    - node.type.job
+  module:
+    - user
+id: node.job.teaser
+targetEntityType: node
+bundle: job
+mode: teaser
+content:
+  field_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sector:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_benefits: true
+  field_funciones: true
+  field_knowledge_and_skills: true
+  field_requirements: true
+  field_working_hours: true
+  langcode: true
+  links: true

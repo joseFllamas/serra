@@ -1,0 +1,23 @@
+uuid: a4f8bfdd-41d0-4e90-9bbe-7c44a73d0f8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.job
+  module:
+    - text
+id: node.job.body
+field_name: body
+entity_type: node
+bundle: job
+label: 'Descripción del puesto'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

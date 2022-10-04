@@ -1,0 +1,22 @@
+uuid: 2e1a8693-ab4a-4162-909b-70643b693cef
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - odisean
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: odisean_powered
+theme: odisean
+region: footer
+weight: -2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: b4ebe566-0994-447f-ba58-e3d8a7cfe019
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_noticias
+    - paragraphs.paragraphs_type.noticias
+id: paragraph.noticias.field_titulo_noticias
+field_name: field_titulo_noticias
+entity_type: paragraph
+bundle: noticias
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

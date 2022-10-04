@@ -1,0 +1,19 @@
+uuid: b25d9f2d-6f2c-4573-9132-281cdf2afbb2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_imagen_grande
+    - paragraphs.paragraphs_type.imagen_grande_titulo
+id: paragraph.imagen_grande_titulo.field_titulo_imagen_grande
+field_name: field_titulo_imagen_grande
+entity_type: paragraph
+bundle: imagen_grande_titulo
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

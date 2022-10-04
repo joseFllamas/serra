@@ -1,0 +1,33 @@
+uuid: cea4a0a4-6abb-452b-b7c5-6e65ead60537
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.baner_bajo_produccion.field_imagen
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.baner_bajo_produccion
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.baner_bajo_produccion.default
+targetEntityType: paragraph
+bundle: baner_bajo_produccion
+mode: default
+content:
+  field_imagen:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

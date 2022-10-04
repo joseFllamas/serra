@@ -1,0 +1,39 @@
+uuid: e893763d-1f38-4195-9cc6-1f6884b1c999
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.medio_220x220
+    - image.style.medium
+  theme:
+    - odisean
+id: 220x200_related
+label: '220x200 related'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: medio_220x220
+    breakpoint_id: default.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medio_220x220
+    breakpoint_id: default.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medio_220x220
+    breakpoint_id: default.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: default.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: default.xs
+    multiplier: 1x
+breakpoint_group: odisean
+fallback_image_style: medio_220x220

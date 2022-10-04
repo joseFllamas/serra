@@ -1,0 +1,22 @@
+uuid: 6a21fb11-2355-41c2-b38c-a73fff1ef827
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.noticias_categorias
+id: taxonomy_term.noticias_categorias.status
+field_name: status
+entity_type: taxonomy_term
+bundle: noticias_categorias
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

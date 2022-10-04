@@ -1,0 +1,23 @@
+uuid: f4b684d1-5d86-4fa9-825d-12e39830408a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.producto
+  module:
+    - text
+id: node.producto.body
+field_name: body
+entity_type: node
+bundle: producto
+label: Texto
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

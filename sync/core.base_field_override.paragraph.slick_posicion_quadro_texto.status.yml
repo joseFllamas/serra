@@ -1,0 +1,22 @@
+uuid: 7c3b3792-2be4-48cc-90e2-2622e9ed38ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+id: paragraph.slick_posicion_quadro_texto.status
+field_name: status
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

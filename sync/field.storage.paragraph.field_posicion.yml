@@ -1,0 +1,33 @@
+uuid: c82e0022-6258-4f86-8b34-ceb5d49eb88e
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_posicion
+field_name: field_posicion
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: tl
+      label: 'Arriba izquierda'
+    -
+      value: tr
+      label: 'Arriba derecha'
+    -
+      value: bl
+      label: 'Abajo izquierda'
+    -
+      value: br
+      label: 'Abajo derecha'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

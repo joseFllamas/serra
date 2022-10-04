@@ -1,0 +1,10 @@
+uuid: 2981ee5e-2777-4145-b48f-a26d5b249b5a
+langcode: es
+status: true
+dependencies: {  }
+id: imagen
+label: imagen
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

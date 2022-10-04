@@ -1,0 +1,19 @@
+uuid: 25d90181-8f1f-4265-af24-739e20c1537e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_reutilizable
+field_name: field_reutilizable
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

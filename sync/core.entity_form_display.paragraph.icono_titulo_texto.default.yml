@@ -1,0 +1,50 @@
+uuid: d4ac45b8-0c62-4f6e-9863-a2b1c91a1117
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icono_titulo_texto.field_icono
+    - field.field.paragraph.icono_titulo_texto.field_texto
+    - field.field.paragraph.icono_titulo_texto.field_titulo
+    - paragraphs.paragraphs_type.icono_titulo_texto
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.icono_titulo_texto.default
+targetEntityType: paragraph
+bundle: icono_titulo_texto
+mode: default
+content:
+  field_icono:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_texto:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

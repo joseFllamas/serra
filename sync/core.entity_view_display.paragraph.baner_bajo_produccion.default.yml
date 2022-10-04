@@ -1,0 +1,30 @@
+uuid: eb81488c-1151-4c81-bcee-ef483b0eaa99
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.baner_bajo_produccion.field_imagen
+    - paragraphs.paragraphs_type.baner_bajo_produccion
+    - responsive_image.styles.220x200_related
+  module:
+    - lazy
+    - responsive_image
+id: paragraph.baner_bajo_produccion.default
+targetEntityType: paragraph
+bundle: baner_bajo_produccion
+mode: default
+content:
+  field_imagen:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: 220x200_related
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: ''
+        data_uri: false
+    weight: 0
+    region: content
+hidden: {  }

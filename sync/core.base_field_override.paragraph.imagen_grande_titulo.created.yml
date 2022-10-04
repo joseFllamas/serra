@@ -1,0 +1,18 @@
+uuid: 420e3bd4-5f6f-4e1b-8b9b-db523c48c767
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.imagen_grande_titulo
+id: paragraph.imagen_grande_titulo.created
+field_name: created
+entity_type: paragraph
+bundle: imagen_grande_titulo
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

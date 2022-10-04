@@ -1,0 +1,19 @@
+uuid: ccf91a37-e602-409e-a751-ff75fa4e1630
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_enlace_boton
+field_name: field_enlace_boton
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

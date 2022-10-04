@@ -1,0 +1,27 @@
+uuid: b1522709-6ef5-441c-b25e-496d24690401
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_productos_relacionados
+    - node.type.producto
+id: node.producto.field_productos_relacionados
+field_name: field_productos_relacionados
+entity_type: node
+bundle: producto
+label: 'Productos relacionados'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      producto: producto
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

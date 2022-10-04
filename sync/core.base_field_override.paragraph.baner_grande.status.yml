@@ -1,0 +1,22 @@
+uuid: 9ba9632c-cf8e-48eb-8a73-91e96afaf796
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.baner_grande
+id: paragraph.baner_grande.status
+field_name: status
+entity_type: paragraph
+bundle: baner_grande
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

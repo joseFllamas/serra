@@ -1,0 +1,18 @@
+uuid: f08d3dc4-2b7f-46c7-8511-9307cec5424d
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.noticias
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.noticias
+target_entity_type_id: paragraph
+target_bundle: noticias
+default_langcode: site_default
+language_alterable: false

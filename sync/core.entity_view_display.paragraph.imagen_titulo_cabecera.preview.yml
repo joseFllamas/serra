@@ -1,0 +1,56 @@
+uuid: e58d8448-0362-422c-beae-83970b2714bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.imagen_titulo_cabecera.field_imagen_
+    - field.field.paragraph.imagen_titulo_cabecera.field_subtitulo_cabecera
+    - field.field.paragraph.imagen_titulo_cabecera.field_titulo_cabecera
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+  module:
+    - image
+    - layout_builder
+    - lazy
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.imagen_titulo_cabecera.preview
+targetEntityType: paragraph
+bundle: imagen_titulo_cabecera
+mode: preview
+content:
+  field_imagen_:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '0'
+        placeholder_style: ''
+        data_uri: false
+    weight: 2
+    region: content
+  field_subtitulo_cabecera:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo_cabecera:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

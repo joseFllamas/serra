@@ -1,0 +1,19 @@
+uuid: cafa97e9-3ec8-4b53-be56-460711bcfb4f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+    parent: 'main:'
+name: Webform
+type: webform
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

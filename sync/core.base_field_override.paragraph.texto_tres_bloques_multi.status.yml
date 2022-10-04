@@ -1,0 +1,22 @@
+uuid: abfefe92-185c-4841-8b8b-1c67b36041ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto_tres_bloques_multi
+id: paragraph.texto_tres_bloques_multi.status
+field_name: status
+entity_type: paragraph
+bundle: texto_tres_bloques_multi
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

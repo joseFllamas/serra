@@ -1,0 +1,38 @@
+uuid: b0c2836b-45e7-4c84-af7b-5db074c13e8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_flip_1
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+  module:
+    - image
+id: paragraph.descarga_fichro_flip_dos_imagene.field_imagen_flip_1
+field_name: field_imagen_flip_1
+entity_type: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+label: 'Imagen flip'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

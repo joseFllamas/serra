@@ -1,0 +1,24 @@
+uuid: 123764b1-0e98-4909-827e-6e757a276eea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.baner_bajo.field_imagen_baner_bajo
+    - paragraphs.paragraphs_type.baner_bajo
+  module:
+    - entity_reference_revisions
+id: paragraph.baner_bajo.default
+targetEntityType: paragraph
+bundle: baner_bajo
+mode: default
+content:
+  field_imagen_baner_bajo:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,29 @@
+uuid: 2f524030-68c9-476e-a4a9-f465627da8f1
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - odisean
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: odisean_page_title
+theme: odisean
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      noticia: noticia

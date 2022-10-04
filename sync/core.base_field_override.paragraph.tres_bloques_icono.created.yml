@@ -1,0 +1,18 @@
+uuid: dc1ebcb3-bd60-40a3-a134-3d76cf77cd5b
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tres_bloques_icono
+id: paragraph.tres_bloques_icono.created
+field_name: created
+entity_type: paragraph
+bundle: tres_bloques_icono
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

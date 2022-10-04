@@ -1,0 +1,33 @@
+uuid: ed206721-176e-4765-bd0b-b45456a17a93
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.productos_relacionados
+  module:
+    - ctools
+    - views
+  theme:
+    - odisean
+id: views_block__productos_relacionados_block_1
+theme: odisean
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:productos_relacionados-block_1'
+settings:
+  id: 'views_block:productos_relacionados-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      producto: producto

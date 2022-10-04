@@ -1,0 +1,21 @@
+uuid: 6f839cf6-2950-4065-bbd4-afa580fcd2ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_knowledge_and_skills
+    - node.type.job
+  module:
+    - text
+id: node.job.field_knowledge_and_skills
+field_name: field_knowledge_and_skills
+entity_type: node
+bundle: job
+label: 'Conocimientos y habilidades'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

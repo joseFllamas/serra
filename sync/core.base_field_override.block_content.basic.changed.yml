@@ -1,0 +1,18 @@
+uuid: e59a3f78-5c84-43be-b7a3-67297bc24456
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Changed
+description: 'La fecha en la que el bloque personalizado se editó por última vez.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

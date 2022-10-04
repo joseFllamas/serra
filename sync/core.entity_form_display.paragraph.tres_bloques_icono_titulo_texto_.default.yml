@@ -1,0 +1,67 @@
+uuid: 316a3d33-d672-484a-8132-05ac3e82691b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tres_bloques_icono_titulo_texto_.field_enlace
+    - field.field.paragraph.tres_bloques_icono_titulo_texto_.field_icono_tres_bloques
+    - field.field.paragraph.tres_bloques_icono_titulo_texto_.field_texto_tres_bloques
+    - field.field.paragraph.tres_bloques_icono_titulo_texto_.field_titulo_grande
+    - field.field.paragraph.tres_bloques_icono_titulo_texto_.field_titulo_pequeno
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+  module:
+    - field_layout
+    - fontawesome
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.tres_bloques_icono_titulo_texto_.default
+targetEntityType: paragraph
+bundle: tres_bloques_icono_titulo_texto_
+mode: default
+content:
+  field_enlace:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_icono_tres_bloques:
+    type: fontawesome_icon_widget
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_texto_tres_bloques:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_grande:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_pequeno:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

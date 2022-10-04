@@ -1,0 +1,18 @@
+uuid: 3212cb3c-f4c7-4aea-a393-488f92efbe9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: tags
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 101ebc00-b008-4da3-9132-eece4ea3e1a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tres_bloques_color_estrecho
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.tres_bloques_color_estrecho
+target_entity_type_id: paragraph
+target_bundle: tres_bloques_color_estrecho
+default_langcode: site_default
+language_alterable: false

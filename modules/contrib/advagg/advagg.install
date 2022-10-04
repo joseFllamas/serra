@@ -186,3 +186,13 @@ function advagg_update_8302() {
     ->condition('name', 'advagg_bundler')
     ->execute();
 }
+
+/**
+ * Add advagg_exclude_admin_routes to the default configuration.
+ */
+function advagg_update_8303() {
+  \Drupal::configFactory()
+    ->getEditable('advagg.settings')
+    ->set('advagg_exclude_admin_routes', FALSE)
+    ->save();
+}

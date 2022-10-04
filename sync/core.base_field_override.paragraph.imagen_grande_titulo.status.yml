@@ -1,0 +1,22 @@
+uuid: 32719e47-2ef7-4726-99ba-58665d1ae435
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.imagen_grande_titulo
+id: paragraph.imagen_grande_titulo.status
+field_name: status
+entity_type: paragraph
+bundle: imagen_grande_titulo
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,28 @@
+uuid: cc23130e-5b45-44c7-9638-fe86357027dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_noticias
+    - paragraphs.paragraphs_type.noticias
+  module:
+    - block_field
+id: paragraph.noticias.field_noticias
+field_name: field_noticias
+entity_type: paragraph
+bundle: noticias
+label: Noticias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:noticias-block_1': 'views_block:noticias-block_1'
+      'views_block:bloc_home_noticias-block_1': 'views_block:bloc_home_noticias-block_1'
+      'views_block:bloc_home_noticias-block_2': 'views_block:bloc_home_noticias-block_2'
+      'views_block:bloc_home_noticias-block_3': 'views_block:bloc_home_noticias-block_3'
+field_type: block_field

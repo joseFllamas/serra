@@ -1,0 +1,18 @@
+uuid: c45626ae-335c-417e-8186-2a4392ab998d
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+id: paragraph.imagen_titulo_cabecera.created
+field_name: created
+entity_type: paragraph
+bundle: imagen_titulo_cabecera
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,19 @@
+uuid: 7cd7b66b-4218-4a80-a58c-4ed2f172a9d6
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_texto_tres_boques
+field_name: field_texto_tres_boques
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

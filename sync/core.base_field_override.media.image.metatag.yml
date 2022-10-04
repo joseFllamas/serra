@@ -1,0 +1,18 @@
+uuid: 063f2656-c31c-4ac0-a9f1-09ef26921da1
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.metatag
+field_name: metatag
+entity_type: media
+bundle: image
+label: 'Meta etiquetas'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

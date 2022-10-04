@@ -1,0 +1,10 @@
+uuid: 38ed8b43-b790-4568-b8aa-aab3cf66711e
+langcode: es
+status: true
+dependencies: {  }
+id: catalogos
+label: Catálogos
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

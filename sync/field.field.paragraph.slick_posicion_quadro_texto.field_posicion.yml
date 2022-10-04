@@ -1,0 +1,23 @@
+uuid: cc6fd790-b55a-4a53-8c23-e328dd8e8e0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_posicion
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+  module:
+    - options
+id: paragraph.slick_posicion_quadro_texto.field_posicion
+field_name: field_posicion
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: Posición
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: br
+default_value_callback: ''
+settings: {  }
+field_type: list_string

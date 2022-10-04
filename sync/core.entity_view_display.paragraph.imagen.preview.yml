@@ -1,0 +1,38 @@
+uuid: c758ae25-8863-4990-88f6-7b60b143b107
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.imagen.field_image_noticia
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.imagen
+  module:
+    - image
+    - layout_builder
+    - lazy
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.imagen.preview
+targetEntityType: paragraph
+bundle: imagen
+mode: preview
+content:
+  field_image_noticia:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '0'
+        placeholder_style: ''
+        data_uri: false
+    weight: 1
+    region: content
+hidden: {  }

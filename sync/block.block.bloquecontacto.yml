@@ -1,0 +1,39 @@
+uuid: 39df55d9-268b-4130-8482-943deec5c181
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:23cec26d-3a6e-482a-a588-7b9a9cd9f286'
+  module:
+    - block_content
+    - language
+    - system
+  theme:
+    - odisean
+id: bloquecontacto
+theme: odisean
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:23cec26d-3a6e-482a-a588-7b9a9cd9f286'
+settings:
+  id: 'block_content:23cec26d-3a6e-482a-a588-7b9a9cd9f286'
+  label: 'Bloque contacto'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/node/13\r\n/node/11"
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es

@@ -1,0 +1,24 @@
+uuid: b062d9fb-3539-4c85-acd9-b3b0a288374f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tres_bloques_color_estrecho.field_tres_bloques_color_estrech
+    - paragraphs.paragraphs_type.tres_bloques_color_estrecho
+  module:
+    - entity_reference_revisions
+id: paragraph.tres_bloques_color_estrecho.default
+targetEntityType: paragraph
+bundle: tres_bloques_color_estrecho
+mode: default
+content:
+  field_tres_bloques_color_estrech:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -151,6 +151,12 @@ function advagg_form_system_performance_settings_alter(&$form) {
  *   Whether AdvAgg functionality should be used.
  */
 function advagg_enabled() {
+  $config = \Drupal::config('advagg.settings');
+  // Skip advagg on admin pages.
+  if ($config->get('advagg_exclude_admin_routes') && \Drupal::service('router.admin_context')->isAdminRoute()) {
+    return FALSE;
+  }
+
   $init = &drupal_static(__FUNCTION__);
   $messenger = \Drupal::messenger();
 

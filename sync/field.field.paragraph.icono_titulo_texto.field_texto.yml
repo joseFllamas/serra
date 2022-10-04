@@ -1,0 +1,21 @@
+uuid: 380b296b-d355-4fb2-9ee5-9c26802b94bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto
+    - paragraphs.paragraphs_type.icono_titulo_texto
+  module:
+    - text
+id: paragraph.icono_titulo_texto.field_texto
+field_name: field_texto
+entity_type: paragraph
+bundle: icono_titulo_texto
+label: Texto
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

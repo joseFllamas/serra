@@ -1,0 +1,19 @@
+uuid: 8e950907-de0a-4904-9472-7f77e8d85c24
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - youtube
+id: paragraph.field_video
+field_name: field_video
+entity_type: paragraph
+type: youtube
+settings: {  }
+module: youtube
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

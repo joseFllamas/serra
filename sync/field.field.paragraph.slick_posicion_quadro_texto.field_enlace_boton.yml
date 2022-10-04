@@ -1,0 +1,23 @@
+uuid: 9d4135ec-5d34-4c6f-b956-f591c47b8315
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_boton
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+  module:
+    - link
+id: paragraph.slick_posicion_quadro_texto.field_enlace_boton
+field_name: field_enlace_boton
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: 'Enlace botón'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 1
+field_type: link

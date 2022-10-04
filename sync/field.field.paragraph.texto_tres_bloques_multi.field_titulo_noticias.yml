@@ -1,0 +1,19 @@
+uuid: ded03476-1c9c-4571-a8fc-2505143c5734
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_noticias
+    - paragraphs.paragraphs_type.texto_tres_bloques_multi
+id: paragraph.texto_tres_bloques_multi.field_titulo_noticias
+field_name: field_titulo_noticias
+entity_type: paragraph
+bundle: texto_tres_bloques_multi
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

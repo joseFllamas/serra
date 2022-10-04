@@ -1,0 +1,16 @@
+uuid: 2d66da32-6422-4ed6-be6a-73a0ed4e1640
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera_720
+label: 'cabecera 720'
+effects:
+  f08fb6e6-d674-4217-97cf-2dff2f4c52a2:
+    uuid: f08fb6e6-d674-4217-97cf-2dff2f4c52a2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 200
+      anchor: center-center
+pipeline: webp

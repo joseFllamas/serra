@@ -1,0 +1,8 @@
+uuid: 7a1e38e7-352f-487b-b638-e166400229e2
+langcode: es
+status: true
+dependencies: {  }
+id: administrador
+label: 'Administrador web'
+description: ''
+locked: false

@@ -1,0 +1,16 @@
+uuid: da6f2f66-b880-4592-ae26-03cdcaefc2cc
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera_400
+label: 'cabecera 400'
+effects:
+  f9c2007e-8909-480b-899c-0dfca42bd66d:
+    uuid: f9c2007e-8909-480b-899c-0dfca42bd66d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300
+      anchor: center-center
+pipeline: webp

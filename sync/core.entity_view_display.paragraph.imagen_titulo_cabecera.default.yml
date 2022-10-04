@@ -1,0 +1,43 @@
+uuid: 61b4d2aa-7e8c-4259-aad1-4cf305a8b0ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen_titulo_cabecera.field_imagen_
+    - field.field.paragraph.imagen_titulo_cabecera.field_subtitulo_cabecera
+    - field.field.paragraph.imagen_titulo_cabecera.field_titulo_cabecera
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+    - responsive_image.styles.cabecera
+  module:
+    - responsive_image
+id: paragraph.imagen_titulo_cabecera.default
+targetEntityType: paragraph
+bundle: imagen_titulo_cabecera
+mode: default
+content:
+  field_imagen_:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: cabecera
+      image_link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_subtitulo_cabecera:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo_cabecera:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 9ae8905e-5cfa-46db-ba72-c2c7c11a3dae
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tres_bloques_color_estrecho
+id: paragraph.tres_bloques_color_estrecho.status
+field_name: status
+entity_type: paragraph
+bundle: tres_bloques_color_estrecho
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

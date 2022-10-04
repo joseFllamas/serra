@@ -1,0 +1,22 @@
+uuid: 96ecd83f-4476-4b92-a043-12f3bfe5f307
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - odisean
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: odisean_breadcrumbs
+theme: odisean
+region: precontent
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,69 @@
+uuid: f4f9c0ed-8c9b-4e48-8075-e2c913789772
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_imagen_flip_1
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_imagen_flip_1_2
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_pdf
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_subtitulo_flip_1_
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_titulo_flip
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+  module:
+    - field_layout
+    - file
+    - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.descarga_fichro_flip_dos_imagene.default
+targetEntityType: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+mode: default
+content:
+  field_imagen_flip_1:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_imagen_flip_1_2:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_pdf:
+    type: file_generic
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_subtitulo_flip_1_:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_titulo_flip:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

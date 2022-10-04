@@ -1,0 +1,6 @@
+langcode: es
+score_rules:
+  0: 'Not available'
+  8: Good
+  1: Bad
+  5: Okay

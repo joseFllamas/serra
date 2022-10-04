@@ -1,0 +1,24 @@
+uuid: f59055ae-12cd-41c1-b9db-0d4897586857
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reutilizable
+    - paragraphs.paragraphs_type.bloque_reutilizable
+  module:
+    - block_field
+id: paragraph.bloque_reutilizable.field_reutilizable
+field_name: field_reutilizable
+entity_type: paragraph
+bundle: bloque_reutilizable
+label: Reutilizable
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

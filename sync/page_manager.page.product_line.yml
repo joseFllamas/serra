@@ -1,0 +1,16 @@
+uuid: e4ecd98c-9e9e-47ea-a69b-548d6fb71c5f
+langcode: es
+status: true
+dependencies: {  }
+id: product_line
+label: Product_line
+description: ''
+use_admin_theme: false
+path: '/taxonomy/term/{taxonomy_term}'
+access_logic: and
+access_conditions: {  }
+parameters:
+  taxonomy_term:
+    machine_name: taxonomy_term
+    label: taxonomy_term
+    type: 'entity:taxonomy_term'

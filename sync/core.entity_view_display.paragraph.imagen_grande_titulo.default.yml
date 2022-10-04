@@ -1,0 +1,35 @@
+uuid: 0148cbae-9d7b-4fb0-8fda-eb0912ca4c36
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen_grande_titulo.field_imagen_imagen_grande
+    - field.field.paragraph.imagen_grande_titulo.field_titulo_imagen_grande
+    - paragraphs.paragraphs_type.imagen_grande_titulo
+  module:
+    - image
+id: paragraph.imagen_grande_titulo.default
+targetEntityType: paragraph
+bundle: imagen_grande_titulo
+mode: default
+content:
+  field_imagen_imagen_grande:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_titulo_imagen_grande:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

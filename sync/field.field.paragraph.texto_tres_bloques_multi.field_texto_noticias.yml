@@ -1,0 +1,19 @@
+uuid: bb966c99-62f1-4a27-bd2f-673938770dd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_noticias
+    - paragraphs.paragraphs_type.texto_tres_bloques_multi
+id: paragraph.texto_tres_bloques_multi.field_texto_noticias
+field_name: field_texto_noticias
+entity_type: paragraph
+bundle: texto_tres_bloques_multi
+label: 'Texto introducción'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

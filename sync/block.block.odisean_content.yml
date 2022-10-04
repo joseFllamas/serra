@@ -1,0 +1,22 @@
+uuid: 2bd06f43-01d3-4bef-ab3b-985fd1fc2db5
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - odisean
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: odisean_content
+theme: odisean
+region: content
+weight: -10
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

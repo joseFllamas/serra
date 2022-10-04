@@ -1,0 +1,71 @@
+uuid: 5257dae9-2a7b-4cdf-87c6-da65d745e708
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_imagen_flip_1
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_imagen_flip_1_2
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_pdf
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_subtitulo_flip_1_
+    - field.field.paragraph.descarga_fichro_flip_dos_imagene.field_titulo_flip
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+    - responsive_image.styles.bloque_350_home
+  module:
+    - file
+    - lazy
+    - responsive_image
+id: paragraph.descarga_fichro_flip_dos_imagene.default
+targetEntityType: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+mode: default
+content:
+  field_imagen_flip_1:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: bloque_350_home
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: ''
+        data_uri: false
+    weight: 0
+    region: content
+  field_imagen_flip_1_2:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: bloque_350_home
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: ''
+        data_uri: false
+    weight: 1
+    region: content
+  field_pdf:
+    type: file_url_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_subtitulo_flip_1_:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_titulo_flip:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

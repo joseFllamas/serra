@@ -1,0 +1,16 @@
+uuid: 62e00b67-0c89-4978-8242-375b2d294bce
+langcode: es
+status: true
+dependencies: {  }
+name: max_1980
+label: 'cabecera 1900'
+effects:
+  8dacf6fd-636c-4884-aea2-868ed700a355:
+    uuid: 8dacf6fd-636c-4884-aea2-868ed700a355
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1900
+      height: 360
+      anchor: center-center
+pipeline: webp

@@ -1,0 +1,22 @@
+uuid: c7d2819e-9937-492b-91b7-060edf108320
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto_tres_bloques
+id: paragraph.texto_tres_bloques.status
+field_name: status
+entity_type: paragraph
+bundle: texto_tres_bloques
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

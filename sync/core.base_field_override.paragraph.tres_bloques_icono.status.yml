@@ -1,0 +1,22 @@
+uuid: 5372c4b1-717e-4490-bb9e-22d430061509
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tres_bloques_icono
+id: paragraph.tres_bloques_icono.status
+field_name: status
+entity_type: paragraph
+bundle: tres_bloques_icono
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

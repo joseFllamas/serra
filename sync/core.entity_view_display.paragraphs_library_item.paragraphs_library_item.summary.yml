@@ -1,0 +1,84 @@
+uuid: 73f49a51-d951-4cac-9f19-07b17e83097d
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.paragraphs_library_item.paragraphs_library_item.label
+    - core.entity_view_mode.paragraphs_library_item.summary
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - paragraphs
+    - paragraphs_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          cc062f32-d972-47b4-993f-cf5f00fba0c5:
+            uuid: cc062f32-d972-47b4-993f-cf5f00fba0c5
+            region: content
+            configuration:
+              id: 'field_block:paragraphs_library_item:paragraphs_library_item:label'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f8b9f382-7f88-4bee-bc4f-ca142f18b775:
+            uuid: f8b9f382-7f88-4bee-bc4f-ca142f18b775
+            region: content
+            configuration:
+              id: 'field_block:paragraphs_library_item:paragraphs_library_item:paragraphs'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: paragraph_summary
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: 298FcPciNgWk7pojyH1AA-0apcAkJulU6N3PO89ZXIk
+id: paragraphs_library_item.paragraphs_library_item.summary
+targetEntityType: paragraphs_library_item
+bundle: paragraphs_library_item
+mode: summary
+content:
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  paragraphs:
+    type: paragraph_summary
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true

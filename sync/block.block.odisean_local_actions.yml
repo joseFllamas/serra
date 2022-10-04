@@ -1,0 +1,20 @@
+uuid: 2ee3af52-a6f6-4917-8f37-44e82e85648c
+langcode: es
+status: true
+dependencies:
+  theme:
+    - odisean
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: odisean_local_actions
+theme: odisean
+region: precontent
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones primarias de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

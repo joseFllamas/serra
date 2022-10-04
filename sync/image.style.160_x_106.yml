@@ -1,0 +1,16 @@
+uuid: 0b97f1c2-de30-4b67-8652-a6d860797283
+langcode: es
+status: true
+dependencies: {  }
+name: 160_x_106
+label: '160 x 106'
+effects:
+  ef86b3bf-e4fe-428c-9817-2c8856ab303d:
+    uuid: ef86b3bf-e4fe-428c-9817-2c8856ab303d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 106
+      anchor: center-center
+pipeline: webp

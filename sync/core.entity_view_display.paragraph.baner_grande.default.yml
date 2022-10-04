@@ -1,0 +1,24 @@
+uuid: f7cafcba-d462-453a-9f6d-ac3da824f671
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.baner_grande.field_baner_grande
+    - paragraphs.paragraphs_type.baner_grande
+  module:
+    - entity_reference_revisions
+id: paragraph.baner_grande.default
+targetEntityType: paragraph
+bundle: baner_grande
+mode: default
+content:
+  field_baner_grande:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

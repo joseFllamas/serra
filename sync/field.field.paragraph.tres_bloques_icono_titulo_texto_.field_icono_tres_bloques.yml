@@ -1,0 +1,21 @@
+uuid: d4c4c2c8-e417-4601-89f9-0dee6e5c7072
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icono_tres_bloques
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+  module:
+    - fontawesome
+id: paragraph.tres_bloques_icono_titulo_texto_.field_icono_tres_bloques
+field_name: field_icono_tres_bloques
+entity_type: paragraph
+bundle: tres_bloques_icono_titulo_texto_
+label: Icono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

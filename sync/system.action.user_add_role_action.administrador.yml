@@ -1,0 +1,14 @@
+uuid: d532f26f-6448-4460-8d2a-09db3f67bb1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador
+  module:
+    - user
+id: user_add_role_action.administrador
+label: 'Añade el rol administrador web al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrador

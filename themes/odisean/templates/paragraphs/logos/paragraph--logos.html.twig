@@ -51,10 +51,10 @@
 %}
 {% block paragraph %}
 <section class="spacer bg-secondary feature14">
-    
+
         <div class="container">
             <div class="row">
-                
+
                 <div class="titlehauto offset-lg- col-lg-2 col-lg-offset1 col-md-12">
                     <h2 class="m-t-10 font-light">{{ content.field_titulo_logos|field_value }}</h2>
                 </div>
@@ -62,24 +62,24 @@
                     <div class="row">
                         <div class="col-lg-3 hauto col-md-6 wrap-feature14-box">
                             <div class="aos-init aos-animate">
-                                <img class="rounded" src="{{ content.field_logo|render|striptags|trim }}" alt="">
+{{ content.field_logo|field_value }}
                             </div>
                         </div>
 
                         <div class="col-lg-3 hauto col-md-6 wrap-feature14-box">
                             <div class="aos-init aos-animate">
-                                <img class="rounded" src="{{ content.field_logo_2|render|striptags|trim }}" alt="">
+                              {{ content.field_logo_2|field_value }}
                             </div>
-                        </div>   
+                        </div>
                         <div class="col-lg-3 hauto col-md-6 wrap-feature14-box">
                             <div class="aos-init aos-animate">
-                                <img class="rounded" src="{{ content.field_logo3|render|striptags|trim }}" alt="">
+                              {{ content.field_logo3|field_value }}
                             </div>
                         </div>
 
                         <div class="col-lg-3 hauto col-md-6 wrap-feature14-box">
                             <div class="aos-init aos-animate">
-                                <img class="rounded" src="{{ content.field_logo4|render|striptags|trim }}" alt="">
+                              {{ content.field_logo4|field_value }}
                             </div>
                         </div>
                     </div>

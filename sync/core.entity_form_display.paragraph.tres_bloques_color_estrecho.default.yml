@@ -1,0 +1,36 @@
+uuid: 59e6b713-34b9-487d-8a15-ddd1afe1164d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tres_bloques_color_estrecho.field_tres_bloques_color_estrech
+    - paragraphs.paragraphs_type.tres_bloques_color_estrecho
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.tres_bloques_color_estrecho.default
+targetEntityType: paragraph
+bundle: tres_bloques_color_estrecho
+mode: default
+content:
+  field_tres_bloques_color_estrech:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,18 @@
+uuid: cf01d78a-77e7-4405-9656-f3d9760d54f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloque_reutilizable
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.bloque_reutilizable
+target_entity_type_id: paragraph
+target_bundle: bloque_reutilizable
+default_langcode: site_default
+language_alterable: false

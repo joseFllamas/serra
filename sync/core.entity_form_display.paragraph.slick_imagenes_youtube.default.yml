@@ -1,0 +1,42 @@
+uuid: 3cfc313e-143e-4cb5-b931-bad397c635dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_imagenes_youtube.field_imagen
+    - field.field.paragraph.slick_imagenes_youtube.field_video
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.slick_imagenes_youtube.default
+targetEntityType: paragraph
+bundle: slick_imagenes_youtube
+mode: default
+content:
+  field_imagen:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_video:
+    type: youtube
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

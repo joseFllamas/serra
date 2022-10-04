@@ -1,0 +1,20 @@
+uuid: d7f56f08-7f57-45ee-8ecb-292f0150c8d9
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_texto_tres_bloques_multi
+field_name: field_texto_tres_bloques_multi
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

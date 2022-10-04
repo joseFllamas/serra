@@ -1,0 +1,19 @@
+uuid: 96a6e6ee-2399-4b60-a863-712f7525ae92
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_tres_bloques
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+id: paragraph.tres_bloques_icono_titulo_texto_.field_texto_tres_bloques
+field_name: field_texto_tres_bloques
+entity_type: paragraph
+bundle: tres_bloques_icono_titulo_texto_
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

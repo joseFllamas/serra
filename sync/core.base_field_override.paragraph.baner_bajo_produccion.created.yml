@@ -1,0 +1,18 @@
+uuid: e48f47d5-6bd0-4274-8aa7-a38543e964b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.baner_bajo_produccion
+id: paragraph.baner_bajo_produccion.created
+field_name: created
+entity_type: paragraph
+bundle: baner_bajo_produccion
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,73 @@
+uuid: 3113dc69-9404-4da5-922e-26787109e3a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tres_bloques_color_estrech
+    - paragraphs.paragraphs_type.tres_bloques_color
+    - paragraphs.paragraphs_type.tres_bloques_color_estrecho
+  module:
+    - entity_reference_revisions
+id: paragraph.tres_bloques_color_estrecho.field_tres_bloques_color_estrech
+field_name: field_tres_bloques_color_estrech
+entity_type: paragraph
+bundle: tres_bloques_color_estrecho
+label: 'Tres bloques color estrecho'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tres_bloques_color: tres_bloques_color
+    negate: 0
+    target_bundles_drag_drop:
+      bloque_reutilizable:
+        weight: 16
+        enabled: false
+      catalogos:
+        weight: 17
+        enabled: false
+      descarga_fichro_flip_dos_imagene:
+        weight: 18
+        enabled: false
+      from_library:
+        weight: 19
+        enabled: false
+      icono_titulo_texto:
+        weight: 20
+        enabled: false
+      imagen_titulo_cabecera:
+        weight: 21
+        enabled: false
+      logos:
+        weight: 22
+        enabled: false
+      slick_bajo:
+        weight: 23
+        enabled: false
+      slick_imagenes_youtube:
+        weight: 24
+        enabled: false
+      slick_posicion_quadro_texto:
+        weight: 25
+        enabled: false
+      slick_video_imagenes:
+        weight: 26
+        enabled: false
+      texto_tres_bloques:
+        weight: 27
+        enabled: false
+      tres_bloques_color:
+        weight: 28
+        enabled: true
+      tres_bloques_color_estrecho:
+        weight: 29
+        enabled: false
+      tres_bloques_icono_titulo_texto_:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,14 @@
+uuid: 4ed673b7-efc3-416f-8730-88fce18aaea3
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.administrador
+  module:
+    - user
+id: user_remove_role_action.administrador
+label: 'Elimina el rol administrador web al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrador

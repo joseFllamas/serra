@@ -47,6 +47,9 @@ advagg.settings:
     enabled:
       type: boolean
       label: 'Enable AdvAgg.'
+    advagg_exclude_admin_routes:
+      type: boolean
+      label: 'Disable module on admin routes.'
     global_counter:
       type: integer
       label: 'Counter to force new aggregates through caches etc.'

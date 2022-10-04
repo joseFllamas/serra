@@ -122,6 +122,12 @@ class SettingsForm extends ConfigFormBase {
       '#default_value' => $config->get('enabled'),
       '#description' => $this->t('Uncheck this box to temporarily disable AdvAgg functionality.'),
     ];
+    $form['global']['advagg_exclude_admin_routes'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Disable advanced aggregation on admin routes.'),
+      '#default_value' => $config->get('advagg_exclude_admin_routes'),
+      '#description' => $this->t('Whether the advanced aggregation module should be disabled on admin routes.'),
+    ];
     $form['global']['dns_prefetch'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Use DNS Prefetch for external CSS/JS.'),
@@ -404,6 +410,7 @@ class SettingsForm extends ConfigFormBase {
       ->set('path.convert.absolute', $form_state->getValue('path_convert_absolute'))
       ->set('path.convert.absolute_to_protocol_relative', $form_state->getValue('path_convert_absolute_to_protocol_relative'))
       ->set('enabled', $form_state->getValue('enabled'))
+      ->set('advagg_exclude_admin_routes', $form_state->getValue('advagg_exclude_admin_routes'))
       ->set('dns_prefetch', $form_state->getValue('dns_prefetch'))
       ->set('cache_level', $form_state->getValue('cache_level'))
       ->set('cron_frequency', $form_state->getValue('cron_frequency'))

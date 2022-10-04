@@ -1,0 +1,36 @@
+uuid: 175101bc-abbe-424a-9d04-9a8cb5054ae5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.catalogos.field_catalogo
+    - paragraphs.paragraphs_type.catalogos
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.catalogos.default
+targetEntityType: paragraph
+bundle: catalogos
+mode: default
+content:
+  field_catalogo:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

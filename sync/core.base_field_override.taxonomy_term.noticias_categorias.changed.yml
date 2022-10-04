@@ -1,0 +1,18 @@
+uuid: 3566ae3a-eb06-45ee-a7ad-99b74b9d0a4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.noticias_categorias
+id: taxonomy_term.noticias_categorias.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: noticias_categorias
+label: Changed
+description: 'La fecha en que el término fue creado por última vez.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

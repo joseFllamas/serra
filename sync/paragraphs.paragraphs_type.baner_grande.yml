@@ -1,0 +1,10 @@
+uuid: b883b5bd-5164-4f59-91e4-6842b17a1337
+langcode: es
+status: true
+dependencies: {  }
+id: baner_grande
+label: 'Baner grande'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

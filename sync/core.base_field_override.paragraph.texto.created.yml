@@ -1,0 +1,18 @@
+uuid: f03bb170-e7dc-4ce3-8102-d0298379f7be
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto
+id: paragraph.texto.created
+field_name: created
+entity_type: paragraph
+bundle: texto
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,22 @@
+uuid: 7d86ad6f-a39f-463f-b9a8-6b8fa0907a0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.baner_bajo
+id: paragraph.baner_bajo.status
+field_name: status
+entity_type: paragraph
+bundle: baner_bajo
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

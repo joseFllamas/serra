@@ -1,0 +1,10 @@
+uuid: 96d60ee3-0952-4dea-98f6-f8c4a6f9c3a4
+langcode: es
+status: true
+dependencies: {  }
+id: tres_bloques_color_estrecho
+label: 'Tres bloques color estrecho'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

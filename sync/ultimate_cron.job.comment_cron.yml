@@ -1,0 +1,17 @@
+uuid: f8403830-81b5-4f11-b7aa-e268053000ac
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+title: 'Store the maximum possible comments per thread'
+id: comment_cron
+weight: 0
+module: comment
+callback: comment_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

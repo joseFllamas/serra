@@ -1,0 +1,18 @@
+uuid: 65aaf8fc-2fec-46e8-9fc2-bdfc20aff342
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto_tres_bloques_multi
+id: paragraph.texto_tres_bloques_multi.created
+field_name: created
+entity_type: paragraph
+bundle: texto_tres_bloques_multi
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,22 @@
+uuid: bf2fd719-4259-49f9-8d34-bf9bf2734330
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+id: paragraph.imagen_titulo_cabecera.status
+field_name: status
+entity_type: paragraph
+bundle: imagen_titulo_cabecera
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

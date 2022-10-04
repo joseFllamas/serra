@@ -1,0 +1,33 @@
+uuid: 2cae59a9-39b3-4e1a-a765-6968e848f5bc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:233c8085-cbb9-4805-8320-9b0ee9bcb36d'
+  module:
+    - block_content
+    - language
+  theme:
+    - odisean
+id: allrightsreservedbytalleresserra.
+theme: odisean
+region: footer_quatre
+weight: 0
+provider: null
+plugin: 'block_content:233c8085-cbb9-4805-8320-9b0ee9bcb36d'
+settings:
+  id: 'block_content:233c8085-cbb9-4805-8320-9b0ee9bcb36d'
+  label: 'All Rights Reserved by Talleres SERRA.'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

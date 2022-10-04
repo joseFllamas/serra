@@ -1,0 +1,18 @@
+uuid: a161f1ca-c252-40b0-8b80-df03e58cce3f
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tres_bloques_color
+id: paragraph.tres_bloques_color.created
+field_name: created
+entity_type: paragraph
+bundle: tres_bloques_color
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,40 @@
+uuid: b9de7649-dd78-4900-a848-3022a55256f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+    - paragraphs.paragraphs_type.slick_video_imagenes
+  module:
+    - entity_reference_revisions
+id: paragraph.slick_video_imagenes.field_slide
+field_name: field_slide
+entity_type: paragraph
+bundle: slick_video_imagenes
+label: Slide
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slick_imagenes_youtube: slick_imagenes_youtube
+    negate: 0
+    target_bundles_drag_drop:
+      from_library:
+        weight: 5
+        enabled: false
+      icono_titulo_texto:
+        weight: 6
+        enabled: false
+      slick_imagenes_youtube:
+        weight: 7
+        enabled: true
+      slick_video_imagenes:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

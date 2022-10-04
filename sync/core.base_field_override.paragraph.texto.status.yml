@@ -1,0 +1,22 @@
+uuid: c5d0d18d-09ed-44b6-a1b8-49ae97795531
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto
+id: paragraph.texto.status
+field_name: status
+entity_type: paragraph
+bundle: texto
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

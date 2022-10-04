@@ -1,0 +1,47 @@
+uuid: 28069684-f485-425b-9421-ffb0ca8b0161
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.imagen_grande_titulo.field_imagen_imagen_grande
+    - field.field.paragraph.imagen_grande_titulo.field_titulo_imagen_grande
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.imagen_grande_titulo
+  module:
+    - image
+    - layout_builder
+    - lazy
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.imagen_grande_titulo.preview
+targetEntityType: paragraph
+bundle: imagen_grande_titulo
+mode: preview
+content:
+  field_imagen_imagen_grande:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '0'
+        placeholder_style: ''
+        data_uri: false
+    weight: 2
+    region: content
+  field_titulo_imagen_grande:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

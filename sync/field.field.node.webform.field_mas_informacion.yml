@@ -1,0 +1,21 @@
+uuid: da1001be-0f89-42e7-bbc2-40d26c7ecd4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.webform
+  module:
+    - text
+id: node.webform.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: webform
+label: 'Mas información'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

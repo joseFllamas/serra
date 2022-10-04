@@ -1,0 +1,22 @@
+uuid: aae374a0-f743-4cca-a961-8b1140888fca
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.noticias
+id: paragraph.noticias.status
+field_name: status
+entity_type: paragraph
+bundle: noticias
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

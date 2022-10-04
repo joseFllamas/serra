@@ -1,0 +1,21 @@
+uuid: 6f3590e2-dff4-4276-9571-67526eb38908
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_titulo_cabecera
+field_name: field_titulo_cabecera
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

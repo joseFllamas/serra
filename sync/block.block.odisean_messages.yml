@@ -1,0 +1,22 @@
+uuid: b2252085-e3e0-48db-b70d-fee0bf9d7491
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - odisean
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: odisean_messages
+theme: odisean
+region: precontent
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

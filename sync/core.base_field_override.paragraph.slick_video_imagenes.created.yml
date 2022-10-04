@@ -1,0 +1,18 @@
+uuid: 69ebd6c8-47f7-45a7-8d9b-b2f4b181506e
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slick_video_imagenes
+id: paragraph.slick_video_imagenes.created
+field_name: created
+entity_type: paragraph
+bundle: slick_video_imagenes
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

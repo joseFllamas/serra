@@ -1,0 +1,30 @@
+uuid: 075c476a-2acc-4c5f-bd52-24d600b27611
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tres_bloques_color.field_texto_tres
+    - field.field.paragraph.tres_bloques_color.field_titulo_block
+    - paragraphs.paragraphs_type.tres_bloques_color
+  module:
+    - text
+id: paragraph.tres_bloques_color.default
+targetEntityType: paragraph
+bundle: tres_bloques_color
+mode: default
+content:
+  field_texto_tres:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo_block:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 1fee6d67-7506-4667-9b24-e81c657e5c08
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+id: paragraph.descarga_fichro_flip_dos_imagene.created
+field_name: created
+entity_type: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

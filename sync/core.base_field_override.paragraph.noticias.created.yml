@@ -1,0 +1,18 @@
+uuid: 1be23089-5f2e-45c6-a776-62fabd285c22
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.noticias
+id: paragraph.noticias.created
+field_name: created
+entity_type: paragraph
+bundle: noticias
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

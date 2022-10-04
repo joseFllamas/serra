@@ -1,0 +1,27 @@
+uuid: ea94ed87-3934-4832-b3cb-0bbe5e0d3a13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen.field_image_noticia
+    - image.style.max_1300x1300
+    - paragraphs.paragraphs_type.imagen
+  module:
+    - image
+id: paragraph.imagen.default
+targetEntityType: paragraph
+bundle: imagen
+mode: default
+content:
+  field_image_noticia:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: max_1300x1300
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

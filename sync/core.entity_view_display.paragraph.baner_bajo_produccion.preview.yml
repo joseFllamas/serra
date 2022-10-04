@@ -1,0 +1,38 @@
+uuid: 5e1c001b-41dc-44d1-b1aa-0ad2a7f15b62
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.baner_bajo_produccion.field_imagen
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.baner_bajo_produccion
+  module:
+    - image
+    - layout_builder
+    - lazy
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.baner_bajo_produccion.preview
+targetEntityType: paragraph
+bundle: baner_bajo_produccion
+mode: preview
+content:
+  field_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+        placeholder_style: ''
+        data_uri: false
+    weight: 0
+    region: content
+hidden: {  }

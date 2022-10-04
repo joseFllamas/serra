@@ -1,0 +1,21 @@
+uuid: 0f407352-75dd-4520-b9b2-bcc0c647af72
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.job
+id: node.job.field_location
+field_name: field_location
+entity_type: node
+bundle: job
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Martorell, CT, Spain'
+default_value_callback: ''
+settings: {  }
+field_type: string

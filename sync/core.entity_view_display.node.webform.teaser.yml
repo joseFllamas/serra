@@ -1,0 +1,43 @@
+uuid: d1ea48f0-f97e-4120-89aa-34bc5b2c342e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.body
+    - field.field.node.webform.field_cabecera
+    - field.field.node.webform.field_columna1
+    - field.field.node.webform.field_columna2
+    - field.field.node.webform.field_formulario
+    - field.field.node.webform.field_mapa
+    - field.field.node.webform.field_mas_informacion
+    - node.type.webform
+  module:
+    - text
+    - user
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_cabecera: true
+  field_columna1: true
+  field_columna2: true
+  field_formulario: true
+  field_mapa: true
+  field_mas_informacion: true
+  langcode: true

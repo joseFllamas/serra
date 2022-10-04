@@ -1,0 +1,16 @@
+uuid: 81a61ae7-a0f3-44bf-974c-fdc30a59dc4d
+langcode: es
+status: true
+dependencies: {  }
+name: medio_220x220
+label: 'Medio 220x220'
+effects:
+  e2089b16-9342-4183-90a6-010ae6bd07cd:
+    uuid: e2089b16-9342-4183-90a6-010ae6bd07cd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center
+pipeline: webp

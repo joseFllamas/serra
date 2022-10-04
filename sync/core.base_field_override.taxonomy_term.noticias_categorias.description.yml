@@ -1,0 +1,20 @@
+uuid: fa8d4692-16da-453e-8448-f9e98ba47bc5
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.noticias_categorias
+  module:
+    - text
+id: taxonomy_term.noticias_categorias.description
+field_name: description
+entity_type: taxonomy_term
+bundle: noticias_categorias
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,17 @@
+uuid: a831b312-6d2f-4d09-a054-bd61049d5935
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Producto
+type: producto
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

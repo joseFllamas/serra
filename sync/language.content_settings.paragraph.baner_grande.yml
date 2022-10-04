@@ -1,0 +1,18 @@
+uuid: 2b17982b-9a6a-463f-887e-393da19e11c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.baner_grande
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.baner_grande
+target_entity_type_id: paragraph
+target_bundle: baner_grande
+default_langcode: site_default
+language_alterable: false

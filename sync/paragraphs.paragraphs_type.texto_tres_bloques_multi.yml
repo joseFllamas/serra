@@ -1,0 +1,10 @@
+uuid: ea5297ac-e773-41e8-9644-c060cd4b252b
+langcode: es
+status: true
+dependencies: {  }
+id: texto_tres_bloques_multi
+label: 'Texto tres bloques'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

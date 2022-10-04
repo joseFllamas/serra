@@ -1,0 +1,24 @@
+uuid: 692ae42b-02e8-4a78-9097-dfb740f5ac6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.catalogos.field_catalogo
+    - paragraphs.paragraphs_type.catalogos
+  module:
+    - entity_reference_revisions
+id: paragraph.catalogos.default
+targetEntityType: paragraph
+bundle: catalogos
+mode: default
+content:
+  field_catalogo:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

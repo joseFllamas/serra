@@ -1,0 +1,19 @@
+uuid: 0b6128de-36f0-41a3-b16d-c62db9c06174
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_tres_bloques
+    - paragraphs.paragraphs_type.texto_tres_bloques
+id: paragraph.texto_tres_bloques.field_titulo_tres_bloques
+field_name: field_titulo_tres_bloques
+entity_type: paragraph
+bundle: texto_tres_bloques
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 45bda15c-811f-44d9-a851-c4eee98b1c60
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Job
+type: job
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

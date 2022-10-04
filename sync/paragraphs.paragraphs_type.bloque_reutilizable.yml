@@ -1,0 +1,10 @@
+uuid: 2abd0dd8-4ef8-4e38-8632-790ece363405
+langcode: es
+status: true
+dependencies: {  }
+id: bloque_reutilizable
+label: 'Bloque reutilizable'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

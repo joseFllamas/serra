@@ -1,0 +1,10 @@
+uuid: 426f2488-3fde-410d-a52c-7d8cf530181c
+langcode: es
+status: true
+dependencies: {  }
+id: noticias
+label: Noticias
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

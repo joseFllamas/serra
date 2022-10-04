@@ -1,0 +1,21 @@
+uuid: 3e680f4e-3a4e-4a5a-9640-ceed611fbf1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_noticia
+    - paragraphs.paragraphs_type.texto
+  module:
+    - text
+id: paragraph.texto.field_texto_noticia
+field_name: field_texto_noticia
+entity_type: paragraph
+bundle: texto
+label: texto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 3a1261f9-5963-4543-8e7d-ef0e7e15e71b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_grande
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+id: paragraph.tres_bloques_icono_titulo_texto_.field_titulo_grande
+field_name: field_titulo_grande
+entity_type: paragraph
+bundle: tres_bloques_icono_titulo_texto_
+label: 'Título grande'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

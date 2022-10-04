@@ -1,0 +1,25 @@
+uuid: 64927339-1f17-47b6-b562-07ab451ab59e
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - odisean
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: odisean_branding
+theme: odisean
+region: navbar_branding
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

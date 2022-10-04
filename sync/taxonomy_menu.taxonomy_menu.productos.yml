@@ -1,0 +1,16 @@
+uuid: 8d125149-08dd-47a4-9f1e-2c0eb538a672
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+    - taxonomy.vocabulary.tipo_de_producto
+id: productos
+label: Productos
+vocabulary: tipo_de_producto
+menu: main
+expanded: true
+depth: 0
+menu_parent: 'main:menu_link_content:9c4e708a-b127-40bb-b726-522f6a582559'
+description_field_name: ''
+use_term_weight_order: true

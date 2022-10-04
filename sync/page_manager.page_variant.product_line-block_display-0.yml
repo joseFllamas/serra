@@ -1,0 +1,53 @@
+uuid: d9413c9c-00d7-4024-a001-f2378aaa8ace
+langcode: es
+status: true
+dependencies:
+  config:
+    - page_manager.page.product_line
+    - views.view.productos
+  module:
+    - ctools_block
+    - views
+id: product_line-block_display-0
+label: 'Block page'
+weight: 0
+variant: block_display
+variant_settings:
+  id: block_display
+  label: null
+  weight: 0
+  uuid: f3d76264-3a7a-4b7c-962d-edd91d6e0843
+  blocks:
+    dd871824-2a2f-4be7-961d-3003af46dd5e:
+      id: 'views_block:productos-block_1'
+      label: ''
+      label_display: '0'
+      provider: views
+      context_mapping: {  }
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: -9
+      uuid: dd871824-2a2f-4be7-961d-3003af46dd5e
+    d5b9251b-ed3b-47ab-a7f3-b4331f460e20:
+      id: 'entity_field:taxonomy_term:field_cabecera'
+      label: Cabecera
+      label_display: '0'
+      provider: ctools_block
+      context_mapping:
+        entity: taxonomy_term
+      formatter:
+        type: entity_reference_revisions_entity_view
+        weight: 0
+        label: hidden
+        settings:
+          view_mode: default
+        third_party_settings: {  }
+      region: top
+      weight: -10
+      uuid: d5b9251b-ed3b-47ab-a7f3-b4331f460e20
+  page_title: ''
+page: product_line
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

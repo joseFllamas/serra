@@ -1,0 +1,30 @@
+uuid: 71a5abb7-471b-44ad-a58e-41396ab75496
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.main.field_views
+    - system.menu.main
+  module:
+    - entity_reference_revisions
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_views:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

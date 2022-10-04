@@ -1,0 +1,11 @@
+elements: |
+  full_name:
+    '#title': 'Full name *'
+  phone:
+    '#title': 'Phone number'
+  curriculum_vitae:
+    '#title': 'Resume *'
+  i_agree_with_a_href_terminos_y_condiciones_target__blank_terms_o:
+    '#title': 'I agree with <a href="/en/terminos-y-condiciones" target="_blank">terms and conditions</a> and<a href="/en/privacy-policy" target="_blank">privacy policy</a> *'
+settings:
+  confirmation_message: "Thank you<br />\r\n&nbsp;"

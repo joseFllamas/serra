@@ -1,0 +1,10 @@
+uuid: 20d23bc3-81d4-423d-932b-13e1ce67295d
+langcode: es
+status: true
+dependencies: {  }
+id: tres_bloques_icono
+label: 'Tres bloques icono título texto color'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

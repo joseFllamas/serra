@@ -1,0 +1,25 @@
+uuid: e7407167-1f7e-4c84-b26a-5f4fa6cb9213
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8655b3b7-0c85-4e89-9071-a91fc483dab3'
+  module:
+    - block_content
+  theme:
+    - odisean
+id: phone
+theme: odisean
+region: footer_u
+weight: 0
+provider: null
+plugin: 'block_content:8655b3b7-0c85-4e89-9071-a91fc483dab3'
+settings:
+  id: 'block_content:8655b3b7-0c85-4e89-9071-a91fc483dab3'
+  label: Teléfono
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

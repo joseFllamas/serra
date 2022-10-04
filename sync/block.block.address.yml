@@ -1,0 +1,25 @@
+uuid: 75c2d38f-4025-4af0-b0fd-c9cf68c1a276
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d628bff2-24c1-41b4-8b58-2c80ce87d567'
+  module:
+    - block_content
+  theme:
+    - odisean
+id: address
+theme: odisean
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d628bff2-24c1-41b4-8b58-2c80ce87d567'
+settings:
+  id: 'block_content:d628bff2-24c1-41b4-8b58-2c80ce87d567'
+  label: Dirección
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

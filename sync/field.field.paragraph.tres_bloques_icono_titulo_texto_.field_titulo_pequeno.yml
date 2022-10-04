@@ -1,0 +1,19 @@
+uuid: cf01f3e3-01b9-4c56-a488-7e7ce27bc467
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_pequeno
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+id: paragraph.tres_bloques_icono_titulo_texto_.field_titulo_pequeno
+field_name: field_titulo_pequeno
+entity_type: paragraph
+bundle: tres_bloques_icono_titulo_texto_
+label: 'Título pequeño'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

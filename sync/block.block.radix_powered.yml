@@ -1,0 +1,22 @@
+uuid: 31ba0c8f-4f1c-4a38-ae08-a90932964c6b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radix
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: radix_powered
+theme: radix
+region: navbar_branding
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

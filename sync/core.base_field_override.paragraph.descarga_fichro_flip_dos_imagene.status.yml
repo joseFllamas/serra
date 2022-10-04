@@ -1,0 +1,22 @@
+uuid: 90ae3397-a259-4b1a-beca-4a85ae479c16
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+id: paragraph.descarga_fichro_flip_dos_imagene.status
+field_name: status
+entity_type: paragraph
+bundle: descarga_fichro_flip_dos_imagene
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

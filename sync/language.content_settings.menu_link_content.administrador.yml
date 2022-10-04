@@ -1,0 +1,18 @@
+uuid: 861c1b9b-29d2-44c4-a6a8-1c60868f21db
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.administrador
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.administrador
+target_entity_type_id: menu_link_content
+target_bundle: administrador
+default_langcode: site_default
+language_alterable: false

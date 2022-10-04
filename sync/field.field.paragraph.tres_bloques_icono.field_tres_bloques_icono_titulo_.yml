@@ -1,0 +1,82 @@
+uuid: 55d05397-297d-4f0f-bdac-09c643f8b536
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tres_bloques_icono_titulo_
+    - paragraphs.paragraphs_type.tres_bloques_icono
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+  module:
+    - entity_reference_revisions
+id: paragraph.tres_bloques_icono.field_tres_bloques_icono_titulo_
+field_name: field_tres_bloques_icono_titulo_
+entity_type: paragraph
+bundle: tres_bloques_icono
+label: 'Tres bloques icono título texto color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tres_bloques_icono_titulo_texto_: tres_bloques_icono_titulo_texto_
+    negate: 0
+    target_bundles_drag_drop:
+      baner_bajo:
+        weight: 19
+        enabled: false
+      baner_bajo_produccion:
+        weight: 20
+        enabled: false
+      baner_grande:
+        weight: 21
+        enabled: false
+      bloque_reutilizable:
+        weight: 22
+        enabled: false
+      catalogos:
+        weight: 23
+        enabled: false
+      descarga_fichro_flip_dos_imagene:
+        weight: 24
+        enabled: false
+      from_library:
+        weight: 25
+        enabled: false
+      icono_titulo_texto:
+        weight: 26
+        enabled: false
+      imagen_titulo_cabecera:
+        weight: 27
+        enabled: false
+      logos:
+        weight: 28
+        enabled: false
+      slick_imagenes_youtube:
+        weight: 29
+        enabled: false
+      slick_posicion_quadro_texto:
+        weight: 30
+        enabled: false
+      slick_video_imagenes:
+        weight: 31
+        enabled: false
+      texto_tres_bloques:
+        weight: 32
+        enabled: false
+      tres_bloques_color:
+        weight: 33
+        enabled: false
+      tres_bloques_color_estrecho:
+        weight: 34
+        enabled: false
+      tres_bloques_icono:
+        weight: 35
+        enabled: false
+      tres_bloques_icono_titulo_texto_:
+        weight: 36
+        enabled: true
+field_type: entity_reference_revisions

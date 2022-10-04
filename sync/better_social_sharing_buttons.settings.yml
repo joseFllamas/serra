@@ -1,0 +1,12 @@
+iconset: social-icons--square
+_core:
+  default_config_hash: xG-M6wrdMJhjfod4XLo5uXFM6-AerFMiXrfX_ykr4NY
+langcode: es
+services:
+  facebook: facebook
+  twitter: twitter
+  linkedin: linkedin
+  email: email
+print_css: ''
+width: 20px
+radius: 3px

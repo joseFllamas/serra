@@ -1,0 +1,30 @@
+uuid: 5c04f0f1-7583-4814-8d7f-2787cbf5d6a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.baner_bajo.field_imagen_baner_bajo
+    - paragraphs.paragraphs_type.baner_bajo
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.baner_bajo.preview
+targetEntityType: paragraph
+bundle: baner_bajo
+mode: preview
+content:
+  field_imagen_baner_bajo:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

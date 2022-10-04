@@ -1,0 +1,21 @@
+uuid: 9bf9386a-a0c4-4e80-a6ca-481b8d058a6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_columna2
+    - node.type.webform
+  module:
+    - text
+id: node.webform.field_columna2
+field_name: field_columna2
+entity_type: node
+bundle: webform
+label: Columna2
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

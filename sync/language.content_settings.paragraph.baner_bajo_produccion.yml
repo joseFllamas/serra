@@ -1,0 +1,18 @@
+uuid: 8468a189-eb3a-4499-a6d6-6ed85e848e9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.baner_bajo_produccion
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.baner_bajo_produccion
+target_entity_type_id: paragraph
+target_bundle: baner_bajo_produccion
+default_langcode: site_default
+language_alterable: false

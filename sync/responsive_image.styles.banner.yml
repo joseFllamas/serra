@@ -1,0 +1,41 @@
+uuid: d9ae2ba1-ea20-4655-9ca4-392e17a2ee8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.banner_
+    - image.style.banner_lg
+    - image.style.banner_sm
+    - image.style.banner_xl
+  theme:
+    - odisean
+id: banner
+label: Banner
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: banner_xl
+    breakpoint_id: default.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: banner_lg
+    breakpoint_id: default.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: banner_
+    breakpoint_id: default.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: banner_sm
+    breakpoint_id: default.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: banner_sm
+    breakpoint_id: default.xs
+    multiplier: 1x
+breakpoint_group: odisean
+fallback_image_style: banner_

@@ -1,0 +1,18 @@
+uuid: cdb5ad71-891e-4f70-8953-3f45c21fdfea
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+id: paragraph.slick_posicion_quadro_texto.created
+field_name: created
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: Fecha
+description: 'La hora en que se creó el Paragraph.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

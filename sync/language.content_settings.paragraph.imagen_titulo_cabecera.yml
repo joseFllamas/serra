@@ -1,0 +1,18 @@
+uuid: 78bb9371-fd83-4550-9dc5-8ad81bb0b9ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.imagen_titulo_cabecera
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.imagen_titulo_cabecera
+target_entity_type_id: paragraph
+target_bundle: imagen_titulo_cabecera
+default_langcode: site_default
+language_alterable: true

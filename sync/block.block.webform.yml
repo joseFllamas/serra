@@ -1,0 +1,33 @@
+uuid: d4cbcb68-d6c0-42aa-8e50-72ad4aeafb31
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.apply_to_this_job_offer
+  module:
+    - ctools
+    - webform
+  theme:
+    - odisean
+id: webform
+theme: odisean
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Aplica para esta oferta'
+  label_display: visible
+  provider: webform
+  webform_id: apply_to_this_job_offer
+  default_data: ''
+  redirect: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      job: job

@@ -1,0 +1,29 @@
+uuid: 117fb639-7ea5-4f49-a1a0-fda1e9d8d4a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.medio_220x220
+    - image.style.medium
+  theme:
+    - odisean
+id: slide_producto
+label: 'slide producto'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: default.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medio_220x220
+    breakpoint_id: default.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: medium
+    breakpoint_id: default.xs
+    multiplier: 1x
+breakpoint_group: odisean
+fallback_image_style: medium

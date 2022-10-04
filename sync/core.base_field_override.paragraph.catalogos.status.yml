@@ -1,0 +1,22 @@
+uuid: 625ea3e1-6cf7-4886-84d3-280b9dd85844
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.catalogos
+id: paragraph.catalogos.status
+field_name: status
+entity_type: paragraph
+bundle: catalogos
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

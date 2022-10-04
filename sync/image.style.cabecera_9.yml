@@ -1,0 +1,16 @@
+uuid: 72763bdc-080c-4c63-a410-4fd241be5fcf
+langcode: es
+status: true
+dependencies: {  }
+name: cabecera_9
+label: 'cabecera 950'
+effects:
+  21280d81-832d-46c7-9078-1f79f3ea9aac:
+    uuid: 21280d81-832d-46c7-9078-1f79f3ea9aac
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 950
+      height: 180
+      anchor: center-center
+pipeline: webp

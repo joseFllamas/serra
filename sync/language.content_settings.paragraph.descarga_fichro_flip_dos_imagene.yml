@@ -1,0 +1,18 @@
+uuid: f00f49ca-7201-4817-8376-d74449be1a53
+langcode: es
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.descarga_fichro_flip_dos_imagene
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.descarga_fichro_flip_dos_imagene
+target_entity_type_id: paragraph
+target_bundle: descarga_fichro_flip_dos_imagene
+default_langcode: site_default
+language_alterable: false

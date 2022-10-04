@@ -12,6 +12,7 @@ path:
 cache_level: 2
 cron_frequency: 86400
 enabled: true
+advagg_exclude_admin_routes: false
 global_counter: 0
 immutable: true
 js:

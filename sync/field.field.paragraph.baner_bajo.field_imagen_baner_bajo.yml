@@ -1,0 +1,79 @@
+uuid: 5735cb9e-fd26-4f17-b147-e95309e6d117
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_baner_bajo
+    - paragraphs.paragraphs_type.baner_bajo
+    - paragraphs.paragraphs_type.baner_bajo_produccion
+  module:
+    - entity_reference_revisions
+id: paragraph.baner_bajo.field_imagen_baner_bajo
+field_name: field_imagen_baner_bajo
+entity_type: paragraph
+bundle: baner_bajo
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      baner_bajo_produccion: baner_bajo_produccion
+    negate: 0
+    target_bundles_drag_drop:
+      baner_bajo:
+        weight: 18
+        enabled: false
+      baner_bajo_produccion:
+        weight: 19
+        enabled: true
+      baner_grande:
+        weight: 20
+        enabled: false
+      bloque_reutilizable:
+        weight: 21
+        enabled: false
+      catalogos:
+        weight: 22
+        enabled: false
+      descarga_fichro_flip_dos_imagene:
+        weight: 23
+        enabled: false
+      from_library:
+        weight: 24
+        enabled: false
+      icono_titulo_texto:
+        weight: 25
+        enabled: false
+      imagen_titulo_cabecera:
+        weight: 26
+        enabled: false
+      logos:
+        weight: 27
+        enabled: false
+      slick_imagenes_youtube:
+        weight: 28
+        enabled: false
+      slick_posicion_quadro_texto:
+        weight: 29
+        enabled: false
+      slick_video_imagenes:
+        weight: 30
+        enabled: false
+      texto_tres_bloques:
+        weight: 31
+        enabled: false
+      tres_bloques_color:
+        weight: 32
+        enabled: false
+      tres_bloques_color_estrecho:
+        weight: 33
+        enabled: false
+      tres_bloques_icono_titulo_texto_:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

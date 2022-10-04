@@ -1,0 +1,38 @@
+uuid: 36166a9f-1e12-4385-9cc6-9303e7913fda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+  module:
+    - image
+id: paragraph.slick_imagenes_youtube.field_imagen
+field_name: field_imagen
+entity_type: paragraph
+bundle: slick_imagenes_youtube
+label: imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: b008cac5-8940-4708-be6d-e773e9bf96ec
+    alt: ''
+    title: ''
+    width: 1155
+    height: 780
+field_type: image

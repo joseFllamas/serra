@@ -1,0 +1,18 @@
+uuid: 3d2f4b75-ca44-47f6-97c8-07cbecfbd742
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: tags
+label: 'Meta etiquetas'
+description: 'Las metaetiquetas de la entidad.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

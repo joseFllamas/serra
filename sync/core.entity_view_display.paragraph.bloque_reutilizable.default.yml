@@ -1,0 +1,22 @@
+uuid: 980a0ad9-e3a7-45bc-905a-a9557fb6f220
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_reutilizable.field_reutilizable
+    - paragraphs.paragraphs_type.bloque_reutilizable
+  module:
+    - block_field
+id: paragraph.bloque_reutilizable.default
+targetEntityType: paragraph
+bundle: bloque_reutilizable
+mode: default
+content:
+  field_reutilizable:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

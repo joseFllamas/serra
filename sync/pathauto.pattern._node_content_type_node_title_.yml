@@ -1,0 +1,22 @@
+uuid: 3cdca325-f00a-45ec-9270-16900b8f736d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: _node_content_type_node_title_
+label: '[node:content-type]/[node:title]'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  42d4875e-10e5-48e8-9bfc-349b4eccef76:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 42d4875e-10e5-48e8-9bfc-349b4eccef76
+    context_mapping:
+      node: node
+    bundles:
+      producto: producto
+selection_logic: and
+weight: -5
+relationships: {  }
