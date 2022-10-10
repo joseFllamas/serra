@@ -10,9 +10,8 @@ Awesome built-in.
 
 Read the documentation here: http://docs.radixtheme.org
 
-## Distributions using Radix 
-
-##### [Apigee Developer Portal](https://www.drupal.org/project/apigee_devportal_kickstart)
+## Distributions using Radix ##### [Apigee Developer
+Portal](https://www.drupal.org/project/apigee_devportal_kickstart)
 Apigee Developer Kickstart is a distribution to create an Apigee developer
 portal using Drupal.
 
@@ -32,10 +31,6 @@ websites.
 The Open Restaurant distribution has everything you need to kickstart your
 restaurant website. It comes with a menu management system, a reservation
 system, a customizable blog and events management.
-
-##### [Sector](https://sector.nz)
-Sector is a New Zealand Drupal Distribution aimed at getting your web project
-up and running in no time. 
 
 ##### [DKAN Open Data Platform](https://getdkan.org)
 DKAN is a community-driven, free and open source open data platform that gives

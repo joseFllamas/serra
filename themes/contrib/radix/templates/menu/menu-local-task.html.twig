@@ -4,4 +4,6 @@
  * Template for a local task link.
  */
 #}
-{% include '@radix/nav/nav-item.twig' %}
+<li{{ attributes.addClass('nav-item') }}>
+  <a href="{{ link['#url'] }}" class="nav-link {{ is_active ? 'active' }}">{{ link['#title'] }}</a>
+</li>

@@ -1,11 +1,12 @@
 uuid: 214a0435-6cf1-4962-9063-ec8ddc1a53f2
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - field.storage.node.body
     - node.type.producto
   module:
+    - eva
     - node
     - smart_trim
     - taxonomy
@@ -386,6 +387,27 @@ display:
     display_options:
       display_description: ''
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+  entity_view_1:
+    id: entity_view_1
+    display_title: EVA
+    display_plugin: entity_view
+    position: 2
+    display_options:
+      display_description: ''
+      display_extenders: {  }
+      entity_type: taxonomy_term
+      bundles:
+        - tipo_de_producto
     cache_metadata:
       max-age: -1
       contexts:

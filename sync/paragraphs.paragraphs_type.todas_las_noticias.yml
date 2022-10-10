@@ -1,0 +1,10 @@
+uuid: 55cd42be-f6c2-434c-9207-342c798c0450
+langcode: es
+status: true
+dependencies: {  }
+id: todas_las_noticias
+label: 'Todas las noticias'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

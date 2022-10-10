@@ -17,11 +17,6 @@ function radix_theme_suggestions_form_alter(array &$suggestions, array &$variabl
   if (isset($element['#form_id'])) {
     $suggestions[] = $variables['theme_hook_original'] . '__' . $element['#form_id'];
   }
-
-  // Check to see if the form is layout builder form
-  if (isset($element['#layout_builder_element_keys'])) {
-    $suggestions[] = $variables['theme_hook_original'] . '__' . 'layout__builder';
-  }
 }
 
 /**
@@ -44,15 +39,6 @@ function radix_preprocess_input(&$variables) {
 
   // Add the element type to the theme.
   $variables['type'] = $element['#type'];
-
-  // Ensure there is no collision with Bootstrap 5 default class names
-  // by replacing ".form-text" with ".form-textfield"
-  $attributes = &$variables['attributes'];
-
-  if ($element['#type'] === 'textfield' && !empty($attributes['class'])) {
-    $classIndex = array_search('form-text', $attributes['class']);
-    $attributes['class'][$classIndex] = 'form-textfield';
-  }
 }
 
 /**
@@ -64,8 +50,6 @@ function radix_preprocess_form_element(&$variables) {
   // Add required class for checkbox and radio labels.
   if (in_array($element['#type'], ['checkbox', 'radio'])) {
     $variables['label']['#attributes']['class'][] = 'form-check-label';
-  } else {
-    $variables['label']['#attributes']['class'][] = 'form-label';
   }
 }
 

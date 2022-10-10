@@ -2,15 +2,17 @@ style:
   version: VERSION
   css:
     theme:
+      '//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap': { type: external ,minified: true }
+      slick/slick/slick.css: { }
+      slick/slick/slick-theme.css: { }
       assets/css/odisean.style.css: {}
       assets/css/flaticon.css: {}
       assets/css/custom.css: {}
-      slick/slick/slick.css: {}
-      slick/slick/slick-theme.css: {}
+
   js:
     slick/slick/slick.min.js: {}
     assets/js/bootstrap.min.js: {}
-    assets/js/odisean.script.js: {} 
+    assets/js/odisean.script.js: {}
   dependencies:
     - core/jquery
     - core/drupal

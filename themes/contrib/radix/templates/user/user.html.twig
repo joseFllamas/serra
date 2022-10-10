@@ -1,1 +1,16 @@
-{% include '@radix/content/user.twig' %}
+{#
+/**
+ * @file
+ * Template for a user view.
+ */
+#}
+{% set classes = [
+  'user',
+  'user--' ~ view_mode|clean_class,
+] %}
+<article{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{- content|without('summary') -}}
+  {% endblock %}
+</article>
+

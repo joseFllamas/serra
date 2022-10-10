@@ -1,0 +1,116 @@
+uuid: 58760afa-2582-41b4-a263-a553613e9fc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_bloques_de_contenido
+    - paragraphs.paragraphs_type.bloque_reutilizable
+    - paragraphs.paragraphs_type.imagen
+    - paragraphs.paragraphs_type.logos
+    - paragraphs.paragraphs_type.noticias
+    - paragraphs.paragraphs_type.slick_imagenes_youtube
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.texto_tres_bloques
+    - paragraphs.paragraphs_type.tres_bloques_color
+    - paragraphs.paragraphs_type.tres_bloques_icono_titulo_texto_
+    - taxonomy.vocabulary.tipo_de_producto
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.tipo_de_producto.field_bloques_de_contenido
+field_name: field_bloques_de_contenido
+entity_type: taxonomy_term
+bundle: tipo_de_producto
+label: 'Bloques de contenido'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bloque_reutilizable: bloque_reutilizable
+      imagen: imagen
+      logos: logos
+      noticias: noticias
+      slick_imagenes_youtube: slick_imagenes_youtube
+      texto: texto
+      texto_tres_bloques: texto_tres_bloques
+      tres_bloques_color: tres_bloques_color
+      tres_bloques_icono_titulo_texto_: tres_bloques_icono_titulo_texto_
+    negate: 0
+    target_bundles_drag_drop:
+      baner_bajo:
+        weight: 25
+        enabled: false
+      baner_bajo_produccion:
+        weight: 26
+        enabled: false
+      baner_grande:
+        weight: 27
+        enabled: false
+      bloque_reutilizable:
+        weight: 28
+        enabled: true
+      catalogos:
+        weight: 29
+        enabled: false
+      descarga_fichro_flip_dos_imagene:
+        weight: 30
+        enabled: false
+      from_library:
+        weight: 31
+        enabled: false
+      icono_titulo_texto:
+        weight: 32
+        enabled: false
+      imagen:
+        weight: 33
+        enabled: true
+      imagen_grande_titulo:
+        weight: 34
+        enabled: false
+      imagen_titulo_cabecera:
+        weight: 35
+        enabled: false
+      logos:
+        weight: 36
+        enabled: true
+      noticias:
+        weight: 37
+        enabled: true
+      slick_imagenes_youtube:
+        weight: 38
+        enabled: true
+      slick_posicion_quadro_texto:
+        weight: 39
+        enabled: false
+      slick_video_imagenes:
+        weight: 40
+        enabled: false
+      texto:
+        weight: 41
+        enabled: true
+      texto_tres_bloques:
+        weight: 42
+        enabled: true
+      texto_tres_bloques_multi:
+        weight: 43
+        enabled: false
+      todas_las_noticias:
+        weight: 44
+        enabled: false
+      tres_bloques_color:
+        weight: 45
+        enabled: true
+      tres_bloques_color_estrecho:
+        weight: 46
+        enabled: false
+      tres_bloques_icono:
+        weight: 47
+        enabled: false
+      tres_bloques_icono_titulo_texto_:
+        weight: 48
+        enabled: true
+field_type: entity_reference_revisions

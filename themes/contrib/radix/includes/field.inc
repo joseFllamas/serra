@@ -41,10 +41,3 @@ function radix_preprocess_filter_caption(&$variables) {
     ];
   }
 }
-
-/**
- * Implements theme_suggestions_field_alter().
- */
-function radix_theme_suggestions_field_alter(&$suggestions, $variables) {
-  $suggestions[] = 'field__' . $variables['element']['#entity_type'] . '__' . $variables['element']['#field_name'] . '__' . $variables['element']['#bundle'] . '__' . $variables['element']['#view_mode'];
-}

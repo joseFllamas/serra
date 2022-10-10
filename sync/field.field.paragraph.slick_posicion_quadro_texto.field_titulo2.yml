@@ -1,0 +1,19 @@
+uuid: 84ab4999-5cdb-4ad8-8a07-821495154a70
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo2
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+id: paragraph.slick_posicion_quadro_texto.field_titulo2
+field_name: field_titulo2
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: 'Título (segunda linea)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

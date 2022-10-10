@@ -5,14 +5,14 @@ dependencies:
   config:
     - webform.webform.apply_to_this_job_offer
   module:
-    - ctools
+    - node
     - webform
   theme:
     - odisean
 id: webform
 theme: odisean
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: webform_block
 settings:

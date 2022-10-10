@@ -1,6 +1,6 @@
 uuid: e4ecd98c-9e9e-47ea-a69b-548d6fb71c5f
 langcode: es
-status: true
+status: false
 dependencies: {  }
 id: product_line
 label: Product_line

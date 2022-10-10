@@ -1,0 +1,21 @@
+uuid: 9744a690-978e-4f2f-850e-25790708bdc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+  module:
+    - text
+id: paragraph.slick_posicion_quadro_texto.field_texto
+field_name: field_texto
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: Texto
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -2,7 +2,7 @@ uuid: 96acb1d9-a355-42ab-8db8-171cd7ed9ebc
 langcode: es
 status: true
 dependencies: {  }
-name: 'Tipo de producto'
+name: 'Línea de producto'
 vid: tipo_de_producto
 description: 'Grupo al que pertenece el producto'
 weight: 0

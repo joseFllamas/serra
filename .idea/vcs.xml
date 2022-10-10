@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/modules/contrib/colorbox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/taxonomy_menu" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/modules/contrib/webform" vcs="Git" />
   </component>
 </project>

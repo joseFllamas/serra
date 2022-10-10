@@ -5,7 +5,6 @@ dependencies:
   config:
     - filter.format.restricted_html
   module:
-    - comment
     - contact
     - eu_cookie_compliance
     - filter
@@ -20,7 +19,6 @@ label: 'Usuario anónimo'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
   - 'bypass paragraphs type content access'
@@ -36,11 +34,15 @@ permissions:
   - 'view paragraph content descarga_fichro_flip_dos_imagene'
   - 'view paragraph content from_library'
   - 'view paragraph content icono_titulo_texto'
+  - 'view paragraph content imagen'
+  - 'view paragraph content imagen_grande_titulo'
   - 'view paragraph content imagen_titulo_cabecera'
   - 'view paragraph content logos'
+  - 'view paragraph content noticias'
   - 'view paragraph content slick_imagenes_youtube'
   - 'view paragraph content slick_posicion_quadro_texto'
   - 'view paragraph content slick_video_imagenes'
+  - 'view paragraph content texto'
   - 'view paragraph content texto_tres_bloques'
   - 'view paragraph content texto_tres_bloques_multi'
   - 'view paragraph content tres_bloques_color'

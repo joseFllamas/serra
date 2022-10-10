@@ -12,6 +12,7 @@ regions:
   navbar_branding: Navbar branding
   navbar_left:  Navbar left
   navbar_right: Navbar right
+  topheader: topHeader
   header: Header
   precontent: PreContent
   contenttaxonomy: Category content
@@ -26,7 +27,7 @@ regions:
   footer_tres: Footer tres
   footer_quatre: Footer quatre
   ultimenu_main_ab528471: 'Menú Productos'
-  
+
 
 libraries:
   - radix/style

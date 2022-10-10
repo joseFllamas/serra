@@ -13,6 +13,7 @@ dependencies:
     - system.menu.main
   module:
     - datetime
+    - eva
     - image
     - node
     - taxonomy
@@ -652,6 +653,29 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_categoria'
+  entity_view_1:
+    id: entity_view_1
+    display_title: EVA
+    display_plugin: entity_view
+    position: 1
+    display_options:
+      display_extenders: {  }
+      entity_type: paragraph
+      bundles:
+        - todas_las_noticias
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_fecha'
+        - 'config:field.storage.node.field_imagen'
+        - 'config:field.storage.node.field_texto_resumen'
   page_1:
     id: page_1
     display_title: Page

@@ -11,7 +11,7 @@ id: paragraph.noticias.field_noticias
 field_name: field_noticias
 entity_type: paragraph
 bundle: noticias
-label: Noticias
+label: 'Elige el tipo de bloque'
 description: ''
 required: false
 translatable: false

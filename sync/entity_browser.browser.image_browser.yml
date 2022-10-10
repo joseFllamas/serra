@@ -1,0 +1,41 @@
+uuid: 465cfbe3-0f4c-49ea-8dc5-09fa20fa079b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.media_browsers
+  module:
+    - views
+name: image_browser
+label: 'Image Browser'
+display: modal
+display_configuration:
+  width: '1245'
+  height: ''
+  link_text: 'Seleccione iamgen'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  eb97398e-6297-4ce8-ac0e-7a4305d9867a:
+    id: view
+    uuid: eb97398e-6297-4ce8-ac0e-7a4305d9867a
+    label: Library
+    weight: 1
+    settings:
+      submit_text: 'Select media'
+      auto_select: false
+      view: media_browsers
+      view_display: media_browser
+  0580e879-e256-4f63-9bbf-9b1c03bb0a76:
+    id: upload
+    uuid: 0580e879-e256-4f63-9bbf-9b1c03bb0a76
+    label: upload
+    weight: 2
+    settings:
+      submit_text: 'Seleccionar los archivos'
+      upload_location: 'public://'
+      multiple: true
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp webp svg'

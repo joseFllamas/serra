@@ -21,7 +21,7 @@ id: node.page.field_bloques_cuerpo
 field_name: field_bloques_cuerpo
 entity_type: node
 bundle: page
-label: 'Bloques de contenido distintos'
+label: 'Constructor por bloques'
 description: ''
 required: false
 translatable: true

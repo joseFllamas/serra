@@ -1,0 +1,19 @@
+uuid: 5f39ba9e-aa64-45ee-abf5-692e6e000236
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.slick_posicion_quadro_texto
+id: paragraph.slick_posicion_quadro_texto.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: slick_posicion_quadro_texto
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,1 +1,13 @@
-{% include '@radix/form/textarea.twig' %}
+{#
+/**
+ * @file
+ * Template for a textarea form element.
+ */
+#}
+{%
+  set classes = [
+  'form-control',
+  attributes.hasClass('error') ? 'is-invalid'
+]
+%}
+<textarea{{ attributes.addClass(classes) }}>{{ value }}</textarea>

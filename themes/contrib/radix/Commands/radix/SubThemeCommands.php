@@ -89,7 +89,7 @@ class SubThemeCommands extends DrushCommands implements BuilderAwareInterface {
     $kit = $options['kit'];
 
     // @todo Use extension service.
-    $radixDir = \Drupal::service('extension.list.theme')->getPath('radix');
+    $radixDir = drupal_get_path('theme', 'radix');
     $srcDir = "$radixDir/src/kits/{$kit}";
 
     // Find kit from other active themes.

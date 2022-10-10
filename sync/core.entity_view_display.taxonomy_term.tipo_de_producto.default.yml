@@ -3,20 +3,22 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.tipo_de_producto.field_bloques_de_contenido
     - field.field.taxonomy_term.tipo_de_producto.field_cabecera
     - taxonomy.vocabulary.tipo_de_producto
   module:
     - entity_reference_revisions
-    - text
 id: taxonomy_term.tipo_de_producto.default
 targetEntityType: taxonomy_term
 bundle: tipo_de_producto
 mode: default
 content:
-  description:
-    type: text_default
-    label: hidden
-    settings: {  }
+  field_bloques_de_contenido:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 1
     region: content
@@ -29,5 +31,12 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  productos_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
+  description: true
   langcode: true
+  search_api_excerpt: true

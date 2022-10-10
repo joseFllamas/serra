@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_imagen_representativa
     - field.storage.node.field_linea_de_producto
     - field.storage.node.field_productos_relacionados
@@ -107,16 +108,34 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: ''
+          label: 'Nombre del producto'
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -525,7 +544,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 40
           total_pages: null
           id: 0
           tags:
@@ -576,7 +595,46 @@ display:
             field_identifier: created
           exposed: false
           granularity: second
-      arguments: {  }
+      arguments:
+        field_linea_de_producto_target_id:
+          id: field_linea_de_producto_target_id
+          table: node__field_linea_de_producto
+          field: field_linea_de_producto_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: taxonomy_tid
+          default_argument_options:
+            term_page: '1'
+            node: false
+            limit: false
+            vids: {  }
+            anyall: ','
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
       filters:
         title:
           id: title
@@ -721,7 +779,6 @@ display:
           value:
             es: es
             en: en
-            und: und
           group: 1
           exposed: true
           expose:
@@ -813,13 +870,23 @@ display:
           row_class: ''
           default_row_class: true
           columns:
+            field_imagen_representativa: field_imagen_representativa
             title: title
             created: created
+            field_linea_de_producto: field_linea_de_producto
+            field_productos_relacionados: field_productos_relacionados
             status: status
-            edit_node: edit_node
-            delete_node: delete_node
+            langcode: langcode
+            operations: operations
           default: '-1'
           info:
+            field_imagen_representativa:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             title:
               sortable: true
               default_sort_order: asc
@@ -834,6 +901,18 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            field_linea_de_producto:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_productos_relacionados:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             status:
               sortable: true
               default_sort_order: asc
@@ -841,16 +920,14 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            edit_node:
+            langcode:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            delete_node:
-              sortable: true
-              default_sort_order: asc
+            operations:
               align: ''
               separator: ''
               empty_column: false

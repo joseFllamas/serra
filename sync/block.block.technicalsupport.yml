@@ -13,7 +13,7 @@ dependencies:
 id: technicalsupport
 theme: odisean
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:e91789a9-0102-446c-969f-177564be7315'
 settings:

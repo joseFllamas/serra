@@ -43,12 +43,6 @@ function radix_preprocess_block(&$variables) {
 
   // Add bundle to template.
   $variables['bundle'] = $block_content->bundle();
-
-  // Add custom attribute class for block.
-  if ($variables['elements']['#base_plugin_id'] == 'block_content') {
-    $blockType = strtr($variables['content']['#block_content']->bundle(), '_', '-');
-    $variables['attributes']['class'][] = 'block--type-' . $blockType;
-  }
 }
 
 /**

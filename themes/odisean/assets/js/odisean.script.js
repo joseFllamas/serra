@@ -846,7 +846,7 @@
                                 slidesToShow: 1,
                                 draggable: true,
                                 autoplay: true,
-                                autoplaySpeed: 4000,
+                                autoplaySpeed: 3000,
                                 arrows: false,
                                 dots: true,
                                 fade: false,

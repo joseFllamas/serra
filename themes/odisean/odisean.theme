@@ -15,27 +15,27 @@ use Drupal\taxonomy\Entity\Term;
 function odisean_preprocess_node(&$variables) {
  $variables['view_mode'] = $variables['elements']['#view_mode'];
   $node = $variables['node'];
- 
+
   // Provide a distinct $teaser boolean.
  if ($variables['view_mode'] == 'nom_view_mode' && $node->type->entity->label() == 'Artículo'){
-  
- } 
+
+ }
 
 
 }
-function odisean_theme_suggestions_page_alter(&$suggestions, $vars, $hook) {      
+function odisean_theme_suggestions_page_alter(&$suggestions, $vars, $hook) {
   if (\Drupal::routeMatch()
       ->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()
       ->getRawParameter('taxonomy_term')
   ) {
     $term = Term::load($tid);
-    $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
+    $suggestions[] = 'page__taxonomy__' . $term->bundle();
   }
 //  kint($suggestions);
 }
 
-function odisean_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {      
-  $vocabulary = $vars['elements']['#taxonomy_term']->getVocabularyId();
+function odisean_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {
+  $vocabulary = $vars['elements']['#taxonomy_term']->bundle();
   $suggestions[] = 'taxonomy_term__' .  $vocabulary;
  // kint($suggestions);
 }
@@ -43,7 +43,7 @@ function odisean_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $ho
  * Implements hook_preprocess_page().
 */
 function odisean_preprocess_taxonomy_term(&$variables) {
-  
+
 }
 
 function odisean_preprocess_page(&$variables) {
@@ -65,7 +65,7 @@ function odisean_preprocess_paragraph(&$variables) {
   $paragraph = $variables['paragraph'];
   // Get the parent bundle.
   if($paragraph->hasField('nome_camp')){
-    
+
   }
 
   if($paragraph->gettype() == 'paragraph name'  ){
@@ -77,6 +77,6 @@ function odisean_preprocess_paragraph(&$variables) {
     if (is_null($parent) && \Drupal::routeMatch()->getRouteName() == 'entity.node.preview') {
       $parent = \Drupal::routeMatch()->getParameter('node_preview');
     }
-  
-   
+
+
 }

@@ -6,11 +6,11 @@ dependencies:
     - field.field.paragraph.imagen_titulo_cabecera.field_imagen_
     - field.field.paragraph.imagen_titulo_cabecera.field_subtitulo_cabecera
     - field.field.paragraph.imagen_titulo_cabecera.field_titulo_cabecera
-    - image.style.thumbnail
+    - image.style.medio_220x220
     - paragraphs.paragraphs_type.imagen_titulo_cabecera
   module:
     - field_layout
-    - image
+    - focal_point
     - layout_discovery
 third_party_settings:
   field_layout:
@@ -23,12 +23,14 @@ bundle: imagen_titulo_cabecera
 mode: default
 content:
   field_imagen_:
-    type: image_image
+    type: image_focal_point
     weight: 2
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: medio_220x220
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_subtitulo_cabecera:
     type: string_textfield
@@ -45,6 +47,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

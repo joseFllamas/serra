@@ -1,0 +1,25 @@
+uuid: f33dc90a-dd88-4d05-bed6-cce3592f1bb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-top
+  module:
+    - system
+  theme:
+    - odisean
+id: menutop
+theme: odisean
+region: topheader
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-top'
+settings:
+  id: 'system_menu_block:menu-top'
+  label: 'Menú top'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -15,11 +15,26 @@ settings:
       value: tl
       label: 'Arriba izquierda'
     -
+      value: tc
+      label: 'Arriba centro'
+    -
       value: tr
       label: 'Arriba derecha'
     -
+      value: cl
+      label: 'Centro izquierda'
+    -
+      value: cc
+      label: 'Centro centro'
+    -
+      value: cr
+      label: 'Centro derecha'
+    -
       value: bl
       label: 'Abajo izquierda'
+    -
+      value: bc
+      label: 'Abajo centro'
     -
       value: br
       label: 'Abajo derecha'

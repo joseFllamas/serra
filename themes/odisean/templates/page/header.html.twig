@@ -1,0 +1,40 @@
+{% embed '@radix/navbar/navbar.twig' with {
+  container: 'fixed',
+  color: 'light',
+  utility_classes: ['bg-light'],
+} %}
+
+
+  {% block branding %}
+
+    <div class="topbar">
+      <div class="top-header">
+        {% if page.topheader %}
+          {{ page.topheader }}
+        {% endif %}
+      </div>
+      <div class="header header1 po-relative">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg h1-nav">
+            {% if page.navbar_branding %}
+              {{ page.navbar_branding }}
+            {% endif %}
+
+            {% if page.navbar_right %}
+              <div class="collapse navbar-collapse ml-auto mt-2 mt-lg-0" id="header1">
+                {{ page.navbar_right }}
+              </div>
+            {% endif %}
+
+          </nav>
+        </div>
+        <!-- comment 1 -->
+      </div>
+      <!-- comment 2 -->
+    </div>
+    <!-- comment 3 -->
+
+  {% endblock %}
+
+
+{% endembed %}

@@ -34,7 +34,8 @@ top: 1px !important;
 .language-switcher-language-url ul.links.nav li a{
 	padding-left: 15px;
 }
-.block--basic h2{    
+
+.block--basic h2{
 	margin-bottom: 20px;
 
     color: #AF282E;
@@ -78,7 +79,7 @@ top: 1px !important;
 .job .field__item strong{
 	font-weight: 700;
 }
-.shortcuts_links{ 
+.shortcuts_links{
 	display: flex;
 	align-items: center;
     text-align: center;
@@ -111,7 +112,7 @@ display: none !important;
 }
 
 @media (max-width: 992px){
-	
+
 	#shortcuts{
 		display: none;
 	}
@@ -170,7 +171,7 @@ font-size: 2.5rem;
   flex-wrap: nowrap;
   padding-bottom:1rem;
   margin-bottom:1rem;
-  
+
 }
 .jobcontent{
   flex-basis:75%;

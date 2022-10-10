@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a view of unformatted rows.
+ * Default theme implementation to display a view of unformatted rows.
  *
  * Available variables:
  * - title: The title of this group of rows. May be empty.
@@ -13,54 +13,22 @@
  *   used on rows.
  *
  * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
  */
 #}
-{# <ul class="dropdown-menu show">
-
-{% for row in rows %}
-  
-    {{- rows[0].content -}}
-  
-{% endfor %}
-
-
-</ul>
- #}
-
-<div class="megamenu">
-	<div class="column">
-	    {{- rows[0].content -}}
-	    {{- rows[1].content -}}
-	    {{- rows[2].content -}}
-	    {{- rows[3].content -}}
-	    {{- rows[4].content -}}
-	    {{- rows[5].content -}}
-	    {{- rows[6].content -}}
-	    {{- rows[7].content -}}
-	</div>
-	<div class="column">
-	    {{- rows[8].content -}}
-	    {{- rows[9].content -}}
-	    {{- rows[10].content -}}
-	    {{- rows[11].content -}}
-	    {{- rows[12].content -}}
-	    {{- rows[13].content -}}
-	    {{- rows[14].content -}}
-	    {{- rows[15].content -}}
-	    {{- rows[16].content -}}
-	</div>
-	<div class="column">
-	    {{- rows[17].content -}}
-	    {{- rows[18].content -}}
-	    {{- rows[19].content -}}
-	    {{- rows[20].content -}}
-	    {{- rows[21].content -}}
-	    {{- rows[22].content -}}
-	    {{- rows[23].content -}}
-	    {{- rows[24].content -}}
-	    {{- rows[25].content -}}
-	    {{- rows[26].content -}}
-	</div>
-
-
+<div class="col">
+  {% if title %}
+    <h3>{{ title }}</h3>
+  {% endif %}
+  {% for row in rows %}
+    {%
+      set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+      {{- row.content -}}
+    </div>
+  {% endfor %}
 </div>

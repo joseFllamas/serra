@@ -42,17 +42,16 @@
 
 
 <div class="diapo diapo1" style="" {{ attributes }}>
-	<div class="imgslider">{{ content.field_imagen_slick_posicion }}</div>
 
-	{% if content.field_video_mp4["#items"] is defined %}
-				<video autoplay muted loop id="myVideo" style="display:none">
-				  <source src="{{content.field_video_mp4|render|striptags|trim}}" type="video/mp4"  >
-				</video>
-	{% endif %}
+  <div class="imgslider">{{ content.field_media }}</div>
+  <div class="diapo_title">
+    <h2 class="line_red">{{ content.field_titulo }}</h2>
+    <h2>{{ content.field_titulo2 }}</h2>
+  </div>
 
-	{% if content.field_texto_slick_posicion|render|striptags|trim is not empty %}
-      <div class=" blanc position-{{ content.field_posicion|render|striptags|trim }}">
-           <h2 class="bg-success-gradiant title">{{ content.field_texto_slick_posicion }}</h2>
+	{% if content.field_texto is not empty %}
+      <div class=" red-box position-{{ content.field_posicion|render|striptags|trim }}">
+           <div class="red-box-content">{{ content.field_texto }}</div>
            {{ content.field_enlace_boton }}
       </div>
     {% endif %}

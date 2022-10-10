@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: odisean_breadcrumbs
 theme: odisean
-region: precontent
-weight: -9
+region: content
+weight: -10
 provider: null
 plugin: system_breadcrumb_block
 settings:

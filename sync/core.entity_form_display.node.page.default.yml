@@ -12,6 +12,7 @@ dependencies:
   module:
     - field_layout
     - layout_discovery
+    - length_indicator
     - metatag
     - paragraphs_asymmetric_translation_widgets
     - paragraphs_previewer
@@ -140,7 +141,13 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 15
+          optimax: 50
+          tolerance: 10
   translation:
     weight: 5
     region: content

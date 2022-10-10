@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - image.style.banner_xl
     - image.style.cabecera_400
     - image.style.cabecera_720
     - image.style.cabecera_9
@@ -38,4 +39,4 @@ image_style_mappings:
     breakpoint_id: default.xs
     multiplier: 1x
 breakpoint_group: odisean
-fallback_image_style: max_1980
+fallback_image_style: banner_xl

@@ -1,3 +1,9 @@
-{% include "@radix/form/form.twig" with {
-  isInline: true,
-} %}
+{#
+/**
+ * @file
+ * Template for the Search block form.
+ */
+#}
+<form{{ attributes.addClass('form-inline') }}>
+  {{ children }}
+</form>
